@@ -70,15 +70,16 @@ $(function() {
 <h4>OpenSceneGraph:</h4>
 <ul>
 <li><a href="https://github.com/openscenegraph/OpenSceneGraph">https://github.com/openscenegraph/OpenSceneGraph</a></li>
-<li><a href="http://www.openscenegraph.org/">http://www.openscenegraph.org/</a> <h4>Bullet:</h4>
-</li>
+<li><a href="http://www.openscenegraph.org/">http://www.openscenegraph.org/</a></li>
 </ul>
+<h4>Bullet:</h4>
 <ul>
 <li><a href="https://github.com/bulletphysics/bullet3">https://github.com/bulletphysics/bullet3</a></li>
 <li><a href="http://bulletphysics.org/">http://bulletphysics.org/</a></li>
 </ul>
-<p>Dependences can be installed by (assuming Fedora Linux): </p><pre class="fragment">dnf install bullet openscenegraph-osg openscenegraph-osgViewer openscenegraph-osgSim openscenegraph-osgDB openscenegraph-osgGA openscenegraph-osgShadow
-</pre><h3>Build</h3>
+<p>Dependences can be installed on Fedora Linux using: dnf install bullet bullet-devel OpenSceneGraph OpenSceneGraph-devel</p>
+<p>Dependences can be installed on Ubuntu using: apt install bullet openscenegraph-osg openscenegraph-osgViewer openscenegraph-osgSim openscenegraph-osgDB openscenegraph-osgGA openscenegraph-osgShadow</p>
+<h3>Build</h3>
 <pre class="fragment">git clone https://github.com/miguelleitao/btosg.git
 cd btosg
 make
