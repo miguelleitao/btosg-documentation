@@ -1,8 +1,5 @@
 var searchData=
 [
-  ['blockblue',['BlockBlue',['../classBlockBlue.html',1,'']]],
-  ['blockgreen',['BlockGreen',['../classBlockGreen.html',1,'']]],
-  ['blockred',['BlockRed',['../classBlockRed.html',1,'']]],
   ['body',['body',['../classbtosgObject.html#a64ccde0543c184ed1749fdb9c9699785',1,'btosgObject']]],
   ['btosgbox',['btosgBox',['../classbtosgBox.html',1,'']]],
   ['btosgcone',['btosgCone',['../classbtosgCone.html',1,'']]],

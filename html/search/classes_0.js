@@ -1,8 +1,5 @@
 var searchData=
 [
-  ['blockblue',['BlockBlue',['../classBlockBlue.html',1,'']]],
-  ['blockgreen',['BlockGreen',['../classBlockGreen.html',1,'']]],
-  ['blockred',['BlockRed',['../classBlockRed.html',1,'']]],
   ['btosgbox',['btosgBox',['../classbtosgBox.html',1,'']]],
   ['btosgcone',['btosgCone',['../classbtosgCone.html',1,'']]],
   ['btosgcylinder',['btosgCylinder',['../classbtosgCylinder.html',1,'']]],

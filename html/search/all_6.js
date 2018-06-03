@@ -1,5 +1,5 @@
 var searchData=
 [
-  ['loadobjectmodel',['loadObjectModel',['../classbtosgObject.html#a91838b8235579da178fcc06e6d3d47f3',1,'btosgObject']]],
-  ['logposition',['logPosition',['../classbtosgObject.html#acfd70fa6477c80fd7f29ad7ab9f4f067',1,'btosgObject']]]
+  ['mass',['mass',['../classbtosgObject.html#a2418bb2194d5e9b0f1c51c84672ba7d1',1,'btosgObject']]],
+  ['model',['model',['../classbtosgObject.html#afd15726e7a214212d6d5815f8ac1ac6c',1,'btosgObject']]]
 ];
