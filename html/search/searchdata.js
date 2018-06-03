@@ -3,8 +3,7 @@ var indexSectionsWithContent =
   0: "abcgilmnrsu",
   1: "b",
   2: "acglrsu",
-  3: "bimns",
-  4: "m"
+  3: "bimns"
 };
 
 var indexSectionNames =
@@ -12,8 +11,7 @@ var indexSectionNames =
   0: "all",
   1: "classes",
   2: "functions",
-  3: "variables",
-  4: "pages"
+  3: "variables"
 };
 
 var indexSectionLabels =
@@ -21,7 +19,6 @@ var indexSectionLabels =
   0: "All",
   1: "Classes",
   2: "Functions",
-  3: "Variables",
-  4: "Pages"
+  3: "Variables"
 };
 
