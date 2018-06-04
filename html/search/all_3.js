@@ -1,6 +1,7 @@
 var searchData=
 [
-  ['geteuler',['getEuler',['../classbtosgObject.html#afef1fe06635566ab9cee134f72439e02',1,'btosgObject']]],
-  ['getposition',['getPosition',['../classbtosgObject.html#a77a1434498d7a6d00c415042a995d119',1,'btosgObject']]],
-  ['getrotation',['getRotation',['../classbtosgObject.html#a9cadb03762699412552601196950a039',1,'btosgObject']]]
+  ['dim',['dim',['../classbtosgVehicle.html#afed9fb742c4a8ed58e8d6202dfc20344',1,'btosgVehicle']]],
+  ['dx',['dx',['../classbtosgVehicle.html#aed23010bba3c34158abd4548328b3819',1,'btosgVehicle']]],
+  ['dy',['dy',['../classbtosgVehicle.html#ae124e1cd8c424080d7be7c47edb07eb1',1,'btosgVehicle']]],
+  ['dz',['dz',['../classbtosgVehicle.html#a39857392dc4882886964c1beefa46268',1,'btosgVehicle']]]
 ];

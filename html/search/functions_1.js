@@ -1,4 +1,4 @@
 var searchData=
 [
-  ['createrigidbody',['createRigidBody',['../classbtosgObject.html#a029dbe9134fa94e7355799f67fb2cd6d',1,'btosgObject']]]
+  ['btosgvehicle',['btosgVehicle',['../classbtosgVehicle.html#a462222cde5a3480b8964b582fcbf39a3',1,'btosgVehicle']]]
 ];

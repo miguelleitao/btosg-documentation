@@ -1,4 +1,5 @@
 var searchData=
 [
-  ['reset',['reset',['../classbtosgWorld.html#a6af4d066410a86b44fff5563667ea9a9',1,'btosgWorld::reset()'],['../classbtosgObject.html#a93983f9180dd0672f8779cf2baa78580',1,'btosgObject::reset()']]]
+  ['mass',['mass',['../classbtosgObject.html#a2418bb2194d5e9b0f1c51c84672ba7d1',1,'btosgObject']]],
+  ['model',['model',['../classbtosgObject.html#afd15726e7a214212d6d5815f8ac1ac6c',1,'btosgObject']]]
 ];

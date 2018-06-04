@@ -1,4 +1,4 @@
 var searchData=
 [
-  ['name',['name',['../classbtosgObject.html#a12396e1362797a75473a2e833b579cc9',1,'btosgObject']]]
+  ['init_5fstate',['init_state',['../classbtosgObject.html#a2dee023f311114e200df9b04c8c1b400',1,'btosgObject']]]
 ];
