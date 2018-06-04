@@ -22,6 +22,6 @@ The **btosg** reference documentation can be built and read locally using:
     make manual
     firefox documentation/html/
 
-Typical users will not find any advantage in cloning or installing the files provided in this **btosg-documentation** repository. This **btosg-documentation** repository is only usefull for maintainers of the **btosg** oficial online documentation.
+Typical users will not find any advantage in cloning or installing the files provided in this **btosg-documentation** repository. This **btosg-documentation** repository is only useful for maintainers of the **btosg** official online documentation.
 
 
