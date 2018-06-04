@@ -67,6 +67,8 @@ $(function() {
 <div class="title">btosgWorld Class Reference</div>  </div>
 </div><!--header-->
 <div class="contents">
+
+<p><code>#include &lt;<a class="el" href="btosg_8h_source.html">btosg.h</a>&gt;</code></p>
 <table class="memberdecls">
 <tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="pub-methods"></a>
 Public Member Functions</h2></td></tr>
@@ -79,17 +81,20 @@ Public Member Functions</h2></td></tr>
 </table><table class="memberdecls">
 <tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="pub-attribs"></a>
 Public Attributes</h2></td></tr>
-<tr class="memitem:ad757a7b3b845142f200d1f2127e5372e"><td class="memItemLeft" align="right" valign="top"><a id="ad757a7b3b845142f200d1f2127e5372e"></a>
-btDynamicsWorld *&#160;</td><td class="memItemRight" valign="bottom"><b>dynamic</b></td></tr>
+<tr class="memitem:ad757a7b3b845142f200d1f2127e5372e"><td class="memItemLeft" align="right" valign="top">btDynamicsWorld *&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classbtosgWorld.html#ad757a7b3b845142f200d1f2127e5372e">dynamic</a></td></tr>
 <tr class="separator:ad757a7b3b845142f200d1f2127e5372e"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:ab6d438f54ccfc18955ea43e87731e008"><td class="memItemLeft" align="right" valign="top"><a id="ab6d438f54ccfc18955ea43e87731e008"></a>
-osg::ref_ptr&lt; osg::Group &gt;&#160;</td><td class="memItemRight" valign="bottom"><b>scene</b></td></tr>
+osg::ref_ptr&lt; osg::Group &gt;&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classbtosgWorld.html#ab6d438f54ccfc18955ea43e87731e008">scene</a></td></tr>
+<tr class="memdesc:ab6d438f54ccfc18955ea43e87731e008"><td class="mdescLeft">&#160;</td><td class="mdescRight">Pointer to osg::Group object storing the root node of the object tree. <br /></td></tr>
 <tr class="separator:ab6d438f54ccfc18955ea43e87731e008"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:ab105aa8c0f8bdbdf323d47b902f6aca0"><td class="memItemLeft" align="right" valign="top"><a id="ab105aa8c0f8bdbdf323d47b902f6aca0"></a>
-std::forward_list&lt; class <a class="el" href="classbtosgObject.html">btosgObject</a> * &gt;&#160;</td><td class="memItemRight" valign="bottom"><b>objects</b></td></tr>
+std::forward_list&lt; class <a class="el" href="classbtosgObject.html">btosgObject</a> * &gt;&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classbtosgWorld.html#ab105aa8c0f8bdbdf323d47b902f6aca0">objects</a></td></tr>
+<tr class="memdesc:ab105aa8c0f8bdbdf323d47b902f6aca0"><td class="mdescLeft">&#160;</td><td class="mdescRight">List of Objects. <br /></td></tr>
 <tr class="separator:ab105aa8c0f8bdbdf323d47b902f6aca0"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table>
-<h2 class="groupheader">Member Function Documentation</h2>
+<a name="details" id="details"></a><h2 class="groupheader">Detailed Description</h2>
+<div class="textblock"><p><a class="el" href="classbtosgWorld.html">btosgWorld</a> Integrates a btDynamicsWorld and an osg::Group </p>
+</div><h2 class="groupheader">Member Function Documentation</h2>
 <a id="ae5b71c6319dd420479096a265a1725b7"></a>
 <h2 class="memtitle"><span class="permalink"><a href="#ae5b71c6319dd420479096a265a1725b7">&#9670;&nbsp;</a></span>addObject()</h2>
 
@@ -153,6 +158,22 @@ std::forward_list&lt; class <a class="el" href="classbtosgObject.html">btosgObje
       </table>
 </div><div class="memdoc">
 <p>Performs a simulation step. </p>
+
+</div>
+</div>
+<h2 class="groupheader">Member Data Documentation</h2>
+<a id="ad757a7b3b845142f200d1f2127e5372e"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#ad757a7b3b845142f200d1f2127e5372e">&#9670;&nbsp;</a></span>dynamic</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">btDynamicsWorld* btosgWorld::dynamic</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+<p>Pointer to btDynamicsWorld object. </p>
 
 </div>
 </div>

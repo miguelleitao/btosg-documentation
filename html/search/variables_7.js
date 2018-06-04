@@ -1,4 +1,4 @@
 var searchData=
 [
-  ['shape',['shape',['../classbtosgObject.html#a0f6a8da01cf643c321bffe86e42604b0',1,'btosgObject']]]
+  ['radius',['radius',['../classbtosgSphere.html#afd570c85e9ce1b15b2b4b378e4f6abeb',1,'btosgSphere']]]
 ];
