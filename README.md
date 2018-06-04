@@ -1,9 +1,27 @@
 # btosg-documentation
 Documentation for btosg
 
+This repository keeps the official online documentation for *btosg*.
+
 *btosg* is a physical end visual simulation framework integrating both *Bullet* and *OpenSceneGraph*.
 
-*btosg* is available at: git@github.com:miguelleitao/btosg.git
+*btosg* is available at: https://github.com/miguelleitao/btosg.git
 
-This repository keeps the oficial online documentation for *btosg*. btosg includes configuration information and makefile targetto allow building the complete reference documentation. There are no needs to clone or install files provided in thisbtosg-documentatio repository.
+The *btosg* reference documentation can be browsed online from both:
+
+* https://miguelleitao.github.io/btosg/
+
+* https://miguelleitao.github.io/btosg-documentation/html
+
+*btosg* includes configuration information and a makefile target to allow building the complete reference documentation.
+
+The *btosg* reference documentation can be built and read locally using:
+
+    git clone https://github.com/miguelleitao/btosg.git
+    cd btosg
+    make manual
+    _firefox_ documentation/html/
+
+Typical users will not find any advantage in cloning or installing the files provided in this *btosg-documentation* repository. This *btosg-documentation* repository is only usefull for maintainers of the *btosg* oficial online documentation.
+
 
