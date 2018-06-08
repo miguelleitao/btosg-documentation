@@ -1,0 +1,83 @@
+\hypertarget{classbtosgQuat}{}\section{btosg\+Quat Class Reference}
+\label{classbtosgQuat}\index{btosg\+Quat@{btosg\+Quat}}
+
+
+\hyperlink{classbtosgQuat}{btosg\+Quat} represents a Quaternion.  
+
+
+
+
+{\ttfamily \#include $<$btosg.\+h$>$}
+
+Inheritance diagram for btosg\+Quat\+:\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[height=2.000000cm]{classbtosgQuat}
+\end{center}
+\end{figure}
+\subsection*{Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+\hyperlink{classbtosgQuat_a8ef8fc0d1503426d5e0ead87edfa5acf}{btosg\+Quat} (double x, double y, double z, double w)
+\begin{DoxyCompactList}\small\item\em Constructor from 4 scalars. \end{DoxyCompactList}\item 
+\hyperlink{classbtosgQuat_aa7646a03371b8aaa2caeba3f4b198ad6}{btosg\+Quat} (osg\+::\+Quat q)
+\begin{DoxyCompactList}\small\item\em Constructor from base class osg\+::\+Quat. \end{DoxyCompactList}\item 
+\mbox{\Hypertarget{classbtosgQuat_a9fc1530e0eb06c2432f1633bf08db8a2}\label{classbtosgQuat_a9fc1530e0eb06c2432f1633bf08db8a2}} 
+{\bfseries btosg\+Quat} (bt\+Quaternion q)
+\item 
+\mbox{\Hypertarget{classbtosgQuat_addfd68e2130ff8bb51c582524de5a345}\label{classbtosgQuat_addfd68e2130ff8bb51c582524de5a345}} 
+{\bfseries operator bt\+Quaternion} () const
+\item 
+\mbox{\Hypertarget{classbtosgQuat_aeda394d825b449ab87a77820aad1737d}\label{classbtosgQuat_aeda394d825b449ab87a77820aad1737d}} 
+\hyperlink{classbtosgVec3}{btosg\+Vec3} {\bfseries to\+Euler} ()
+\end{DoxyCompactItemize}
+
+
+\subsection{Detailed Description}
+\hyperlink{classbtosgQuat}{btosg\+Quat} represents a Quaternion. 
+
+Can be used as a bt\+Quaternion or an osg\+::\+Quat. Implemented as derived from osg\+::\+Quar with aditional constructor and convertor from and to bt\+Quaternion. 
+
+\subsection{Constructor \& Destructor Documentation}
+\mbox{\Hypertarget{classbtosgQuat_a8ef8fc0d1503426d5e0ead87edfa5acf}\label{classbtosgQuat_a8ef8fc0d1503426d5e0ead87edfa5acf}} 
+\index{btosg\+Quat@{btosg\+Quat}!btosg\+Quat@{btosg\+Quat}}
+\index{btosg\+Quat@{btosg\+Quat}!btosg\+Quat@{btosg\+Quat}}
+\subsubsection{\texorpdfstring{btosg\+Quat()}{btosgQuat()}\hspace{0.1cm}{\footnotesize\ttfamily [1/2]}}
+{\footnotesize\ttfamily btosg\+Quat\+::btosg\+Quat (\begin{DoxyParamCaption}\item[{double}]{x,  }\item[{double}]{y,  }\item[{double}]{z,  }\item[{double}]{w }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}}
+
+
+
+Constructor from 4 scalars. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em x} & X value \\
+\hline
+{\em y} & Y value \\
+\hline
+{\em z} & Z value \\
+\hline
+{\em w} & W value \\
+\hline
+\end{DoxyParams}
+\mbox{\Hypertarget{classbtosgQuat_aa7646a03371b8aaa2caeba3f4b198ad6}\label{classbtosgQuat_aa7646a03371b8aaa2caeba3f4b198ad6}} 
+\index{btosg\+Quat@{btosg\+Quat}!btosg\+Quat@{btosg\+Quat}}
+\index{btosg\+Quat@{btosg\+Quat}!btosg\+Quat@{btosg\+Quat}}
+\subsubsection{\texorpdfstring{btosg\+Quat()}{btosgQuat()}\hspace{0.1cm}{\footnotesize\ttfamily [2/2]}}
+{\footnotesize\ttfamily btosg\+Quat\+::btosg\+Quat (\begin{DoxyParamCaption}\item[{osg\+::\+Quat}]{q }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}}
+
+
+
+Constructor from base class osg\+::\+Quat. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em q} & osg\+::\+Quat object \\
+\hline
+\end{DoxyParams}
+
+
+The documentation for this class was generated from the following files\+:\begin{DoxyCompactItemize}
+\item 
+btosg.\+h\item 
+btosg.\+cpp\end{DoxyCompactItemize}
