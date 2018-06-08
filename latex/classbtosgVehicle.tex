@@ -18,7 +18,7 @@ Inheritance diagram for btosg\+Vehicle\+:\begin{figure}[H]
 \subsection*{Public Member Functions}
 \begin{DoxyCompactItemize}
 \item 
-\hyperlink{classbtosgVehicle_a462222cde5a3480b8964b582fcbf39a3}{btosg\+Vehicle} (\hyperlink{classbtosgWorld}{btosg\+World} $\ast$world, osg\+::\+Vec3 dim\+Local=osg\+::\+Vec3(2., 0.\+4, 4.), double m=1000.)
+\hyperlink{classbtosgVehicle_aa754dd94553b8690763e4c24d1f26227}{btosg\+Vehicle} (\hyperlink{classbtosgWorld}{btosg\+World} $\ast$world, \hyperlink{classbtosgVec3}{btosg\+Vec3} dim\+Local=\hyperlink{classbtosgVec3}{btosg\+Vec3}(2., 0.\+4, 4.), double m=1000.)
 \item 
 void \hyperlink{classbtosgVehicle_a98971fb952c08cb72341a0c333fc66de}{add\+Wheels} (bt\+Vector3 $\ast$half\+Extents, bt\+Raycast\+Vehicle $\ast$\hyperlink{classbtosgVehicle_ac45b117f8b523f7040de99639deb7522}{vehicle}, bt\+Raycast\+Vehicle\+::bt\+Vehicle\+Tuning tuning)
 \item 
@@ -42,11 +42,9 @@ void \hyperlink{classbtosgObject_ace6b51040b7ddce90818174200cc6074}{set\+Positio
 \item 
 void \hyperlink{classbtosgObject_adb9f2cff0faf66dc252cd7c97b11ac84}{set\+Position} (float x, float y, float z)
 \item 
-void \hyperlink{classbtosgObject_a656412794a971a10478aedb520f298bf}{set\+Rotation} (bt\+Quaternion q)
+void \hyperlink{classbtosgObject_a6365748d5506bb9da31907c9988071fa}{set\+Rotation} (\hyperlink{classbtosgQuat}{btosg\+Quat} q)
 \item 
 void \hyperlink{classbtosgObject_a4d21ca59b944fd26644db35d3e9ba67a}{set\+Rotation} (float x, float y, float z, float w)
-\item 
-void \hyperlink{classbtosgObject_ae803e0566f0d7b3ffca686b968b297f8}{set\+Rotation} (osg\+::\+Quat q)
 \item 
 void \hyperlink{classbtosgObject_aff54acbc7c66811efb0cf2838107a241}{set\+Texture} (char const $\ast$fname)
 \item 
@@ -74,14 +72,14 @@ float \hyperlink{classbtosgVehicle_ae124e1cd8c424080d7be7c47edb07eb1}{dy}
 \mbox{\Hypertarget{classbtosgVehicle_a39857392dc4882886964c1beefa46268}\label{classbtosgVehicle_a39857392dc4882886964c1beefa46268}} 
 float \hyperlink{classbtosgVehicle_a39857392dc4882886964c1beefa46268}{dz}
 \begin{DoxyCompactList}\small\item\em Vehicle $<$ dimension. \end{DoxyCompactList}\item 
-\mbox{\Hypertarget{classbtosgVehicle_afed9fb742c4a8ed58e8d6202dfc20344}\label{classbtosgVehicle_afed9fb742c4a8ed58e8d6202dfc20344}} 
-osg\+::\+Vec3 \hyperlink{classbtosgVehicle_afed9fb742c4a8ed58e8d6202dfc20344}{dim}
+\mbox{\Hypertarget{classbtosgVehicle_a2173f99ca0719929aa5a1c890927aca3}\label{classbtosgVehicle_a2173f99ca0719929aa5a1c890927aca3}} 
+\hyperlink{classbtosgVec3}{btosg\+Vec3} \hyperlink{classbtosgVehicle_a2173f99ca0719929aa5a1c890927aca3}{dim}
 \begin{DoxyCompactList}\small\item\em Vehicle\textquotesingle{}s dimensions in world coordinates. \end{DoxyCompactList}\item 
-\mbox{\Hypertarget{classbtosgVehicle_a8f68a9e001e79f61602427228c97fe26}\label{classbtosgVehicle_a8f68a9e001e79f61602427228c97fe26}} 
-osg\+::\+Vec3 \hyperlink{classbtosgVehicle_a8f68a9e001e79f61602427228c97fe26}{up}
+\mbox{\Hypertarget{classbtosgVehicle_a84705afaa9e37bb8a0bd7f6b6f291c26}\label{classbtosgVehicle_a84705afaa9e37bb8a0bd7f6b6f291c26}} 
+\hyperlink{classbtosgVec3}{btosg\+Vec3} \hyperlink{classbtosgVehicle_a84705afaa9e37bb8a0bd7f6b6f291c26}{up}
 \begin{DoxyCompactList}\small\item\em Vehicle\textquotesingle{}s up vector. Usually, up=-\/gravity. \end{DoxyCompactList}\item 
-\mbox{\Hypertarget{classbtosgVehicle_a5b21a5ad3a8583f773bce6b894ac010d}\label{classbtosgVehicle_a5b21a5ad3a8583f773bce6b894ac010d}} 
-osg\+::\+Vec3 \hyperlink{classbtosgVehicle_a5b21a5ad3a8583f773bce6b894ac010d}{front}
+\mbox{\Hypertarget{classbtosgVehicle_a33d6c0dc296ac54ec4a37e34332fa446}\label{classbtosgVehicle_a33d6c0dc296ac54ec4a37e34332fa446}} 
+\hyperlink{classbtosgVec3}{btosg\+Vec3} \hyperlink{classbtosgVehicle_a33d6c0dc296ac54ec4a37e34332fa446}{front}
 \begin{DoxyCompactList}\small\item\em Vehicle\textquotesingle{}s up vector. \end{DoxyCompactList}\item 
 \mbox{\Hypertarget{classbtosgVehicle_ac45b117f8b523f7040de99639deb7522}\label{classbtosgVehicle_ac45b117f8b523f7040de99639deb7522}} 
 bt\+Raycast\+Vehicle $\ast$ \hyperlink{classbtosgVehicle_ac45b117f8b523f7040de99639deb7522}{vehicle}
@@ -116,11 +114,11 @@ float \hyperlink{classbtosgObject_a2418bb2194d5e9b0f1c51c84672ba7d1}{mass}
 A four-\/wheeled vehicle based on bt\+Raycast\+Vehicle. 
 
 \subsection{Constructor \& Destructor Documentation}
-\mbox{\Hypertarget{classbtosgVehicle_a462222cde5a3480b8964b582fcbf39a3}\label{classbtosgVehicle_a462222cde5a3480b8964b582fcbf39a3}} 
+\mbox{\Hypertarget{classbtosgVehicle_aa754dd94553b8690763e4c24d1f26227}\label{classbtosgVehicle_aa754dd94553b8690763e4c24d1f26227}} 
 \index{btosg\+Vehicle@{btosg\+Vehicle}!btosg\+Vehicle@{btosg\+Vehicle}}
 \index{btosg\+Vehicle@{btosg\+Vehicle}!btosg\+Vehicle@{btosg\+Vehicle}}
 \subsubsection{\texorpdfstring{btosg\+Vehicle()}{btosgVehicle()}}
-{\footnotesize\ttfamily btosg\+Vehicle\+::btosg\+Vehicle (\begin{DoxyParamCaption}\item[{\hyperlink{classbtosgWorld}{btosg\+World} $\ast$}]{world,  }\item[{osg\+::\+Vec3}]{dim\+Local = {\ttfamily osg\+:\+:Vec3(2.,0.4,4.)},  }\item[{double}]{m = {\ttfamily 1000.} }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}}
+{\footnotesize\ttfamily btosg\+Vehicle\+::btosg\+Vehicle (\begin{DoxyParamCaption}\item[{\hyperlink{classbtosgWorld}{btosg\+World} $\ast$}]{world,  }\item[{\hyperlink{classbtosgVec3}{btosg\+Vec3}}]{dim\+Local = {\ttfamily \hyperlink{classbtosgVec3}{btosg\+Vec3}(2.,0.4,4.)},  }\item[{double}]{m = {\ttfamily 1000.} }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}}
 
 \hyperlink{classbtosgVehicle}{btosg\+Vehicle} constructor. 
 
@@ -221,25 +219,19 @@ Sets objects position. \mbox{\Hypertarget{classbtosgObject_adb9f2cff0faf66dc252c
 \subsubsection{\texorpdfstring{set\+Position()}{setPosition()}\hspace{0.1cm}{\footnotesize\ttfamily [2/2]}}
 {\footnotesize\ttfamily void btosg\+Object\+::set\+Position (\begin{DoxyParamCaption}\item[{float}]{x,  }\item[{float}]{y,  }\item[{float}]{z }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}, {\ttfamily [inherited]}}
 
-Sets objects position. \mbox{\Hypertarget{classbtosgObject_a656412794a971a10478aedb520f298bf}\label{classbtosgObject_a656412794a971a10478aedb520f298bf}} 
+Sets objects position. \mbox{\Hypertarget{classbtosgObject_a6365748d5506bb9da31907c9988071fa}\label{classbtosgObject_a6365748d5506bb9da31907c9988071fa}} 
 \index{btosg\+Vehicle@{btosg\+Vehicle}!set\+Rotation@{set\+Rotation}}
 \index{set\+Rotation@{set\+Rotation}!btosg\+Vehicle@{btosg\+Vehicle}}
-\subsubsection{\texorpdfstring{set\+Rotation()}{setRotation()}\hspace{0.1cm}{\footnotesize\ttfamily [1/3]}}
-{\footnotesize\ttfamily void btosg\+Object\+::set\+Rotation (\begin{DoxyParamCaption}\item[{bt\+Quaternion}]{q }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}, {\ttfamily [inherited]}}
+\subsubsection{\texorpdfstring{set\+Rotation()}{setRotation()}\hspace{0.1cm}{\footnotesize\ttfamily [1/2]}}
+{\footnotesize\ttfamily void btosg\+Object\+::set\+Rotation (\begin{DoxyParamCaption}\item[{\hyperlink{classbtosgQuat}{btosg\+Quat}}]{q }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}, {\ttfamily [inherited]}}
 
 Sets objects attitude from a quaternion. \mbox{\Hypertarget{classbtosgObject_a4d21ca59b944fd26644db35d3e9ba67a}\label{classbtosgObject_a4d21ca59b944fd26644db35d3e9ba67a}} 
 \index{btosg\+Vehicle@{btosg\+Vehicle}!set\+Rotation@{set\+Rotation}}
 \index{set\+Rotation@{set\+Rotation}!btosg\+Vehicle@{btosg\+Vehicle}}
-\subsubsection{\texorpdfstring{set\+Rotation()}{setRotation()}\hspace{0.1cm}{\footnotesize\ttfamily [2/3]}}
+\subsubsection{\texorpdfstring{set\+Rotation()}{setRotation()}\hspace{0.1cm}{\footnotesize\ttfamily [2/2]}}
 {\footnotesize\ttfamily void btosg\+Object\+::set\+Rotation (\begin{DoxyParamCaption}\item[{float}]{x,  }\item[{float}]{y,  }\item[{float}]{z,  }\item[{float}]{w }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}, {\ttfamily [inherited]}}
 
-Sets objects attitude from the quaternion coords. \mbox{\Hypertarget{classbtosgObject_ae803e0566f0d7b3ffca686b968b297f8}\label{classbtosgObject_ae803e0566f0d7b3ffca686b968b297f8}} 
-\index{btosg\+Vehicle@{btosg\+Vehicle}!set\+Rotation@{set\+Rotation}}
-\index{set\+Rotation@{set\+Rotation}!btosg\+Vehicle@{btosg\+Vehicle}}
-\subsubsection{\texorpdfstring{set\+Rotation()}{setRotation()}\hspace{0.1cm}{\footnotesize\ttfamily [3/3]}}
-{\footnotesize\ttfamily void btosg\+Object\+::set\+Rotation (\begin{DoxyParamCaption}\item[{osg\+::\+Quat}]{q }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}, {\ttfamily [inherited]}}
-
-Sets objects attitude from a quaternion. \mbox{\Hypertarget{classbtosgObject_aff54acbc7c66811efb0cf2838107a241}\label{classbtosgObject_aff54acbc7c66811efb0cf2838107a241}} 
+Sets objects attitude from the quaternion coords. \mbox{\Hypertarget{classbtosgObject_aff54acbc7c66811efb0cf2838107a241}\label{classbtosgObject_aff54acbc7c66811efb0cf2838107a241}} 
 \index{btosg\+Vehicle@{btosg\+Vehicle}!set\+Texture@{set\+Texture}}
 \index{set\+Texture@{set\+Texture}!btosg\+Vehicle@{btosg\+Vehicle}}
 \subsubsection{\texorpdfstring{set\+Texture()}{setTexture()}}

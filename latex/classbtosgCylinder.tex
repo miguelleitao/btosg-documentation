@@ -34,11 +34,9 @@ void \hyperlink{classbtosgObject_ace6b51040b7ddce90818174200cc6074}{set\+Positio
 \item 
 void \hyperlink{classbtosgObject_adb9f2cff0faf66dc252cd7c97b11ac84}{set\+Position} (float x, float y, float z)
 \item 
-void \hyperlink{classbtosgObject_a656412794a971a10478aedb520f298bf}{set\+Rotation} (bt\+Quaternion q)
+void \hyperlink{classbtosgObject_a6365748d5506bb9da31907c9988071fa}{set\+Rotation} (\hyperlink{classbtosgQuat}{btosg\+Quat} q)
 \item 
 void \hyperlink{classbtosgObject_a4d21ca59b944fd26644db35d3e9ba67a}{set\+Rotation} (float x, float y, float z, float w)
-\item 
-void \hyperlink{classbtosgObject_ae803e0566f0d7b3ffca686b968b297f8}{set\+Rotation} (osg\+::\+Quat q)
 \item 
 void \hyperlink{classbtosgObject_aff54acbc7c66811efb0cf2838107a241}{set\+Texture} (char const $\ast$fname)
 \item 
@@ -178,25 +176,19 @@ Sets objects position. \mbox{\Hypertarget{classbtosgObject_adb9f2cff0faf66dc252c
 \subsubsection{\texorpdfstring{set\+Position()}{setPosition()}\hspace{0.1cm}{\footnotesize\ttfamily [2/2]}}
 {\footnotesize\ttfamily void btosg\+Object\+::set\+Position (\begin{DoxyParamCaption}\item[{float}]{x,  }\item[{float}]{y,  }\item[{float}]{z }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}, {\ttfamily [inherited]}}
 
-Sets objects position. \mbox{\Hypertarget{classbtosgObject_a656412794a971a10478aedb520f298bf}\label{classbtosgObject_a656412794a971a10478aedb520f298bf}} 
+Sets objects position. \mbox{\Hypertarget{classbtosgObject_a6365748d5506bb9da31907c9988071fa}\label{classbtosgObject_a6365748d5506bb9da31907c9988071fa}} 
 \index{btosg\+Cylinder@{btosg\+Cylinder}!set\+Rotation@{set\+Rotation}}
 \index{set\+Rotation@{set\+Rotation}!btosg\+Cylinder@{btosg\+Cylinder}}
-\subsubsection{\texorpdfstring{set\+Rotation()}{setRotation()}\hspace{0.1cm}{\footnotesize\ttfamily [1/3]}}
-{\footnotesize\ttfamily void btosg\+Object\+::set\+Rotation (\begin{DoxyParamCaption}\item[{bt\+Quaternion}]{q }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}, {\ttfamily [inherited]}}
+\subsubsection{\texorpdfstring{set\+Rotation()}{setRotation()}\hspace{0.1cm}{\footnotesize\ttfamily [1/2]}}
+{\footnotesize\ttfamily void btosg\+Object\+::set\+Rotation (\begin{DoxyParamCaption}\item[{\hyperlink{classbtosgQuat}{btosg\+Quat}}]{q }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}, {\ttfamily [inherited]}}
 
 Sets objects attitude from a quaternion. \mbox{\Hypertarget{classbtosgObject_a4d21ca59b944fd26644db35d3e9ba67a}\label{classbtosgObject_a4d21ca59b944fd26644db35d3e9ba67a}} 
 \index{btosg\+Cylinder@{btosg\+Cylinder}!set\+Rotation@{set\+Rotation}}
 \index{set\+Rotation@{set\+Rotation}!btosg\+Cylinder@{btosg\+Cylinder}}
-\subsubsection{\texorpdfstring{set\+Rotation()}{setRotation()}\hspace{0.1cm}{\footnotesize\ttfamily [2/3]}}
+\subsubsection{\texorpdfstring{set\+Rotation()}{setRotation()}\hspace{0.1cm}{\footnotesize\ttfamily [2/2]}}
 {\footnotesize\ttfamily void btosg\+Object\+::set\+Rotation (\begin{DoxyParamCaption}\item[{float}]{x,  }\item[{float}]{y,  }\item[{float}]{z,  }\item[{float}]{w }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}, {\ttfamily [inherited]}}
 
-Sets objects attitude from the quaternion coords. \mbox{\Hypertarget{classbtosgObject_ae803e0566f0d7b3ffca686b968b297f8}\label{classbtosgObject_ae803e0566f0d7b3ffca686b968b297f8}} 
-\index{btosg\+Cylinder@{btosg\+Cylinder}!set\+Rotation@{set\+Rotation}}
-\index{set\+Rotation@{set\+Rotation}!btosg\+Cylinder@{btosg\+Cylinder}}
-\subsubsection{\texorpdfstring{set\+Rotation()}{setRotation()}\hspace{0.1cm}{\footnotesize\ttfamily [3/3]}}
-{\footnotesize\ttfamily void btosg\+Object\+::set\+Rotation (\begin{DoxyParamCaption}\item[{osg\+::\+Quat}]{q }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}, {\ttfamily [inherited]}}
-
-Sets objects attitude from a quaternion. \mbox{\Hypertarget{classbtosgObject_aff54acbc7c66811efb0cf2838107a241}\label{classbtosgObject_aff54acbc7c66811efb0cf2838107a241}} 
+Sets objects attitude from the quaternion coords. \mbox{\Hypertarget{classbtosgObject_aff54acbc7c66811efb0cf2838107a241}\label{classbtosgObject_aff54acbc7c66811efb0cf2838107a241}} 
 \index{btosg\+Cylinder@{btosg\+Cylinder}!set\+Texture@{set\+Texture}}
 \index{set\+Texture@{set\+Texture}!btosg\+Cylinder@{btosg\+Cylinder}}
 \subsubsection{\texorpdfstring{set\+Texture()}{setTexture()}}

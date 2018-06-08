@@ -20,7 +20,7 @@ Inheritance diagram for btosg\+Plane\+:\begin{figure}[H]
 \item 
 \hyperlink{classbtosgPlane_a363737cea03a886470a1a46003706268}{btosg\+Plane} ()
 \item 
-\hyperlink{classbtosgPlane_a4bc8b74d62426eb5fa66355b71569db2}{btosg\+Plane} (osg\+::\+Vec3 v)
+\hyperlink{classbtosgPlane_a56b020a475b1c955fc50d5c1f6d4d754}{btosg\+Plane} (\hyperlink{classbtosgVec3}{btosg\+Vec3} v)
 \item 
 \hyperlink{classbtosgPlane_a295ebe4cb55a2786764c7840d10895f4}{btosg\+Plane} (float dx, float dy, float dz)
 \item 
@@ -40,11 +40,9 @@ void \hyperlink{classbtosgObject_ace6b51040b7ddce90818174200cc6074}{set\+Positio
 \item 
 void \hyperlink{classbtosgObject_adb9f2cff0faf66dc252cd7c97b11ac84}{set\+Position} (float x, float y, float z)
 \item 
-void \hyperlink{classbtosgObject_a656412794a971a10478aedb520f298bf}{set\+Rotation} (bt\+Quaternion q)
+void \hyperlink{classbtosgObject_a6365748d5506bb9da31907c9988071fa}{set\+Rotation} (\hyperlink{classbtosgQuat}{btosg\+Quat} q)
 \item 
 void \hyperlink{classbtosgObject_a4d21ca59b944fd26644db35d3e9ba67a}{set\+Rotation} (float x, float y, float z, float w)
-\item 
-void \hyperlink{classbtosgObject_ae803e0566f0d7b3ffca686b968b297f8}{set\+Rotation} (osg\+::\+Quat q)
 \item 
 void \hyperlink{classbtosgObject_aff54acbc7c66811efb0cf2838107a241}{set\+Texture} (char const $\ast$fname)
 \item 
@@ -97,11 +95,11 @@ Infinite plane.
 
 Constructs a physical infinite plane, viewable as low thickness finite box.
 
-Viewable box has dimensions 10,10,0. Plane is created facing Z axis. \mbox{\Hypertarget{classbtosgPlane_a4bc8b74d62426eb5fa66355b71569db2}\label{classbtosgPlane_a4bc8b74d62426eb5fa66355b71569db2}} 
+Viewable box has dimensions 10,10,0. Plane is created facing Z axis. \mbox{\Hypertarget{classbtosgPlane_a56b020a475b1c955fc50d5c1f6d4d754}\label{classbtosgPlane_a56b020a475b1c955fc50d5c1f6d4d754}} 
 \index{btosg\+Plane@{btosg\+Plane}!btosg\+Plane@{btosg\+Plane}}
 \index{btosg\+Plane@{btosg\+Plane}!btosg\+Plane@{btosg\+Plane}}
 \subsubsection{\texorpdfstring{btosg\+Plane()}{btosgPlane()}\hspace{0.1cm}{\footnotesize\ttfamily [2/3]}}
-{\footnotesize\ttfamily btosg\+Plane\+::btosg\+Plane (\begin{DoxyParamCaption}\item[{osg\+::\+Vec3}]{v }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}}
+{\footnotesize\ttfamily btosg\+Plane\+::btosg\+Plane (\begin{DoxyParamCaption}\item[{\hyperlink{classbtosgVec3}{btosg\+Vec3}}]{v }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}}
 
 Constructs a physical infinite plane, viewable as low thickness finite box.
 
@@ -198,25 +196,19 @@ Sets objects position. \mbox{\Hypertarget{classbtosgObject_adb9f2cff0faf66dc252c
 \subsubsection{\texorpdfstring{set\+Position()}{setPosition()}\hspace{0.1cm}{\footnotesize\ttfamily [2/2]}}
 {\footnotesize\ttfamily void btosg\+Object\+::set\+Position (\begin{DoxyParamCaption}\item[{float}]{x,  }\item[{float}]{y,  }\item[{float}]{z }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}, {\ttfamily [inherited]}}
 
-Sets objects position. \mbox{\Hypertarget{classbtosgObject_a656412794a971a10478aedb520f298bf}\label{classbtosgObject_a656412794a971a10478aedb520f298bf}} 
+Sets objects position. \mbox{\Hypertarget{classbtosgObject_a6365748d5506bb9da31907c9988071fa}\label{classbtosgObject_a6365748d5506bb9da31907c9988071fa}} 
 \index{btosg\+Plane@{btosg\+Plane}!set\+Rotation@{set\+Rotation}}
 \index{set\+Rotation@{set\+Rotation}!btosg\+Plane@{btosg\+Plane}}
-\subsubsection{\texorpdfstring{set\+Rotation()}{setRotation()}\hspace{0.1cm}{\footnotesize\ttfamily [1/3]}}
-{\footnotesize\ttfamily void btosg\+Object\+::set\+Rotation (\begin{DoxyParamCaption}\item[{bt\+Quaternion}]{q }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}, {\ttfamily [inherited]}}
+\subsubsection{\texorpdfstring{set\+Rotation()}{setRotation()}\hspace{0.1cm}{\footnotesize\ttfamily [1/2]}}
+{\footnotesize\ttfamily void btosg\+Object\+::set\+Rotation (\begin{DoxyParamCaption}\item[{\hyperlink{classbtosgQuat}{btosg\+Quat}}]{q }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}, {\ttfamily [inherited]}}
 
 Sets objects attitude from a quaternion. \mbox{\Hypertarget{classbtosgObject_a4d21ca59b944fd26644db35d3e9ba67a}\label{classbtosgObject_a4d21ca59b944fd26644db35d3e9ba67a}} 
 \index{btosg\+Plane@{btosg\+Plane}!set\+Rotation@{set\+Rotation}}
 \index{set\+Rotation@{set\+Rotation}!btosg\+Plane@{btosg\+Plane}}
-\subsubsection{\texorpdfstring{set\+Rotation()}{setRotation()}\hspace{0.1cm}{\footnotesize\ttfamily [2/3]}}
+\subsubsection{\texorpdfstring{set\+Rotation()}{setRotation()}\hspace{0.1cm}{\footnotesize\ttfamily [2/2]}}
 {\footnotesize\ttfamily void btosg\+Object\+::set\+Rotation (\begin{DoxyParamCaption}\item[{float}]{x,  }\item[{float}]{y,  }\item[{float}]{z,  }\item[{float}]{w }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}, {\ttfamily [inherited]}}
 
-Sets objects attitude from the quaternion coords. \mbox{\Hypertarget{classbtosgObject_ae803e0566f0d7b3ffca686b968b297f8}\label{classbtosgObject_ae803e0566f0d7b3ffca686b968b297f8}} 
-\index{btosg\+Plane@{btosg\+Plane}!set\+Rotation@{set\+Rotation}}
-\index{set\+Rotation@{set\+Rotation}!btosg\+Plane@{btosg\+Plane}}
-\subsubsection{\texorpdfstring{set\+Rotation()}{setRotation()}\hspace{0.1cm}{\footnotesize\ttfamily [3/3]}}
-{\footnotesize\ttfamily void btosg\+Object\+::set\+Rotation (\begin{DoxyParamCaption}\item[{osg\+::\+Quat}]{q }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}, {\ttfamily [inherited]}}
-
-Sets objects attitude from a quaternion. \mbox{\Hypertarget{classbtosgObject_aff54acbc7c66811efb0cf2838107a241}\label{classbtosgObject_aff54acbc7c66811efb0cf2838107a241}} 
+Sets objects attitude from the quaternion coords. \mbox{\Hypertarget{classbtosgObject_aff54acbc7c66811efb0cf2838107a241}\label{classbtosgObject_aff54acbc7c66811efb0cf2838107a241}} 
 \index{btosg\+Plane@{btosg\+Plane}!set\+Texture@{set\+Texture}}
 \index{set\+Texture@{set\+Texture}!btosg\+Plane@{btosg\+Plane}}
 \subsubsection{\texorpdfstring{set\+Texture()}{setTexture()}}

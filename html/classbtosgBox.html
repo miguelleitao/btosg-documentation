@@ -104,12 +104,10 @@ Public Member Functions</h2></td></tr>
 <tr class="separator:ace6b51040b7ddce90818174200cc6074"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:adb9f2cff0faf66dc252cd7c97b11ac84"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classbtosgObject.html#adb9f2cff0faf66dc252cd7c97b11ac84">setPosition</a> (float x, float y, float z)</td></tr>
 <tr class="separator:adb9f2cff0faf66dc252cd7c97b11ac84"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a656412794a971a10478aedb520f298bf"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classbtosgObject.html#a656412794a971a10478aedb520f298bf">setRotation</a> (btQuaternion q)</td></tr>
-<tr class="separator:a656412794a971a10478aedb520f298bf"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a6365748d5506bb9da31907c9988071fa"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classbtosgObject.html#a6365748d5506bb9da31907c9988071fa">setRotation</a> (<a class="el" href="classbtosgQuat.html">btosgQuat</a> q)</td></tr>
+<tr class="separator:a6365748d5506bb9da31907c9988071fa"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a4d21ca59b944fd26644db35d3e9ba67a"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classbtosgObject.html#a4d21ca59b944fd26644db35d3e9ba67a">setRotation</a> (float x, float y, float z, float w)</td></tr>
 <tr class="separator:a4d21ca59b944fd26644db35d3e9ba67a"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:ae803e0566f0d7b3ffca686b968b297f8"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classbtosgObject.html#ae803e0566f0d7b3ffca686b968b297f8">setRotation</a> (osg::Quat q)</td></tr>
-<tr class="separator:ae803e0566f0d7b3ffca686b968b297f8"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:aff54acbc7c66811efb0cf2838107a241"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classbtosgObject.html#aff54acbc7c66811efb0cf2838107a241">setTexture</a> (char const *fname)</td></tr>
 <tr class="separator:aff54acbc7c66811efb0cf2838107a241"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a6ab7b9e0553dab398b980637788b56a8"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classbtosgObject.html#a6ab7b9e0553dab398b980637788b56a8">setMaterial</a> (osg::ref_ptr&lt; osg::Material &gt; mat)</td></tr>
@@ -667,8 +665,8 @@ float&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="cla
 
 </div>
 </div>
-<a id="a656412794a971a10478aedb520f298bf"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#a656412794a971a10478aedb520f298bf">&#9670;&nbsp;</a></span>setRotation() <span class="overload">[1/3]</span></h2>
+<a id="a6365748d5506bb9da31907c9988071fa"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a6365748d5506bb9da31907c9988071fa">&#9670;&nbsp;</a></span>setRotation() <span class="overload">[1/2]</span></h2>
 
 <div class="memitem">
 <div class="memproto">
@@ -679,7 +677,7 @@ float&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="cla
         <tr>
           <td class="memname">void btosgObject::setRotation </td>
           <td>(</td>
-          <td class="paramtype">btQuaternion&#160;</td>
+          <td class="paramtype"><a class="el" href="classbtosgQuat.html">btosgQuat</a>&#160;</td>
           <td class="paramname"><em>q</em></td><td>)</td>
           <td></td>
         </tr>
@@ -695,7 +693,7 @@ float&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="cla
 </div>
 </div>
 <a id="a4d21ca59b944fd26644db35d3e9ba67a"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#a4d21ca59b944fd26644db35d3e9ba67a">&#9670;&nbsp;</a></span>setRotation() <span class="overload">[2/3]</span></h2>
+<h2 class="memtitle"><span class="permalink"><a href="#a4d21ca59b944fd26644db35d3e9ba67a">&#9670;&nbsp;</a></span>setRotation() <span class="overload">[2/2]</span></h2>
 
 <div class="memitem">
 <div class="memproto">
@@ -740,33 +738,6 @@ float&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="cla
 </table>
 </div><div class="memdoc">
 <p>Sets objects attitude from the quaternion coords. </p>
-
-</div>
-</div>
-<a id="ae803e0566f0d7b3ffca686b968b297f8"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#ae803e0566f0d7b3ffca686b968b297f8">&#9670;&nbsp;</a></span>setRotation() <span class="overload">[3/3]</span></h2>
-
-<div class="memitem">
-<div class="memproto">
-<table class="mlabels">
-  <tr>
-  <td class="mlabels-left">
-      <table class="memname">
-        <tr>
-          <td class="memname">void btosgObject::setRotation </td>
-          <td>(</td>
-          <td class="paramtype">osg::Quat&#160;</td>
-          <td class="paramname"><em>q</em></td><td>)</td>
-          <td></td>
-        </tr>
-      </table>
-  </td>
-  <td class="mlabels-right">
-<span class="mlabels"><span class="mlabel">inline</span><span class="mlabel">inherited</span></span>  </td>
-  </tr>
-</table>
-</div><div class="memdoc">
-<p>Sets objects attitude from a quaternion. </p>
 
 </div>
 </div>
