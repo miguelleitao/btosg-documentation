@@ -212,109 +212,13 @@ Public Attributes</h2></td></tr>
 </div>
 </div>
 <hr/>The documentation for this class was generated from the following files:<ul>
-<li><a class="el" href="btosg_8h_source.html">btosg.h (/*
- *	btosg.h
- *
- *	(c) Miguel Leitao, 2016
- *
- */
-
-#ifndef BTOSG_H
-#define BTOSG_H 1
-
-#define YES 1
-#define NO  0
-
-#include &lt;osgDB/ReadFile&gt;
-#include &lt;osg/MatrixTransform&gt;
-#include &lt;osg/PositionAttitudeTransform&gt;
-#include &lt;osgGA/TrackballManipulator&gt;
-#include &lt;osg/ShapeDrawable&gt;
-#include &lt;osg/Plane&gt;
-#include &lt;osg/LightSource&gt;
-#include &lt;osg/Material&gt;
-
-#include &lt;btBulletDynamicsCommon.h&gt;
-
-#if BTOSG_LOAD_OBJ==YES
-#include &quot;loadOBJ/include/LoadMeshFromOb
-#include &quot;loadOBJ/include/GLInstanceGrap
-//include &lt;GLInstanceGraphicsShape.h&gt;
-#endif
-
-//include &lt;GLInstanceGraphicsShape.h&gt;
-
-#ifdef BTOSG_SHADOW
-#include &lt;osgShadow/ShadowedScene&gt;
-#include &lt;osgShadow/ShadowMap&gt;
-#endif
-#include &lt;forward_list&gt;
-
-/* Direct update of positions and orient
- * or normal objects that are syncronize
- * Direct update can be enabled to allow
- * update the graphics model directly.
- * This can be used in special cases lik
- * btosgWorld or Worlds that are not ste
- */
-#define AVOID_DIRECT_MODEL_UPDATE
-
-#define max(a,b) \
-   ({ __typeof__ (a))</a></li>
-<li>btosg.cpp (/*
-	btosg.cpp
-	Miguel Leitao, 2016
-*/
-
-#include &quot;btosg.h&quot;
-#include &lt;osg/Material&gt;
-#include &lt;osg/Texture2D&gt;
-
-#define _DEBUG_ (0)
-
-btVector3 quat2Euler(const btQuaternion&amp;
-{
-    // Implementation not tested.
-
-    // roll (x-axis rotation)
-    double sinr = +2.0 * (q.w() * q.x() 
-    double cosr = +1.0 - 2.0 * (q.x() * 
-    double roll = atan2(sinr, cosr);
-
-    // pitch (y-axis rotation)
-    double sinp = +2.0 * (q.w() * q.y() 
-    double pitch;
-    if (fabs(sinp) &gt;= 1)
-        pitch = copysign(M_PI / 2, sinp)
-    else
-        pitch = asin(sinp);
-
-    // yaw (z-axis rotation)
-    double siny = +2.0 * (q.w() * q.z() 
-    double cosy = +1.0 - 2.0 * (q.y() * 
-    double yaw = atan2(siny, cosy);
-    return btVector3(yaw,pitch,roll);
-}
-
-btosgVec3 btosgQuat::toEuler()
-{
-    return quat2Euler(*this);
-}
-
-
-btosgWorld::~btosgWorld() {
-    delete dynamic; // ????
-    delete solver;
-    delete dispatcher;
-    delete collisionConfiguration;
-    delete broadphase;
-    for ( auto it = objects.begin(); it 
-        btosgObject)</li>
+<li><a class="el" href="btosg_8h_source.html">btosg.h</a></li>
+<li>btosg.cpp</li>
 </ul>
 </div><!-- contents -->
 <!-- start footer part -->
 <hr class="footer"/><address class="footer"><small>
-Generated on Sat Jun 9 2018 22:44:01 for btosg by &#160;<a href="http://www.doxygen.org/index.html">
+Generated on Sat Jun 9 2018 22:52:22 for btosg by &#160;<a href="http://www.doxygen.org/index.html">
 <img class="footer" src="doxygen.png" alt="doxygen"/>
 </a> 1.8.13
 </small></address>

@@ -1101,61 +1101,12 @@ Public Attributes</h2></td></tr>
 </div>
 </div>
 <hr/>The documentation for this class was generated from the following file:<ul>
-<li><a class="el" href="btosgVehicle_8h_source.html">btosgVehicle.h (/*
-	btosgVehicle.h
-	Miguel Leitao, 2016
-*/
-
-#ifndef BTOSGVEHICLE_H
-#define BTOSGVEHICLE_H 1
-
-#include &lt;osg/Material&gt;
-
-#include &lt;btBulletCollisionCommon.h&gt;
-#include &lt;btBulletDynamicsCommon.h&gt;
-#include &lt;BulletDynamics/Vehicle/btRayca
-
-#include &quot;btosg.h&quot;
-
-#include &lt;osg/Material&gt;
-#include &lt;osg/Texture2D&gt;
-
-/*
-class btosgWheel : public btosgCylinder 
-    public:
-        btosgWheel(btVector3 pos, double
-            setPosition(pos);
-            setRotation(osg::Quat(ang,os
-            setTexture(&quot;wheel.png&quot;);
-            body-&gt;setFriction(100.);
-        }
-        virtual void update() {
-        if (body) {
-            btTransform wTrans;
-            body-&gt;getMotionState()-&gt;getW
-
-            if ( model ) {
-                model-&gt;setAttitude(bt2os
-                model-&gt;setPosition(bt2os
-            }
-            //logPosition();
-
-        }
-    }
-};
-*/
-
-/// A four-wheeled vehicle based on btRa
-class btosgVehicle: public btosgObject {
-private:
-    btDefaultVehicleRaycaster *rayCaster
-public:
-    float dx;			///&lt; Vehic)</a></li>
+<li><a class="el" href="btosgVehicle_8h_source.html">btosgVehicle.h</a></li>
 </ul>
 </div><!-- contents -->
 <!-- start footer part -->
 <hr class="footer"/><address class="footer"><small>
-Generated on Sat Jun 9 2018 22:44:01 for btosg by &#160;<a href="http://www.doxygen.org/index.html">
+Generated on Sat Jun 9 2018 22:52:22 for btosg by &#160;<a href="http://www.doxygen.org/index.html">
 <img class="footer" src="doxygen.png" alt="doxygen"/>
 </a> 1.8.13
 </small></address>
