@@ -22,15 +22,12 @@ Inheritance diagram for btosg\+Quat\+:\begin{figure}[H]
 \begin{DoxyCompactList}\small\item\em Constructor from 4 scalars. \end{DoxyCompactList}\item 
 \hyperlink{classbtosgQuat_aa7646a03371b8aaa2caeba3f4b198ad6}{btosg\+Quat} (osg\+::\+Quat q)
 \begin{DoxyCompactList}\small\item\em Constructor from base class osg\+::\+Quat. \end{DoxyCompactList}\item 
-\mbox{\Hypertarget{classbtosgQuat_a9fc1530e0eb06c2432f1633bf08db8a2}\label{classbtosgQuat_a9fc1530e0eb06c2432f1633bf08db8a2}} 
-{\bfseries btosg\+Quat} (bt\+Quaternion q)
-\item 
-\mbox{\Hypertarget{classbtosgQuat_addfd68e2130ff8bb51c582524de5a345}\label{classbtosgQuat_addfd68e2130ff8bb51c582524de5a345}} 
-{\bfseries operator bt\+Quaternion} () const
-\item 
-\mbox{\Hypertarget{classbtosgQuat_aeda394d825b449ab87a77820aad1737d}\label{classbtosgQuat_aeda394d825b449ab87a77820aad1737d}} 
-\hyperlink{classbtosgVec3}{btosg\+Vec3} {\bfseries to\+Euler} ()
-\end{DoxyCompactItemize}
+\hyperlink{classbtosgQuat_a9fc1530e0eb06c2432f1633bf08db8a2}{btosg\+Quat} (bt\+Quaternion q)
+\begin{DoxyCompactList}\small\item\em Constructor from Bullet quaternion bt\+Quaternion. \end{DoxyCompactList}\item 
+\hyperlink{classbtosgQuat_addfd68e2130ff8bb51c582524de5a345}{operator bt\+Quaternion} () const
+\begin{DoxyCompactList}\small\item\em Convertor operator to Bullet quaternion. \end{DoxyCompactList}\item 
+\hyperlink{classbtosgVec3}{btosg\+Vec3} \hyperlink{classbtosgQuat_aeda394d825b449ab87a77820aad1737d}{to\+Euler} ()
+\begin{DoxyCompactList}\small\item\em Converter to Euler angles. \end{DoxyCompactList}\end{DoxyCompactItemize}
 
 
 \subsection{Detailed Description}
@@ -42,7 +39,7 @@ Can be used as a bt\+Quaternion or an osg\+::\+Quat. Implemented as derived from
 \mbox{\Hypertarget{classbtosgQuat_a8ef8fc0d1503426d5e0ead87edfa5acf}\label{classbtosgQuat_a8ef8fc0d1503426d5e0ead87edfa5acf}} 
 \index{btosg\+Quat@{btosg\+Quat}!btosg\+Quat@{btosg\+Quat}}
 \index{btosg\+Quat@{btosg\+Quat}!btosg\+Quat@{btosg\+Quat}}
-\subsubsection{\texorpdfstring{btosg\+Quat()}{btosgQuat()}\hspace{0.1cm}{\footnotesize\ttfamily [1/2]}}
+\subsubsection{\texorpdfstring{btosg\+Quat()}{btosgQuat()}\hspace{0.1cm}{\footnotesize\ttfamily [1/3]}}
 {\footnotesize\ttfamily btosg\+Quat\+::btosg\+Quat (\begin{DoxyParamCaption}\item[{double}]{x,  }\item[{double}]{y,  }\item[{double}]{z,  }\item[{double}]{w }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}}
 
 
@@ -63,7 +60,7 @@ Constructor from 4 scalars.
 \mbox{\Hypertarget{classbtosgQuat_aa7646a03371b8aaa2caeba3f4b198ad6}\label{classbtosgQuat_aa7646a03371b8aaa2caeba3f4b198ad6}} 
 \index{btosg\+Quat@{btosg\+Quat}!btosg\+Quat@{btosg\+Quat}}
 \index{btosg\+Quat@{btosg\+Quat}!btosg\+Quat@{btosg\+Quat}}
-\subsubsection{\texorpdfstring{btosg\+Quat()}{btosgQuat()}\hspace{0.1cm}{\footnotesize\ttfamily [2/2]}}
+\subsubsection{\texorpdfstring{btosg\+Quat()}{btosgQuat()}\hspace{0.1cm}{\footnotesize\ttfamily [2/3]}}
 {\footnotesize\ttfamily btosg\+Quat\+::btosg\+Quat (\begin{DoxyParamCaption}\item[{osg\+::\+Quat}]{q }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}}
 
 
@@ -75,9 +72,147 @@ Constructor from base class osg\+::\+Quat.
 {\em q} & osg\+::\+Quat object \\
 \hline
 \end{DoxyParams}
+\mbox{\Hypertarget{classbtosgQuat_a9fc1530e0eb06c2432f1633bf08db8a2}\label{classbtosgQuat_a9fc1530e0eb06c2432f1633bf08db8a2}} 
+\index{btosg\+Quat@{btosg\+Quat}!btosg\+Quat@{btosg\+Quat}}
+\index{btosg\+Quat@{btosg\+Quat}!btosg\+Quat@{btosg\+Quat}}
+\subsubsection{\texorpdfstring{btosg\+Quat()}{btosgQuat()}\hspace{0.1cm}{\footnotesize\ttfamily [3/3]}}
+{\footnotesize\ttfamily btosg\+Quat\+::btosg\+Quat (\begin{DoxyParamCaption}\item[{bt\+Quaternion}]{q }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}}
+
+
+
+Constructor from Bullet quaternion bt\+Quaternion. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em q} & bt\+Quaternion object \\
+\hline
+\end{DoxyParams}
+
+
+\subsection{Member Function Documentation}
+\mbox{\Hypertarget{classbtosgQuat_addfd68e2130ff8bb51c582524de5a345}\label{classbtosgQuat_addfd68e2130ff8bb51c582524de5a345}} 
+\index{btosg\+Quat@{btosg\+Quat}!operator bt\+Quaternion@{operator bt\+Quaternion}}
+\index{operator bt\+Quaternion@{operator bt\+Quaternion}!btosg\+Quat@{btosg\+Quat}}
+\subsubsection{\texorpdfstring{operator bt\+Quaternion()}{operator btQuaternion()}}
+{\footnotesize\ttfamily btosg\+Quat\+::operator bt\+Quaternion (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption}) const\hspace{0.3cm}{\ttfamily [inline]}}
+
+
+
+Convertor operator to Bullet quaternion. 
+
+Returns quaternion as a bt\+Quaternion object \mbox{\Hypertarget{classbtosgQuat_aeda394d825b449ab87a77820aad1737d}\label{classbtosgQuat_aeda394d825b449ab87a77820aad1737d}} 
+\index{btosg\+Quat@{btosg\+Quat}!to\+Euler@{to\+Euler}}
+\index{to\+Euler@{to\+Euler}!btosg\+Quat@{btosg\+Quat}}
+\subsubsection{\texorpdfstring{to\+Euler()}{toEuler()}}
+{\footnotesize\ttfamily \hyperlink{classbtosgVec3}{btosg\+Vec3} btosg\+Quat\+::to\+Euler (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})}
+
+
+
+Converter to Euler angles. 
+
+Returns a btoasg\+Vec3 object with H\+PR Euler angles 
+
+Referenced by btosg\+Object\+::get\+Euler().
+
 
 
 The documentation for this class was generated from the following files\+:\begin{DoxyCompactItemize}
 \item 
-btosg.\+h\item 
-btosg.\+cpp\end{DoxyCompactItemize}
+btosg.\+h (/$\ast$
+ $\ast$	btosg.\+h
+ $\ast$
+ $\ast$	(c) Miguel Leitao, 2016
+ $\ast$
+ $\ast$/
+
+\#ifndef B\+T\+O\+S\+G\+\_\+\+H
+\#define B\+T\+O\+S\+G\+\_\+\+H 1
+
+\#define Y\+E\+S 1
+\#define N\+O  0
+
+\#include $<$osg\+D\+B/\+Read\+File$>$
+\#include $<$osg/\+Matrix\+Transform$>$
+\#include $<$osg/\+Position\+Attitude\+Transform$>$
+\#include $<$osg\+G\+A/\+Trackball\+Manipulator$>$
+\#include $<$osg/\+Shape\+Drawable$>$
+\#include $<$osg/\+Plane$>$
+\#include $<$osg/\+Light\+Source$>$
+\#include $<$osg/\+Material$>$
+
+\#include $<$bt\+Bullet\+Dynamics\+Common.\+h$>$
+
+\#if B\+T\+O\+S\+G\+\_\+\+L\+O\+A\+D\+\_\+\+O\+B\+J==\+Y\+E\+S
+\#include \char`\"{}load\+O\+B\+J/include/\+Load\+Mesh\+From\+Ob
+\#include \char`\"{}load\+O\+B\+J/include/\+G\+L\+Instance\+Grap
+//include $<$\+G\+L\+Instance\+Graphics\+Shape.\+h$>$
+\#endif
+
+//include $<$\+G\+L\+Instance\+Graphics\+Shape.\+h$>$
+
+\#ifdef B\+T\+O\+S\+G\+\_\+\+S\+H\+A\+D\+O\+W
+\#include $<$osg\+Shadow/\+Shadowed\+Scene$>$
+\#include $<$osg\+Shadow/\+Shadow\+Map$>$
+\#endif
+\#include $<$forward\+\_\+list$>$
+
+/$\ast$ Direct update of positions and orient
+ $\ast$ or normal objects that are syncronize
+ $\ast$ Direct update can be enabled to allow
+ $\ast$ update the graphics model directly.
+ $\ast$ This can be used in special cases lik
+ $\ast$ btosg\+World or Worlds that are not ste
+ $\ast$/
+\#define A\+V\+O\+I\+D\+\_\+\+D\+I\+R\+E\+C\+T\+\_\+\+M\+O\+D\+E\+L\+\_\+\+U\+P\+D\+A\+T\+E
+
+\#define max(a,b) \textbackslash{}
+   (\{ \+\_\+\+\_\+typeof\+\_\+\+\_\+ (a))\item 
+btosg.\+cpp (/$\ast$
+	btosg.\+cpp
+	\+Miguel Leitao, 2016
+$\ast$/
+
+\#include \char`\"{}btosg.\+h\char`\"{}
+\#include $<$osg/\+Material$>$
+\#include $<$osg/\+Texture2\+D$>$
+
+\#define \+\_\+\+D\+E\+B\+U\+G\+\_\+ (0)
+
+bt\+Vector3 quat2\+Euler(const bt\+Quaternion\&
+\{
+    // Implementation not tested.
+
+    // roll (x-\/axis rotation)
+    double sinr = +2.\+0 $\ast$ (q.\+w() $\ast$ q.\+x() 
+    double cosr = +1.\+0 -\/ 2.\+0 $\ast$ (q.\+x() $\ast$ 
+    double roll = atan2(sinr, cosr);
+
+    // pitch (y-\/axis rotation)
+    double sinp = +2.\+0 $\ast$ (q.\+w() $\ast$ q.\+y() 
+    double pitch;
+    if (fabs(sinp) $>$= 1)
+        pitch = copysign(\+M\+\_\+\+P\+I / 2, sinp)
+    else
+        pitch = asin(sinp);
+
+    // yaw (z-\/axis rotation)
+    double siny = +2.\+0 $\ast$ (q.\+w() $\ast$ q.\+z() 
+    double cosy = +1.\+0 -\/ 2.\+0 $\ast$ (q.\+y() $\ast$ 
+    double yaw = atan2(siny, cosy);
+    return bt\+Vector3(yaw,pitch,roll);
+\}
+
+btosg\+Vec3 btosg\+Quat\+::to\+Euler()
+\{
+    return quat2\+Euler($\ast$this);
+\}
+
+
+btosg\+World\+::$\sim$btosg\+World() \{
+    delete dynamic; // ????
+    delete solver;
+    delete dispatcher;
+    delete collision\+Configuration;
+    delete broadphase;
+    for ( auto it = objects.\+begin(); it 
+        btosg\+Object)\end{DoxyCompactItemize}

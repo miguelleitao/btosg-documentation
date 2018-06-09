@@ -23,10 +23,8 @@ void \hyperlink{classbtosgWorld_a6af4d066410a86b44fff5563667ea9a9}{reset} ()
 \item 
 bt\+Dynamics\+World $\ast$ \hyperlink{classbtosgWorld_ad757a7b3b845142f200d1f2127e5372e}{dynamic}
 \item 
-\mbox{\Hypertarget{classbtosgWorld_ab6d438f54ccfc18955ea43e87731e008}\label{classbtosgWorld_ab6d438f54ccfc18955ea43e87731e008}} 
 osg\+::ref\+\_\+ptr$<$ osg\+::\+Group $>$ \hyperlink{classbtosgWorld_ab6d438f54ccfc18955ea43e87731e008}{scene}
 \begin{DoxyCompactList}\small\item\em Pointer to osg\+::\+Group object storing the root node of the object tree. \end{DoxyCompactList}\item 
-\mbox{\Hypertarget{classbtosgWorld_ab105aa8c0f8bdbdf323d47b902f6aca0}\label{classbtosgWorld_ab105aa8c0f8bdbdf323d47b902f6aca0}} 
 std\+::forward\+\_\+list$<$ class \hyperlink{classbtosgObject}{btosg\+Object} $\ast$ $>$ \hyperlink{classbtosgWorld_ab105aa8c0f8bdbdf323d47b902f6aca0}{objects}
 \begin{DoxyCompactList}\small\item\em List of Objects. \end{DoxyCompactList}\end{DoxyCompactItemize}
 
@@ -43,19 +41,31 @@ Integrates a bt\+Dynamics\+World and an osg\+::\+Group. Provides automated updat
 \subsubsection{\texorpdfstring{add\+Object()}{addObject()}}
 {\footnotesize\ttfamily void btosg\+World\+::add\+Object (\begin{DoxyParamCaption}\item[{class \hyperlink{classbtosgObject}{btosg\+Object} $\ast$}]{obj }\end{DoxyParamCaption})}
 
-Registers the object obj into a simulation world. \mbox{\Hypertarget{classbtosgWorld_a6af4d066410a86b44fff5563667ea9a9}\label{classbtosgWorld_a6af4d066410a86b44fff5563667ea9a9}} 
+Registers the object obj into a simulation world. 
+
+References btosg\+Object\+::body, and btosg\+Object\+::model.
+
+\mbox{\Hypertarget{classbtosgWorld_a6af4d066410a86b44fff5563667ea9a9}\label{classbtosgWorld_a6af4d066410a86b44fff5563667ea9a9}} 
 \index{btosg\+World@{btosg\+World}!reset@{reset}}
 \index{reset@{reset}!btosg\+World@{btosg\+World}}
 \subsubsection{\texorpdfstring{reset()}{reset()}}
 {\footnotesize\ttfamily void btosg\+World\+::reset (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})}
 
-Reset all registered objects. \mbox{\Hypertarget{classbtosgWorld_afce096686d8f84afd8b8fa3f2dc161b8}\label{classbtosgWorld_afce096686d8f84afd8b8fa3f2dc161b8}} 
+Reset all registered objects. 
+
+References btosg\+Object\+::reset().
+
+\mbox{\Hypertarget{classbtosgWorld_afce096686d8f84afd8b8fa3f2dc161b8}\label{classbtosgWorld_afce096686d8f84afd8b8fa3f2dc161b8}} 
 \index{btosg\+World@{btosg\+World}!step\+Simulation@{step\+Simulation}}
 \index{step\+Simulation@{step\+Simulation}!btosg\+World@{btosg\+World}}
 \subsubsection{\texorpdfstring{step\+Simulation()}{stepSimulation()}}
 {\footnotesize\ttfamily void btosg\+World\+::step\+Simulation (\begin{DoxyParamCaption}\item[{bt\+Scalar}]{time\+Step,  }\item[{int}]{max\+Sub\+Steps }\end{DoxyParamCaption})}
 
 Performs a simulation step. 
+
+References btosg\+Object\+::set\+Init\+State(), and btosg\+Object\+::update().
+
+
 
 \subsection{Member Data Documentation}
 \mbox{\Hypertarget{classbtosgWorld_ad757a7b3b845142f200d1f2127e5372e}\label{classbtosgWorld_ad757a7b3b845142f200d1f2127e5372e}} 
@@ -66,7 +76,127 @@ Performs a simulation step.
 
 Pointer to bt\+Dynamics\+World object. 
 
+Referenced by btosg\+Vehicle\+::btosg\+Vehicle().
+
+\mbox{\Hypertarget{classbtosgWorld_ab105aa8c0f8bdbdf323d47b902f6aca0}\label{classbtosgWorld_ab105aa8c0f8bdbdf323d47b902f6aca0}} 
+\index{btosg\+World@{btosg\+World}!objects@{objects}}
+\index{objects@{objects}!btosg\+World@{btosg\+World}}
+\subsubsection{\texorpdfstring{objects}{objects}}
+{\footnotesize\ttfamily std\+::forward\+\_\+list$<$class \hyperlink{classbtosgObject}{btosg\+Object}$\ast$$>$ btosg\+World\+::objects}
+
+
+
+List of Objects. 
+
+\mbox{\Hypertarget{classbtosgWorld_ab6d438f54ccfc18955ea43e87731e008}\label{classbtosgWorld_ab6d438f54ccfc18955ea43e87731e008}} 
+\index{btosg\+World@{btosg\+World}!scene@{scene}}
+\index{scene@{scene}!btosg\+World@{btosg\+World}}
+\subsubsection{\texorpdfstring{scene}{scene}}
+{\footnotesize\ttfamily osg\+::ref\+\_\+ptr$<$osg\+::\+Group$>$ btosg\+World\+::scene}
+
+
+
+Pointer to osg\+::\+Group object storing the root node of the object tree. 
+
+
+
 The documentation for this class was generated from the following files\+:\begin{DoxyCompactItemize}
 \item 
-btosg.\+h\item 
-btosg.\+cpp\end{DoxyCompactItemize}
+btosg.\+h (/$\ast$
+ $\ast$	btosg.\+h
+ $\ast$
+ $\ast$	(c) Miguel Leitao, 2016
+ $\ast$
+ $\ast$/
+
+\#ifndef B\+T\+O\+S\+G\+\_\+\+H
+\#define B\+T\+O\+S\+G\+\_\+\+H 1
+
+\#define Y\+E\+S 1
+\#define N\+O  0
+
+\#include $<$osg\+D\+B/\+Read\+File$>$
+\#include $<$osg/\+Matrix\+Transform$>$
+\#include $<$osg/\+Position\+Attitude\+Transform$>$
+\#include $<$osg\+G\+A/\+Trackball\+Manipulator$>$
+\#include $<$osg/\+Shape\+Drawable$>$
+\#include $<$osg/\+Plane$>$
+\#include $<$osg/\+Light\+Source$>$
+\#include $<$osg/\+Material$>$
+
+\#include $<$bt\+Bullet\+Dynamics\+Common.\+h$>$
+
+\#if B\+T\+O\+S\+G\+\_\+\+L\+O\+A\+D\+\_\+\+O\+B\+J==\+Y\+E\+S
+\#include \char`\"{}load\+O\+B\+J/include/\+Load\+Mesh\+From\+Ob
+\#include \char`\"{}load\+O\+B\+J/include/\+G\+L\+Instance\+Grap
+//include $<$\+G\+L\+Instance\+Graphics\+Shape.\+h$>$
+\#endif
+
+//include $<$\+G\+L\+Instance\+Graphics\+Shape.\+h$>$
+
+\#ifdef B\+T\+O\+S\+G\+\_\+\+S\+H\+A\+D\+O\+W
+\#include $<$osg\+Shadow/\+Shadowed\+Scene$>$
+\#include $<$osg\+Shadow/\+Shadow\+Map$>$
+\#endif
+\#include $<$forward\+\_\+list$>$
+
+/$\ast$ Direct update of positions and orient
+ $\ast$ or normal objects that are syncronize
+ $\ast$ Direct update can be enabled to allow
+ $\ast$ update the graphics model directly.
+ $\ast$ This can be used in special cases lik
+ $\ast$ btosg\+World or Worlds that are not ste
+ $\ast$/
+\#define A\+V\+O\+I\+D\+\_\+\+D\+I\+R\+E\+C\+T\+\_\+\+M\+O\+D\+E\+L\+\_\+\+U\+P\+D\+A\+T\+E
+
+\#define max(a,b) \textbackslash{}
+   (\{ \+\_\+\+\_\+typeof\+\_\+\+\_\+ (a))\item 
+btosg.\+cpp (/$\ast$
+	btosg.\+cpp
+	\+Miguel Leitao, 2016
+$\ast$/
+
+\#include \char`\"{}btosg.\+h\char`\"{}
+\#include $<$osg/\+Material$>$
+\#include $<$osg/\+Texture2\+D$>$
+
+\#define \+\_\+\+D\+E\+B\+U\+G\+\_\+ (0)
+
+bt\+Vector3 quat2\+Euler(const bt\+Quaternion\&
+\{
+    // Implementation not tested.
+
+    // roll (x-\/axis rotation)
+    double sinr = +2.\+0 $\ast$ (q.\+w() $\ast$ q.\+x() 
+    double cosr = +1.\+0 -\/ 2.\+0 $\ast$ (q.\+x() $\ast$ 
+    double roll = atan2(sinr, cosr);
+
+    // pitch (y-\/axis rotation)
+    double sinp = +2.\+0 $\ast$ (q.\+w() $\ast$ q.\+y() 
+    double pitch;
+    if (fabs(sinp) $>$= 1)
+        pitch = copysign(\+M\+\_\+\+P\+I / 2, sinp)
+    else
+        pitch = asin(sinp);
+
+    // yaw (z-\/axis rotation)
+    double siny = +2.\+0 $\ast$ (q.\+w() $\ast$ q.\+z() 
+    double cosy = +1.\+0 -\/ 2.\+0 $\ast$ (q.\+y() $\ast$ 
+    double yaw = atan2(siny, cosy);
+    return bt\+Vector3(yaw,pitch,roll);
+\}
+
+btosg\+Vec3 btosg\+Quat\+::to\+Euler()
+\{
+    return quat2\+Euler($\ast$this);
+\}
+
+
+btosg\+World\+::$\sim$btosg\+World() \{
+    delete dynamic; // ????
+    delete solver;
+    delete dispatcher;
+    delete collision\+Configuration;
+    delete broadphase;
+    for ( auto it = objects.\+begin(); it 
+        btosg\+Object)\end{DoxyCompactItemize}

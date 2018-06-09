@@ -55,4 +55,42 @@ Set up geometry for the H\+UD and add it to the H\+UD
 
 The documentation for this class was generated from the following file\+:\begin{DoxyCompactItemize}
 \item 
-btosg\+H\+U\+D.\+h\end{DoxyCompactItemize}
+btosg\+H\+U\+D.\+h (\#include $<$osg\+Util/\+Optimizer$>$
+
+\#include $<$osg\+D\+B/\+Read\+File$>$
+\#include $<$osg\+D\+B/\+Registry$>$
+
+\#include $<$osg/\+Geode$>$
+\#include $<$osg/\+Projection$>$
+\#include $<$osg/\+Matrix\+Transform$>$
+\#include $<$osg/\+Position\+Attitude\+Transform$>$
+\#include $<$osg/\+Shape\+Drawable$>$
+
+\#include $<$osg\+Text/\+Font$>$
+\#include $<$osg\+Text/\+Text$>$
+
+
+/// Head Up Display
+class btosg\+H\+U\+D \+: public osg\+::\+Projection 
+private\+:
+    // A geometry node for the H\+U\+D
+    osg\+::\+Geode$\ast$ geode;
+public\+:
+    void set\+Background() \{
+        /// Set up geometry for the H\+U\+D 
+        osg\+::\+Geometry$\ast$ H\+U\+D\+Background\+Geom
+
+        osg\+::\+Vec3\+Array$\ast$ H\+U\+D\+Background\+Ver
+        H\+U\+D\+Background\+Vertices-\/$>$push\+\_\+back
+        H\+U\+D\+Background\+Vertices-\/$>$push\+\_\+back
+        H\+U\+D\+Background\+Vertices-\/$>$push\+\_\+back
+        H\+U\+D\+Background\+Vertices-\/$>$push\+\_\+back
+
+        osg\+::\+Draw\+Elements\+U\+Int$\ast$ H\+U\+D\+Backgr
+            new osg\+::\+Draw\+Elements\+U\+Int(os
+        H\+U\+D\+Background\+Indices-\/$>$push\+\_\+back(
+        H\+U\+D\+Background\+Indices-\/$>$push\+\_\+back(
+        H\+U\+D\+Background\+Indices-\/$>$push\+\_\+back(
+        H\+U\+D\+Background\+Indices-\/$>$push\+\_\+back(
+
+        osg\+::\+Vec4\+Array$\ast$ H\+U\+Dcolors = new)\end{DoxyCompactItemize}

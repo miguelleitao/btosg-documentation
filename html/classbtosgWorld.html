@@ -86,13 +86,11 @@ Public Member Functions</h2></td></tr>
 Public Attributes</h2></td></tr>
 <tr class="memitem:ad757a7b3b845142f200d1f2127e5372e"><td class="memItemLeft" align="right" valign="top">btDynamicsWorld *&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classbtosgWorld.html#ad757a7b3b845142f200d1f2127e5372e">dynamic</a></td></tr>
 <tr class="separator:ad757a7b3b845142f200d1f2127e5372e"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:ab6d438f54ccfc18955ea43e87731e008"><td class="memItemLeft" align="right" valign="top"><a id="ab6d438f54ccfc18955ea43e87731e008"></a>
-osg::ref_ptr&lt; osg::Group &gt;&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classbtosgWorld.html#ab6d438f54ccfc18955ea43e87731e008">scene</a></td></tr>
-<tr class="memdesc:ab6d438f54ccfc18955ea43e87731e008"><td class="mdescLeft">&#160;</td><td class="mdescRight">Pointer to osg::Group object storing the root node of the object tree. <br /></td></tr>
+<tr class="memitem:ab6d438f54ccfc18955ea43e87731e008"><td class="memItemLeft" align="right" valign="top">osg::ref_ptr&lt; osg::Group &gt;&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classbtosgWorld.html#ab6d438f54ccfc18955ea43e87731e008">scene</a></td></tr>
+<tr class="memdesc:ab6d438f54ccfc18955ea43e87731e008"><td class="mdescLeft">&#160;</td><td class="mdescRight">Pointer to osg::Group object storing the root node of the object tree.  <a href="#ab6d438f54ccfc18955ea43e87731e008">More...</a><br /></td></tr>
 <tr class="separator:ab6d438f54ccfc18955ea43e87731e008"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:ab105aa8c0f8bdbdf323d47b902f6aca0"><td class="memItemLeft" align="right" valign="top"><a id="ab105aa8c0f8bdbdf323d47b902f6aca0"></a>
-std::forward_list&lt; class <a class="el" href="classbtosgObject.html">btosgObject</a> * &gt;&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classbtosgWorld.html#ab105aa8c0f8bdbdf323d47b902f6aca0">objects</a></td></tr>
-<tr class="memdesc:ab105aa8c0f8bdbdf323d47b902f6aca0"><td class="mdescLeft">&#160;</td><td class="mdescRight">List of Objects. <br /></td></tr>
+<tr class="memitem:ab105aa8c0f8bdbdf323d47b902f6aca0"><td class="memItemLeft" align="right" valign="top">std::forward_list&lt; class <a class="el" href="classbtosgObject.html">btosgObject</a> * &gt;&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classbtosgWorld.html#ab105aa8c0f8bdbdf323d47b902f6aca0">objects</a></td></tr>
+<tr class="memdesc:ab105aa8c0f8bdbdf323d47b902f6aca0"><td class="mdescLeft">&#160;</td><td class="mdescRight">List of Objects.  <a href="#ab105aa8c0f8bdbdf323d47b902f6aca0">More...</a><br /></td></tr>
 <tr class="separator:ab105aa8c0f8bdbdf323d47b902f6aca0"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table>
 <a name="details" id="details"></a><h2 class="groupheader">Detailed Description</h2>
@@ -116,6 +114,8 @@ std::forward_list&lt; class <a class="el" href="classbtosgObject.html">btosgObje
 </div><div class="memdoc">
 <p>Registers the object obj into a simulation world. </p>
 
+<p class="reference">References <a class="el" href="classbtosgObject.html#a64ccde0543c184ed1749fdb9c9699785">btosgObject::body</a>, and <a class="el" href="classbtosgObject.html#afd15726e7a214212d6d5815f8ac1ac6c">btosgObject::model</a>.</p>
+
 </div>
 </div>
 <a id="a6af4d066410a86b44fff5563667ea9a9"></a>
@@ -133,6 +133,8 @@ std::forward_list&lt; class <a class="el" href="classbtosgObject.html">btosgObje
       </table>
 </div><div class="memdoc">
 <p>Reset all registered objects. </p>
+
+<p class="reference">References <a class="el" href="classbtosgObject.html#a93983f9180dd0672f8779cf2baa78580">btosgObject::reset()</a>.</p>
 
 </div>
 </div>
@@ -163,6 +165,8 @@ std::forward_list&lt; class <a class="el" href="classbtosgObject.html">btosgObje
 </div><div class="memdoc">
 <p>Performs a simulation step. </p>
 
+<p class="reference">References <a class="el" href="classbtosgObject.html#ad1508a0ce28cfac83e5f0ff6245f91b5">btosgObject::setInitState()</a>, and <a class="el" href="classbtosgObject.html#a342917817dfde62554f83da8e0d5110b">btosgObject::update()</a>.</p>
+
 </div>
 </div>
 <h2 class="groupheader">Member Data Documentation</h2>
@@ -179,16 +183,146 @@ std::forward_list&lt; class <a class="el" href="classbtosgObject.html">btosgObje
 </div><div class="memdoc">
 <p>Pointer to btDynamicsWorld object. </p>
 
+<p class="reference">Referenced by <a class="el" href="classbtosgVehicle.html#aa754dd94553b8690763e4c24d1f26227">btosgVehicle::btosgVehicle()</a>.</p>
+
+</div>
+</div>
+<a id="ab105aa8c0f8bdbdf323d47b902f6aca0"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#ab105aa8c0f8bdbdf323d47b902f6aca0">&#9670;&nbsp;</a></span>objects</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">std::forward_list&lt;class <a class="el" href="classbtosgObject.html">btosgObject</a>*&gt; btosgWorld::objects</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>List of Objects. </p>
+
+</div>
+</div>
+<a id="ab6d438f54ccfc18955ea43e87731e008"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#ab6d438f54ccfc18955ea43e87731e008">&#9670;&nbsp;</a></span>scene</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">osg::ref_ptr&lt;osg::Group&gt; btosgWorld::scene</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>Pointer to osg::Group object storing the root node of the object tree. </p>
+
 </div>
 </div>
 <hr/>The documentation for this class was generated from the following files:<ul>
-<li><a class="el" href="btosg_8h_source.html">btosg.h</a></li>
-<li>btosg.cpp</li>
+<li><a class="el" href="btosg_8h_source.html">btosg.h (/*
+ *	btosg.h
+ *
+ *	(c) Miguel Leitao, 2016
+ *
+ */
+
+#ifndef BTOSG_H
+#define BTOSG_H 1
+
+#define YES 1
+#define NO  0
+
+#include &lt;osgDB/ReadFile&gt;
+#include &lt;osg/MatrixTransform&gt;
+#include &lt;osg/PositionAttitudeTransform&gt;
+#include &lt;osgGA/TrackballManipulator&gt;
+#include &lt;osg/ShapeDrawable&gt;
+#include &lt;osg/Plane&gt;
+#include &lt;osg/LightSource&gt;
+#include &lt;osg/Material&gt;
+
+#include &lt;btBulletDynamicsCommon.h&gt;
+
+#if BTOSG_LOAD_OBJ==YES
+#include &quot;loadOBJ/include/LoadMeshFromOb
+#include &quot;loadOBJ/include/GLInstanceGrap
+//include &lt;GLInstanceGraphicsShape.h&gt;
+#endif
+
+//include &lt;GLInstanceGraphicsShape.h&gt;
+
+#ifdef BTOSG_SHADOW
+#include &lt;osgShadow/ShadowedScene&gt;
+#include &lt;osgShadow/ShadowMap&gt;
+#endif
+#include &lt;forward_list&gt;
+
+/* Direct update of positions and orient
+ * or normal objects that are syncronize
+ * Direct update can be enabled to allow
+ * update the graphics model directly.
+ * This can be used in special cases lik
+ * btosgWorld or Worlds that are not ste
+ */
+#define AVOID_DIRECT_MODEL_UPDATE
+
+#define max(a,b) \
+   ({ __typeof__ (a))</a></li>
+<li>btosg.cpp (/*
+	btosg.cpp
+	Miguel Leitao, 2016
+*/
+
+#include &quot;btosg.h&quot;
+#include &lt;osg/Material&gt;
+#include &lt;osg/Texture2D&gt;
+
+#define _DEBUG_ (0)
+
+btVector3 quat2Euler(const btQuaternion&amp;
+{
+    // Implementation not tested.
+
+    // roll (x-axis rotation)
+    double sinr = +2.0 * (q.w() * q.x() 
+    double cosr = +1.0 - 2.0 * (q.x() * 
+    double roll = atan2(sinr, cosr);
+
+    // pitch (y-axis rotation)
+    double sinp = +2.0 * (q.w() * q.y() 
+    double pitch;
+    if (fabs(sinp) &gt;= 1)
+        pitch = copysign(M_PI / 2, sinp)
+    else
+        pitch = asin(sinp);
+
+    // yaw (z-axis rotation)
+    double siny = +2.0 * (q.w() * q.z() 
+    double cosy = +1.0 - 2.0 * (q.y() * 
+    double yaw = atan2(siny, cosy);
+    return btVector3(yaw,pitch,roll);
+}
+
+btosgVec3 btosgQuat::toEuler()
+{
+    return quat2Euler(*this);
+}
+
+
+btosgWorld::~btosgWorld() {
+    delete dynamic; // ????
+    delete solver;
+    delete dispatcher;
+    delete collisionConfiguration;
+    delete broadphase;
+    for ( auto it = objects.begin(); it 
+        btosgObject)</li>
 </ul>
 </div><!-- contents -->
 <!-- start footer part -->
 <hr class="footer"/><address class="footer"><small>
-Generated by &#160;<a href="http://www.doxygen.org/index.html">
+Generated on Sat Jun 9 2018 22:28:32 for btosg by &#160;<a href="http://www.doxygen.org/index.html">
 <img class="footer" src="doxygen.png" alt="doxygen"/>
 </a> 1.8.13
 </small></address>
