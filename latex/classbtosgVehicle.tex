@@ -107,10 +107,6 @@ A four-\/wheeled vehicle based on bt\+Raycast\+Vehicle.
 
 \hyperlink{classbtosgVehicle}{btosg\+Vehicle} constructor. 
 
-References add\+Wheels(), btosg\+Object\+::body, btosg\+Object\+::create\+Rigid\+Body(), btosg\+World\+::dynamic, btosg\+Object\+::model, btosg\+Object\+::set\+Mass(), btosg\+Object\+::set\+Material(), and btosg\+Object\+::shape.
-
-
-
 \subsection{Member Function Documentation}
 \mbox{\Hypertarget{classbtosgVehicle_a98971fb952c08cb72341a0c333fc66de}\label{classbtosgVehicle_a98971fb952c08cb72341a0c333fc66de}} 
 \index{btosg\+Vehicle@{btosg\+Vehicle}!add\+Wheels@{add\+Wheels}}
@@ -118,45 +114,25 @@ References add\+Wheels(), btosg\+Object\+::body, btosg\+Object\+::create\+Rigid\
 \subsubsection{\texorpdfstring{add\+Wheels()}{addWheels()}}
 {\footnotesize\ttfamily void btosg\+Vehicle\+::add\+Wheels (\begin{DoxyParamCaption}\item[{bt\+Vector3 $\ast$}]{half\+Extents,  }\item[{bt\+Raycast\+Vehicle $\ast$}]{vehicle,  }\item[{bt\+Raycast\+Vehicle\+::bt\+Vehicle\+Tuning}]{tuning }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}}
 
-Adds four wheels to the vehicle. 
-
-References btosg\+Object\+::model.
-
-
-
-Referenced by btosg\+Vehicle().
-
-\mbox{\Hypertarget{classbtosgObject_a029dbe9134fa94e7355799f67fb2cd6d}\label{classbtosgObject_a029dbe9134fa94e7355799f67fb2cd6d}} 
+Adds four wheels to the vehicle. \mbox{\Hypertarget{classbtosgObject_a029dbe9134fa94e7355799f67fb2cd6d}\label{classbtosgObject_a029dbe9134fa94e7355799f67fb2cd6d}} 
 \index{btosg\+Vehicle@{btosg\+Vehicle}!create\+Rigid\+Body@{create\+Rigid\+Body}}
 \index{create\+Rigid\+Body@{create\+Rigid\+Body}!btosg\+Vehicle@{btosg\+Vehicle}}
 \subsubsection{\texorpdfstring{create\+Rigid\+Body()}{createRigidBody()}}
 {\footnotesize\ttfamily void btosg\+Object\+::create\+Rigid\+Body (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}, {\ttfamily [inherited]}}
 
-Creates a new rigid body as a bt\+Rigid\+Body object. 
-
-Referenced by btosg\+Vehicle().
-
-\mbox{\Hypertarget{classbtosgObject_a2019ec63bde02b72600450c7c985e77a}\label{classbtosgObject_a2019ec63bde02b72600450c7c985e77a}} 
+Creates a new rigid body as a bt\+Rigid\+Body object. \mbox{\Hypertarget{classbtosgObject_a2019ec63bde02b72600450c7c985e77a}\label{classbtosgObject_a2019ec63bde02b72600450c7c985e77a}} 
 \index{btosg\+Vehicle@{btosg\+Vehicle}!get\+Euler@{get\+Euler}}
 \index{get\+Euler@{get\+Euler}!btosg\+Vehicle@{btosg\+Vehicle}}
 \subsubsection{\texorpdfstring{get\+Euler()}{getEuler()}}
 {\footnotesize\ttfamily \hyperlink{classbtosgVec3}{btosg\+Vec3} btosg\+Object\+::get\+Euler (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}, {\ttfamily [inherited]}}
 
-Returns object\textquotesingle{}s attitude as H\+PR Euler angles. 
-
-References btosg\+Quat\+::to\+Euler().
-
-\mbox{\Hypertarget{classbtosgObject_a3dadd5da8f2a312e44a039446b93d4cd}\label{classbtosgObject_a3dadd5da8f2a312e44a039446b93d4cd}} 
+Returns object\textquotesingle{}s attitude as H\+PR Euler angles. \mbox{\Hypertarget{classbtosgObject_a3dadd5da8f2a312e44a039446b93d4cd}\label{classbtosgObject_a3dadd5da8f2a312e44a039446b93d4cd}} 
 \index{btosg\+Vehicle@{btosg\+Vehicle}!get\+Position@{get\+Position}}
 \index{get\+Position@{get\+Position}!btosg\+Vehicle@{btosg\+Vehicle}}
 \subsubsection{\texorpdfstring{get\+Position()}{getPosition()}}
 {\footnotesize\ttfamily \hyperlink{classbtosgVec3}{btosg\+Vec3} btosg\+Object\+::get\+Position (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}, {\ttfamily [inherited]}}
 
-Returns object\textquotesingle{}s position. 
-
-References btosg\+Vec3\+::btosg\+Vec3().
-
-\mbox{\Hypertarget{classbtosgObject_a3b825999ad3a51bde743d4085ff19dae}\label{classbtosgObject_a3b825999ad3a51bde743d4085ff19dae}} 
+Returns object\textquotesingle{}s position. \mbox{\Hypertarget{classbtosgObject_a3b825999ad3a51bde743d4085ff19dae}\label{classbtosgObject_a3b825999ad3a51bde743d4085ff19dae}} 
 \index{btosg\+Vehicle@{btosg\+Vehicle}!get\+Rotation@{get\+Rotation}}
 \index{get\+Rotation@{get\+Rotation}!btosg\+Vehicle@{btosg\+Vehicle}}
 \subsubsection{\texorpdfstring{get\+Rotation()}{getRotation()}}
@@ -174,45 +150,25 @@ Loads an object model from a Wavefront O\+BJ file. Loadded model is used to defi
 \subsubsection{\texorpdfstring{log\+Position()}{logPosition()}}
 {\footnotesize\ttfamily void btosg\+Vehicle\+::log\+Position (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}}
 
-Outputs vehicle\textquotesingle{}s position. 
-
-References btosg\+Object\+::body, and btosg\+Object\+::name.
-
-\mbox{\Hypertarget{classbtosgVehicle_abe98f64f0a8f37c7c0b244e3afbbcb15}\label{classbtosgVehicle_abe98f64f0a8f37c7c0b244e3afbbcb15}} 
+Outputs vehicle\textquotesingle{}s position. \mbox{\Hypertarget{classbtosgVehicle_abe98f64f0a8f37c7c0b244e3afbbcb15}\label{classbtosgVehicle_abe98f64f0a8f37c7c0b244e3afbbcb15}} 
 \index{btosg\+Vehicle@{btosg\+Vehicle}!print\+Info@{print\+Info}}
 \index{print\+Info@{print\+Info}!btosg\+Vehicle@{btosg\+Vehicle}}
 \subsubsection{\texorpdfstring{print\+Info()}{printInfo()}}
 {\footnotesize\ttfamily void btosg\+Vehicle\+::print\+Info (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}}
 
-Outputs vehicle\textquotesingle{}s info. 
-
-References btosg\+Object\+::body, and btosg\+Object\+::mass.
-
-\mbox{\Hypertarget{classbtosgObject_a93983f9180dd0672f8779cf2baa78580}\label{classbtosgObject_a93983f9180dd0672f8779cf2baa78580}} 
+Outputs vehicle\textquotesingle{}s info. \mbox{\Hypertarget{classbtosgObject_a93983f9180dd0672f8779cf2baa78580}\label{classbtosgObject_a93983f9180dd0672f8779cf2baa78580}} 
 \index{btosg\+Vehicle@{btosg\+Vehicle}!reset@{reset}}
 \index{reset@{reset}!btosg\+Vehicle@{btosg\+Vehicle}}
 \subsubsection{\texorpdfstring{reset()}{reset()}}
 {\footnotesize\ttfamily void btosg\+Object\+::reset (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}, {\ttfamily [inherited]}}
 
-Reposition object to its inital state. 
-
-References btosg\+Vec3\+::btosg\+Vec3().
-
-
-
-Referenced by btosg\+World\+::reset().
-
-\mbox{\Hypertarget{classbtosgObject_ad1508a0ce28cfac83e5f0ff6245f91b5}\label{classbtosgObject_ad1508a0ce28cfac83e5f0ff6245f91b5}} 
+Reposition object to its inital state. \mbox{\Hypertarget{classbtosgObject_ad1508a0ce28cfac83e5f0ff6245f91b5}\label{classbtosgObject_ad1508a0ce28cfac83e5f0ff6245f91b5}} 
 \index{btosg\+Vehicle@{btosg\+Vehicle}!set\+Init\+State@{set\+Init\+State}}
 \index{set\+Init\+State@{set\+Init\+State}!btosg\+Vehicle@{btosg\+Vehicle}}
 \subsubsection{\texorpdfstring{set\+Init\+State()}{setInitState()}\hspace{0.1cm}{\footnotesize\ttfamily [1/2]}}
 {\footnotesize\ttfamily void btosg\+Object\+::set\+Init\+State (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}, {\ttfamily [inherited]}}
 
-Stores current state as init state. Init state is aplied by \hyperlink{classbtosgObject_a93983f9180dd0672f8779cf2baa78580}{reset()} 
-
-Referenced by btosg\+World\+::step\+Simulation().
-
-\mbox{\Hypertarget{classbtosgObject_a6ceb08e59ee95acaaef389ee198d2b56}\label{classbtosgObject_a6ceb08e59ee95acaaef389ee198d2b56}} 
+Stores current state as init state. Init state is aplied by \hyperlink{classbtosgObject_a93983f9180dd0672f8779cf2baa78580}{reset()} \mbox{\Hypertarget{classbtosgObject_a6ceb08e59ee95acaaef389ee198d2b56}\label{classbtosgObject_a6ceb08e59ee95acaaef389ee198d2b56}} 
 \index{btosg\+Vehicle@{btosg\+Vehicle}!set\+Init\+State@{set\+Init\+State}}
 \index{set\+Init\+State@{set\+Init\+State}!btosg\+Vehicle@{btosg\+Vehicle}}
 \subsubsection{\texorpdfstring{set\+Init\+State()}{setInitState()}\hspace{0.1cm}{\footnotesize\ttfamily [2/2]}}
@@ -224,21 +180,13 @@ Stores i\+State as init state. Init state is aplied by \hyperlink{classbtosgObje
 \subsubsection{\texorpdfstring{set\+Mass()}{setMass()}}
 {\footnotesize\ttfamily void btosg\+Object\+::set\+Mass (\begin{DoxyParamCaption}\item[{double}]{m }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}, {\ttfamily [inherited]}}
 
-Sets the object\textquotesingle{}s mass. 
-
-Referenced by btosg\+Vehicle().
-
-\mbox{\Hypertarget{classbtosgObject_a6ab7b9e0553dab398b980637788b56a8}\label{classbtosgObject_a6ab7b9e0553dab398b980637788b56a8}} 
+Sets the object\textquotesingle{}s mass. \mbox{\Hypertarget{classbtosgObject_a6ab7b9e0553dab398b980637788b56a8}\label{classbtosgObject_a6ab7b9e0553dab398b980637788b56a8}} 
 \index{btosg\+Vehicle@{btosg\+Vehicle}!set\+Material@{set\+Material}}
 \index{set\+Material@{set\+Material}!btosg\+Vehicle@{btosg\+Vehicle}}
 \subsubsection{\texorpdfstring{set\+Material()}{setMaterial()}}
 {\footnotesize\ttfamily void btosg\+Object\+::set\+Material (\begin{DoxyParamCaption}\item[{osg\+::ref\+\_\+ptr$<$ osg\+::\+Material $>$}]{mat }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}, {\ttfamily [inherited]}}
 
-Sets the material properties for the object. 
-
-Referenced by btosg\+Vehicle().
-
-\mbox{\Hypertarget{classbtosgObject_ab06a1b3f357209214c6440cd5746523e}\label{classbtosgObject_ab06a1b3f357209214c6440cd5746523e}} 
+Sets the material properties for the object. \mbox{\Hypertarget{classbtosgObject_ab06a1b3f357209214c6440cd5746523e}\label{classbtosgObject_ab06a1b3f357209214c6440cd5746523e}} 
 \index{btosg\+Vehicle@{btosg\+Vehicle}!set\+Name@{set\+Name}}
 \index{set\+Name@{set\+Name}!btosg\+Vehicle@{btosg\+Vehicle}}
 \subsubsection{\texorpdfstring{set\+Name()}{setName()}}
@@ -256,11 +204,7 @@ Sets objects position. \mbox{\Hypertarget{classbtosgObject_adb9f2cff0faf66dc252c
 \subsubsection{\texorpdfstring{set\+Position()}{setPosition()}\hspace{0.1cm}{\footnotesize\ttfamily [2/2]}}
 {\footnotesize\ttfamily void btosg\+Object\+::set\+Position (\begin{DoxyParamCaption}\item[{float}]{x,  }\item[{float}]{y,  }\item[{float}]{z }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}, {\ttfamily [inherited]}}
 
-Sets objects position. 
-
-References btosg\+Vec3\+::btosg\+Vec3().
-
-\mbox{\Hypertarget{classbtosgObject_a6365748d5506bb9da31907c9988071fa}\label{classbtosgObject_a6365748d5506bb9da31907c9988071fa}} 
+Sets objects position. \mbox{\Hypertarget{classbtosgObject_a6365748d5506bb9da31907c9988071fa}\label{classbtosgObject_a6365748d5506bb9da31907c9988071fa}} 
 \index{btosg\+Vehicle@{btosg\+Vehicle}!set\+Rotation@{set\+Rotation}}
 \index{set\+Rotation@{set\+Rotation}!btosg\+Vehicle@{btosg\+Vehicle}}
 \subsubsection{\texorpdfstring{set\+Rotation()}{setRotation()}\hspace{0.1cm}{\footnotesize\ttfamily [1/2]}}
@@ -290,10 +234,6 @@ Reimplemented from \hyperlink{classbtosgObject_a342917817dfde62554f83da8e0d5110b
 
 
 
-References btosg\+Object\+::update().
-
-
-
 \subsection{Member Data Documentation}
 \mbox{\Hypertarget{classbtosgObject_a64ccde0543c184ed1749fdb9c9699785}\label{classbtosgObject_a64ccde0543c184ed1749fdb9c9699785}} 
 \index{btosg\+Vehicle@{btosg\+Vehicle}!body@{body}}
@@ -304,10 +244,6 @@ References btosg\+Object\+::update().
 
 
 object\textquotesingle{}s rigid body 
-
-
-
-Referenced by btosg\+World\+::add\+Object(), btosg\+Vehicle(), log\+Position(), and print\+Info().
 
 \mbox{\Hypertarget{classbtosgVehicle_a2173f99ca0719929aa5a1c890927aca3}\label{classbtosgVehicle_a2173f99ca0719929aa5a1c890927aca3}} 
 \index{btosg\+Vehicle@{btosg\+Vehicle}!dim@{dim}}
@@ -379,10 +315,6 @@ Inital state. Applied on reset events.
 
 Mass of object. 
 
-
-
-Referenced by print\+Info().
-
 \mbox{\Hypertarget{classbtosgObject_afd15726e7a214212d6d5815f8ac1ac6c}\label{classbtosgObject_afd15726e7a214212d6d5815f8ac1ac6c}} 
 \index{btosg\+Vehicle@{btosg\+Vehicle}!model@{model}}
 \index{model@{model}!btosg\+Vehicle@{btosg\+Vehicle}}
@@ -392,10 +324,6 @@ Referenced by print\+Info().
 
 
 Object\textquotesingle{}s graphical model. 
-
-
-
-Referenced by btosg\+World\+::add\+Object(), add\+Wheels(), and btosg\+Vehicle().
 
 \mbox{\Hypertarget{classbtosgObject_a12396e1362797a75473a2e833b579cc9}\label{classbtosgObject_a12396e1362797a75473a2e833b579cc9}} 
 \index{btosg\+Vehicle@{btosg\+Vehicle}!name@{name}}
@@ -407,10 +335,6 @@ Referenced by btosg\+World\+::add\+Object(), add\+Wheels(), and btosg\+Vehicle()
 
 Object name. 
 
-
-
-Referenced by log\+Position().
-
 \mbox{\Hypertarget{classbtosgObject_a0f6a8da01cf643c321bffe86e42604b0}\label{classbtosgObject_a0f6a8da01cf643c321bffe86e42604b0}} 
 \index{btosg\+Vehicle@{btosg\+Vehicle}!shape@{shape}}
 \index{shape@{shape}!btosg\+Vehicle@{btosg\+Vehicle}}
@@ -420,10 +344,6 @@ Referenced by log\+Position().
 
 
 Object\textquotesingle{}s collision shape. 
-
-
-
-Referenced by btosg\+Vehicle().
 
 \mbox{\Hypertarget{classbtosgVehicle_a84705afaa9e37bb8a0bd7f6b6f291c26}\label{classbtosgVehicle_a84705afaa9e37bb8a0bd7f6b6f291c26}} 
 \index{btosg\+Vehicle@{btosg\+Vehicle}!up@{up}}
