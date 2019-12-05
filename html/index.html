@@ -81,7 +81,8 @@ $(function() {
 <li><a href="https://github.com/bulletphysics/bullet3">https://github.com/bulletphysics/bullet3</a></li>
 <li><a href="http://bulletphysics.org/">http://bulletphysics.org/</a></li>
 </ul>
-<p>Dependences can be installed on Fedora Linux using: </p><pre class="fragment">dnf install bullet bullet-devel OpenSceneGraph OpenSceneGraph-devel
+<p>Dependences can be installed on Fedora Linux using: </p><pre class="fragment">dnf install gcc-c++ mesa-libGL-devel
+dnf install bullet bullet-devel OpenSceneGraph OpenSceneGraph-devel
 </pre><p>Dependences can be installed on Ubuntu using: </p><pre class="fragment">apt install bullet openscenegraph-osg openscenegraph-osgViewer openscenegraph-osgSim openscenegraph-osgDB openscenegraph-osgGA openscenegraph-osgShadow
 </pre><h3>Build</h3>
 <pre class="fragment">git clone https://github.com/miguelleitao/btosg.git
@@ -90,10 +91,15 @@ make
 sudo make install
 </pre><h3>Usage</h3>
 <p>Look at provided examples. Prepare your <em>application.cpp</em> using </p><pre class="fragment">#include &lt;btosg.h&gt;
-</pre><p>Compile using </p><pre>
+</pre><p>Compile using</p>
+<pre>
+g++ -c -I path/to/btosg/dir <em>application.cpp</em>
+g++ -o <em>application</em> -L path/to/btosg/dir/lib -l btosg <em>application.o</em>
+</pre><p>Or, if you completed installation using <code>make install</code>:</p>
+<pre>
 g++ -c `pkg-config --cflags btosg` <em>application.cpp</em>
 g++ -o <em>application</em> `pkg-config --libs btosg` <em>application.o</em>
-</pre> <h3>Examples</h3>
+</pre><h3>Examples</h3>
 <p><b>btosg</b> is available with some working examples.</p><ul>
 <li><b>ball.cpp</b> implements a simple simulation of a ball with two planes.</li>
 <li><b>objects.cpp</b> provides an example for creating a complete object (graphical and physical) from loading an external Wavefront OBJ file.</li>
@@ -104,11 +110,13 @@ g++ -o <em>application</em> `pkg-config --libs btosg` <em>application.o</em>
 ./objects
 ./carZ
 ./carY
-</pre> </div></div><!-- PageDoc -->
+</pre><h3>Referencing</h3>
+<p>The release version can be referenced by either <a href="http://doi.org/ctz5">http://doi.org/ctz5</a> or doi:10.5281/zenodo.1283484. </p>
+</div></div><!-- PageDoc -->
 </div><!-- contents -->
 <!-- start footer part -->
 <hr class="footer"/><address class="footer"><small>
-Generated on Thu Dec 5 2019 12:23:11 for btosg by &#160;<a href="http://www.doxygen.org/index.html">
+Generated on Thu Dec 5 2019 12:36:04 for btosg by &#160;<a href="http://www.doxygen.org/index.html">
 <img class="footer" src="doxygen.png" alt="doxygen"/>
 </a> 1.8.15
 </small></address>
