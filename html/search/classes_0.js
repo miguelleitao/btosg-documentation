@@ -3,6 +3,7 @@ var searchData=
   ['btosgbox',['btosgBox',['../classbtosgBox.html',1,'']]],
   ['btosgcone',['btosgCone',['../classbtosgCone.html',1,'']]],
   ['btosgcylinder',['btosgCylinder',['../classbtosgCylinder.html',1,'']]],
+  ['btosgheightfield',['btosgHeightfield',['../classbtosgHeightfield.html',1,'']]],
   ['btosghud',['btosgHUD',['../classbtosgHUD.html',1,'']]],
   ['btosgobject',['btosgObject',['../classbtosgObject.html',1,'']]],
   ['btosgplane',['btosgPlane',['../classbtosgPlane.html',1,'']]],

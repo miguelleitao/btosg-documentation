@@ -12,11 +12,14 @@ Main btosg object base class.
 Inheritance diagram for btosg\+Object\+:\begin{figure}[H]
 \begin{center}
 \leavevmode
-\includegraphics[height=1.904762cm]{classbtosgObject}
+\includegraphics[height=1.454545cm]{classbtosgObject}
 \end{center}
 \end{figure}
 \subsection*{Public Member Functions}
 \begin{DoxyCompactItemize}
+\item 
+\mbox{\Hypertarget{classbtosgObject_a4432b5c28097065e89e045a8d02c45e6}\label{classbtosgObject_a4432b5c28097065e89e045a8d02c45e6}} 
+void {\bfseries print} ()
 \item 
 void \mbox{\hyperlink{classbtosgObject_ab06a1b3f357209214c6440cd5746523e}{set\+Name}} (char const $\ast$n)
 \item 
@@ -27,6 +30,8 @@ void \mbox{\hyperlink{classbtosgObject_a91da93c82d48b86192f0cbb16054fe57}{set\+M
 \mbox{\hyperlink{classbtosgQuat}{btosg\+Quat}} \mbox{\hyperlink{classbtosgObject_a3b825999ad3a51bde743d4085ff19dae}{get\+Rotation}} ()
 \item 
 \mbox{\hyperlink{classbtosgVec3}{btosg\+Vec3}} \mbox{\hyperlink{classbtosgObject_a2019ec63bde02b72600450c7c985e77a}{get\+Euler}} ()
+\item 
+void \mbox{\hyperlink{classbtosgObject_ad33fcab26c0c83ccab6dca6906e8cdb0}{set\+Transform}} (const bt\+Transform \&w\+Trans)
 \item 
 void \mbox{\hyperlink{classbtosgObject_ace6b51040b7ddce90818174200cc6074}{set\+Position}} (const \mbox{\hyperlink{classbtosgVec3}{btosg\+Vec3}} \&p)
 \item 
@@ -81,7 +86,7 @@ Integrates a physical object (bt\+Rigid\+Body), a collision shape (bt\+Collision
 \index{btosgObject@{btosgObject}!createRigidBody@{createRigidBody}}
 \index{createRigidBody@{createRigidBody}!btosgObject@{btosgObject}}
 \subsubsection{\texorpdfstring{createRigidBody()}{createRigidBody()}}
-{\footnotesize\ttfamily void btosg\+Object\+::create\+Rigid\+Body (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}}
+{\footnotesize\ttfamily void btosg\+Object\+::create\+Rigid\+Body (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})}
 
 Creates a new rigid body as a bt\+Rigid\+Body object. \mbox{\Hypertarget{classbtosgObject_a2019ec63bde02b72600450c7c985e77a}\label{classbtosgObject_a2019ec63bde02b72600450c7c985e77a}} 
 \index{btosgObject@{btosgObject}!getEuler@{getEuler}}
@@ -117,7 +122,7 @@ Outputs object\textquotesingle{}s position. \mbox{\Hypertarget{classbtosgObject_
 \index{btosgObject@{btosgObject}!reset@{reset}}
 \index{reset@{reset}!btosgObject@{btosgObject}}
 \subsubsection{\texorpdfstring{reset()}{reset()}}
-{\footnotesize\ttfamily void btosg\+Object\+::reset (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}}
+{\footnotesize\ttfamily void btosg\+Object\+::reset (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})}
 
 Reposition object to its inital state. \mbox{\Hypertarget{classbtosgObject_ad1508a0ce28cfac83e5f0ff6245f91b5}\label{classbtosgObject_ad1508a0ce28cfac83e5f0ff6245f91b5}} 
 \index{btosgObject@{btosgObject}!setInitState@{setInitState}}
@@ -179,7 +184,13 @@ Sets objects attitude from the quaternion coords. \mbox{\Hypertarget{classbtosgO
 \subsubsection{\texorpdfstring{setTexture()}{setTexture()}}
 {\footnotesize\ttfamily void btosg\+Object\+::set\+Texture (\begin{DoxyParamCaption}\item[{char const $\ast$}]{fname }\end{DoxyParamCaption})}
 
-Sets the object texture from a loaded image file. \mbox{\Hypertarget{classbtosgObject_a342917817dfde62554f83da8e0d5110b}\label{classbtosgObject_a342917817dfde62554f83da8e0d5110b}} 
+Sets the object texture from a loaded image file. \mbox{\Hypertarget{classbtosgObject_ad33fcab26c0c83ccab6dca6906e8cdb0}\label{classbtosgObject_ad33fcab26c0c83ccab6dca6906e8cdb0}} 
+\index{btosgObject@{btosgObject}!setTransform@{setTransform}}
+\index{setTransform@{setTransform}!btosgObject@{btosgObject}}
+\subsubsection{\texorpdfstring{setTransform()}{setTransform()}}
+{\footnotesize\ttfamily void btosg\+Object\+::set\+Transform (\begin{DoxyParamCaption}\item[{const bt\+Transform \&}]{w\+Trans }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}}
+
+Sets position and orientation of object using bt\+Transform \mbox{\Hypertarget{classbtosgObject_a342917817dfde62554f83da8e0d5110b}\label{classbtosgObject_a342917817dfde62554f83da8e0d5110b}} 
 \index{btosgObject@{btosgObject}!update@{update}}
 \index{update@{update}!btosgObject@{btosgObject}}
 \subsubsection{\texorpdfstring{update()}{update()}}

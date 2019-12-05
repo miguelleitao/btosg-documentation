@@ -94,6 +94,9 @@ Public Member Functions</h2></td></tr>
 <tr class="memitem:a9fc1530e0eb06c2432f1633bf08db8a2"><td class="memItemLeft" align="right" valign="top">&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classbtosgQuat.html#a9fc1530e0eb06c2432f1633bf08db8a2">btosgQuat</a> (btQuaternion q)</td></tr>
 <tr class="memdesc:a9fc1530e0eb06c2432f1633bf08db8a2"><td class="mdescLeft">&#160;</td><td class="mdescRight">Constructor from Bullet quaternion btQuaternion.  <a href="#a9fc1530e0eb06c2432f1633bf08db8a2">More...</a><br /></td></tr>
 <tr class="separator:a9fc1530e0eb06c2432f1633bf08db8a2"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a25cb8f2aee828fbfe5dc8113c890bbdb"><td class="memItemLeft" align="right" valign="top">&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classbtosgQuat.html#a25cb8f2aee828fbfe5dc8113c890bbdb">btosgQuat</a> (<a class="el" href="classbtosgVec3.html">btosgVec3</a> axis, double ang)</td></tr>
+<tr class="memdesc:a25cb8f2aee828fbfe5dc8113c890bbdb"><td class="mdescLeft">&#160;</td><td class="mdescRight">Constructor from <a class="el" href="classbtosgVec3.html" title="btosgVec3 can be used to represent 3D points and vectors.">btosgVec3</a> and scalar.  <a href="#a25cb8f2aee828fbfe5dc8113c890bbdb">More...</a><br /></td></tr>
+<tr class="separator:a25cb8f2aee828fbfe5dc8113c890bbdb"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:addfd68e2130ff8bb51c582524de5a345"><td class="memItemLeft" align="right" valign="top">&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classbtosgQuat.html#addfd68e2130ff8bb51c582524de5a345">operator btQuaternion</a> () const</td></tr>
 <tr class="memdesc:addfd68e2130ff8bb51c582524de5a345"><td class="mdescLeft">&#160;</td><td class="mdescRight">Convertor operator to Bullet quaternion.  <a href="#addfd68e2130ff8bb51c582524de5a345">More...</a><br /></td></tr>
 <tr class="separator:addfd68e2130ff8bb51c582524de5a345"><td class="memSeparator" colspan="2">&#160;</td></tr>
@@ -106,7 +109,7 @@ Public Member Functions</h2></td></tr>
 <p>Can be used as a btQuaternion or an osg::Quat. Implemented as derived from osg::Quar with aditional constructor and convertor from and to btQuaternion. </p>
 </div><h2 class="groupheader">Constructor &amp; Destructor Documentation</h2>
 <a id="a8ef8fc0d1503426d5e0ead87edfa5acf"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#a8ef8fc0d1503426d5e0ead87edfa5acf">&#9670;&nbsp;</a></span>btosgQuat() <span class="overload">[1/3]</span></h2>
+<h2 class="memtitle"><span class="permalink"><a href="#a8ef8fc0d1503426d5e0ead87edfa5acf">&#9670;&nbsp;</a></span>btosgQuat() <span class="overload">[1/4]</span></h2>
 
 <div class="memitem">
 <div class="memproto">
@@ -165,7 +168,7 @@ Public Member Functions</h2></td></tr>
 </div>
 </div>
 <a id="aa7646a03371b8aaa2caeba3f4b198ad6"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#aa7646a03371b8aaa2caeba3f4b198ad6">&#9670;&nbsp;</a></span>btosgQuat() <span class="overload">[2/3]</span></h2>
+<h2 class="memtitle"><span class="permalink"><a href="#aa7646a03371b8aaa2caeba3f4b198ad6">&#9670;&nbsp;</a></span>btosgQuat() <span class="overload">[2/4]</span></h2>
 
 <div class="memitem">
 <div class="memproto">
@@ -199,7 +202,7 @@ Public Member Functions</h2></td></tr>
 </div>
 </div>
 <a id="a9fc1530e0eb06c2432f1633bf08db8a2"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#a9fc1530e0eb06c2432f1633bf08db8a2">&#9670;&nbsp;</a></span>btosgQuat() <span class="overload">[3/3]</span></h2>
+<h2 class="memtitle"><span class="permalink"><a href="#a9fc1530e0eb06c2432f1633bf08db8a2">&#9670;&nbsp;</a></span>btosgQuat() <span class="overload">[3/4]</span></h2>
 
 <div class="memitem">
 <div class="memproto">
@@ -226,6 +229,51 @@ Public Member Functions</h2></td></tr>
 <dl class="params"><dt>Parameters</dt><dd>
   <table class="params">
     <tr><td class="paramname">q</td><td>btQuaternion object </td></tr>
+  </table>
+  </dd>
+</dl>
+
+</div>
+</div>
+<a id="a25cb8f2aee828fbfe5dc8113c890bbdb"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a25cb8f2aee828fbfe5dc8113c890bbdb">&#9670;&nbsp;</a></span>btosgQuat() <span class="overload">[4/4]</span></h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">btosgQuat::btosgQuat </td>
+          <td>(</td>
+          <td class="paramtype"><a class="el" href="classbtosgVec3.html">btosgVec3</a>&#160;</td>
+          <td class="paramname"><em>axis</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">double&#160;</td>
+          <td class="paramname"><em>ang</em>&#160;</td>
+        </tr>
+        <tr>
+          <td></td>
+          <td>)</td>
+          <td></td><td></td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">inline</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+<p>Constructor from <a class="el" href="classbtosgVec3.html" title="btosgVec3 can be used to represent 3D points and vectors.">btosgVec3</a> and scalar. </p>
+<dl class="params"><dt>Parameters</dt><dd>
+  <table class="params">
+    <tr><td class="paramname">axis</td><td><a class="el" href="classbtosgVec3.html" title="btosgVec3 can be used to represent 3D points and vectors.">btosgVec3</a> rotation axis </td></tr>
+    <tr><td class="paramname">ang</td><td>double rotation angle </td></tr>
   </table>
   </dd>
 </dl>
@@ -288,7 +336,7 @@ Public Member Functions</h2></td></tr>
 </div><!-- contents -->
 <!-- start footer part -->
 <hr class="footer"/><address class="footer"><small>
-Generated on Fri May 31 2019 19:55:26 for btosg by &#160;<a href="http://www.doxygen.org/index.html">
+Generated on Thu Dec 5 2019 12:23:11 for btosg by &#160;<a href="http://www.doxygen.org/index.html">
 <img class="footer" src="doxygen.png" alt="doxygen"/>
 </a> 1.8.15
 </small></address>

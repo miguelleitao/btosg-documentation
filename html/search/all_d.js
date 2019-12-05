@@ -8,6 +8,7 @@ var searchData=
   ['setposition',['setPosition',['../classbtosgObject.html#ace6b51040b7ddce90818174200cc6074',1,'btosgObject::setPosition(const btosgVec3 &amp;p)'],['../classbtosgObject.html#adb9f2cff0faf66dc252cd7c97b11ac84',1,'btosgObject::setPosition(float x, float y, float z)']]],
   ['setrotation',['setRotation',['../classbtosgObject.html#a6365748d5506bb9da31907c9988071fa',1,'btosgObject::setRotation(btosgQuat q)'],['../classbtosgObject.html#a4d21ca59b944fd26644db35d3e9ba67a',1,'btosgObject::setRotation(float x, float y, float z, float w)']]],
   ['settexture',['setTexture',['../classbtosgObject.html#aff54acbc7c66811efb0cf2838107a241',1,'btosgObject']]],
+  ['settransform',['setTransform',['../classbtosgObject.html#ad33fcab26c0c83ccab6dca6906e8cdb0',1,'btosgObject']]],
   ['shape',['shape',['../classbtosgObject.html#a0f6a8da01cf643c321bffe86e42604b0',1,'btosgObject']]],
   ['stepsimulation',['stepSimulation',['../classbtosgWorld.html#afce096686d8f84afd8b8fa3f2dc161b8',1,'btosgWorld']]]
 ];

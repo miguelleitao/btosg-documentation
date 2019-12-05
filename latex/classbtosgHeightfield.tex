@@ -1,28 +1,26 @@
-\hypertarget{classbtosgBox}{}\section{btosg\+Box Class Reference}
-\label{classbtosgBox}\index{btosgBox@{btosgBox}}
+\hypertarget{classbtosgHeightfield}{}\section{btosg\+Heightfield Class Reference}
+\label{classbtosgHeightfield}\index{btosgHeightfield@{btosgHeightfield}}
 
 
-Axis oriented box..  
+Heightfield.  
 
 
 
 
 {\ttfamily \#include $<$btosg.\+h$>$}
 
-Inheritance diagram for btosg\+Box\+:\begin{figure}[H]
+Inheritance diagram for btosg\+Heightfield\+:\begin{figure}[H]
 \begin{center}
 \leavevmode
-\includegraphics[height=2.000000cm]{classbtosgBox}
+\includegraphics[height=2.000000cm]{classbtosgHeightfield}
 \end{center}
 \end{figure}
 \subsection*{Public Member Functions}
 \begin{DoxyCompactItemize}
 \item 
-\mbox{\hyperlink{classbtosgBox_aaffbdeeac3ee040dea98c19b538f0e49}{btosg\+Box}} (\mbox{\hyperlink{classbtosgVec3}{btosg\+Vec3}} dim=\mbox{\hyperlink{classbtosgVec3}{btosg\+Vec3}}(1., 1., 1.), double m=1.)
+\mbox{\hyperlink{classbtosgHeightfield_a535e1a7b47bb279fdfa0d6d6826251ab}{btosg\+Heightfield}} (float dx, float dy, float dz)
 \item 
-\mbox{\hyperlink{classbtosgBox_a0b7809cf498d50ced7c6e4a1bf0f5470}{btosg\+Box}} (float x, float y, float z)
-\item 
-\mbox{\hyperlink{classbtosgBox_a3b17e84e3f94aabdc7b8517bd802a5c9}{btosg\+Box}} (float r)
+void \mbox{\hyperlink{classbtosgHeightfield_a9f44ffd7e820af4a3dc4b6cc036bda36}{create\+Rigid\+Body}} ()
 \item 
 \mbox{\Hypertarget{classbtosgObject_a4432b5c28097065e89e045a8d02c45e6}\label{classbtosgObject_a4432b5c28097065e89e045a8d02c45e6}} 
 void {\bfseries print} ()
@@ -61,19 +59,11 @@ void \mbox{\hyperlink{classbtosgObject_ad1508a0ce28cfac83e5f0ff6245f91b5}{set\+I
 \item 
 void \mbox{\hyperlink{classbtosgObject_a6ceb08e59ee95acaaef389ee198d2b56}{set\+Init\+State}} (bt\+Transform i\+State)
 \item 
-void \mbox{\hyperlink{classbtosgObject_a029dbe9134fa94e7355799f67fb2cd6d}{create\+Rigid\+Body}} ()
-\item 
 void \mbox{\hyperlink{classbtosgObject_a91838b8235579da178fcc06e6d3d47f3}{load\+Object\+Model}} (char const $\ast$fname)
 \end{DoxyCompactItemize}
 \subsection*{Public Attributes}
 \begin{DoxyCompactItemize}
 \item 
-float \mbox{\hyperlink{classbtosgBox_a1d1e4744d9e377e1462ea097dacef716}{dx}}
-\begin{DoxyCompactList}\small\item\em x dimension \end{DoxyCompactList}\item 
-float \mbox{\hyperlink{classbtosgBox_a7665337187adb52a1ce3b4cf2819217d}{dy}}
-\begin{DoxyCompactList}\small\item\em y dimension \end{DoxyCompactList}\item 
-float \mbox{\hyperlink{classbtosgBox_a1dd905f6afb684d5d364f2b211dbab97}{dz}}
-\begin{DoxyCompactList}\small\item\em z dimension \end{DoxyCompactList}\item 
 osg\+::ref\+\_\+ptr$<$ osg\+::\+Position\+Attitude\+Transform $>$ \mbox{\hyperlink{classbtosgObject_afd15726e7a214212d6d5815f8ac1ac6c}{model}}
 \begin{DoxyCompactList}\small\item\em Object\textquotesingle{}s graphical model. \end{DoxyCompactList}\item 
 char $\ast$ \mbox{\hyperlink{classbtosgObject_a12396e1362797a75473a2e833b579cc9}{name}}
@@ -89,143 +79,129 @@ float \mbox{\hyperlink{classbtosgObject_a2418bb2194d5e9b0f1c51c84672ba7d1}{mass}
 
 
 \subsection{Detailed Description}
-Axis oriented box.. 
-
-Represents a physical and visual axis oriented box. 
+Heightfield. 
 
 \subsection{Constructor \& Destructor Documentation}
-\mbox{\Hypertarget{classbtosgBox_aaffbdeeac3ee040dea98c19b538f0e49}\label{classbtosgBox_aaffbdeeac3ee040dea98c19b538f0e49}} 
-\index{btosgBox@{btosgBox}!btosgBox@{btosgBox}}
-\index{btosgBox@{btosgBox}!btosgBox@{btosgBox}}
-\subsubsection{\texorpdfstring{btosgBox()}{btosgBox()}\hspace{0.1cm}{\footnotesize\ttfamily [1/3]}}
-{\footnotesize\ttfamily btosg\+Box\+::btosg\+Box (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{classbtosgVec3}{btosg\+Vec3}}}]{dim = {\ttfamily \mbox{\hyperlink{classbtosgVec3}{btosg\+Vec3}}(1.,1.,1.)},  }\item[{double}]{m = {\ttfamily 1.} }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}}
+\mbox{\Hypertarget{classbtosgHeightfield_a535e1a7b47bb279fdfa0d6d6826251ab}\label{classbtosgHeightfield_a535e1a7b47bb279fdfa0d6d6826251ab}} 
+\index{btosgHeightfield@{btosgHeightfield}!btosgHeightfield@{btosgHeightfield}}
+\index{btosgHeightfield@{btosgHeightfield}!btosgHeightfield@{btosgHeightfield}}
+\subsubsection{\texorpdfstring{btosgHeightfield()}{btosgHeightfield()}}
+{\footnotesize\ttfamily btosg\+Heightfield\+::btosg\+Heightfield (\begin{DoxyParamCaption}\item[{float}]{dx,  }\item[{float}]{dy,  }\item[{float}]{dz }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}}
 
-Constructs an axis oriented box. dim specifies the three coordinates of the box\textquotesingle{}s center in meters units. m specifies the object mass. \mbox{\Hypertarget{classbtosgBox_a0b7809cf498d50ced7c6e4a1bf0f5470}\label{classbtosgBox_a0b7809cf498d50ced7c6e4a1bf0f5470}} 
-\index{btosgBox@{btosgBox}!btosgBox@{btosgBox}}
-\index{btosgBox@{btosgBox}!btosgBox@{btosgBox}}
-\subsubsection{\texorpdfstring{btosgBox()}{btosgBox()}\hspace{0.1cm}{\footnotesize\ttfamily [2/3]}}
-{\footnotesize\ttfamily btosg\+Box\+::btosg\+Box (\begin{DoxyParamCaption}\item[{float}]{x,  }\item[{float}]{y,  }\item[{float}]{z }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}}
-
-Constructs an axis oriented box. \mbox{\Hypertarget{classbtosgBox_a3b17e84e3f94aabdc7b8517bd802a5c9}\label{classbtosgBox_a3b17e84e3f94aabdc7b8517bd802a5c9}} 
-\index{btosgBox@{btosgBox}!btosgBox@{btosgBox}}
-\index{btosgBox@{btosgBox}!btosgBox@{btosgBox}}
-\subsubsection{\texorpdfstring{btosgBox()}{btosgBox()}\hspace{0.1cm}{\footnotesize\ttfamily [3/3]}}
-{\footnotesize\ttfamily btosg\+Box\+::btosg\+Box (\begin{DoxyParamCaption}\item[{float}]{r }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}}
-
-Constructs an axis oriented box. 
+Constructs a physical highfield. Viewable box has dimensions dx,dy,dz. Minimum dimension selects physical plane orientation. Plane is created as axis oriented. 
 
 \subsection{Member Function Documentation}
-\mbox{\Hypertarget{classbtosgObject_a029dbe9134fa94e7355799f67fb2cd6d}\label{classbtosgObject_a029dbe9134fa94e7355799f67fb2cd6d}} 
-\index{btosgBox@{btosgBox}!createRigidBody@{createRigidBody}}
-\index{createRigidBody@{createRigidBody}!btosgBox@{btosgBox}}
+\mbox{\Hypertarget{classbtosgHeightfield_a9f44ffd7e820af4a3dc4b6cc036bda36}\label{classbtosgHeightfield_a9f44ffd7e820af4a3dc4b6cc036bda36}} 
+\index{btosgHeightfield@{btosgHeightfield}!createRigidBody@{createRigidBody}}
+\index{createRigidBody@{createRigidBody}!btosgHeightfield@{btosgHeightfield}}
 \subsubsection{\texorpdfstring{createRigidBody()}{createRigidBody()}}
-{\footnotesize\ttfamily void btosg\+Object\+::create\+Rigid\+Body (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inherited]}}
+{\footnotesize\ttfamily void btosg\+Heightfield\+::create\+Rigid\+Body (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}}
 
-Creates a new rigid body as a bt\+Rigid\+Body object. \mbox{\Hypertarget{classbtosgObject_a2019ec63bde02b72600450c7c985e77a}\label{classbtosgObject_a2019ec63bde02b72600450c7c985e77a}} 
-\index{btosgBox@{btosgBox}!getEuler@{getEuler}}
-\index{getEuler@{getEuler}!btosgBox@{btosgBox}}
+Creates a Rigid Body \mbox{\Hypertarget{classbtosgObject_a2019ec63bde02b72600450c7c985e77a}\label{classbtosgObject_a2019ec63bde02b72600450c7c985e77a}} 
+\index{btosgHeightfield@{btosgHeightfield}!getEuler@{getEuler}}
+\index{getEuler@{getEuler}!btosgHeightfield@{btosgHeightfield}}
 \subsubsection{\texorpdfstring{getEuler()}{getEuler()}}
 {\footnotesize\ttfamily \mbox{\hyperlink{classbtosgVec3}{btosg\+Vec3}} btosg\+Object\+::get\+Euler (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}, {\ttfamily [inherited]}}
 
 Returns object\textquotesingle{}s attitude as H\+PR Euler angles. \mbox{\Hypertarget{classbtosgObject_a3dadd5da8f2a312e44a039446b93d4cd}\label{classbtosgObject_a3dadd5da8f2a312e44a039446b93d4cd}} 
-\index{btosgBox@{btosgBox}!getPosition@{getPosition}}
-\index{getPosition@{getPosition}!btosgBox@{btosgBox}}
+\index{btosgHeightfield@{btosgHeightfield}!getPosition@{getPosition}}
+\index{getPosition@{getPosition}!btosgHeightfield@{btosgHeightfield}}
 \subsubsection{\texorpdfstring{getPosition()}{getPosition()}}
 {\footnotesize\ttfamily \mbox{\hyperlink{classbtosgVec3}{btosg\+Vec3}} btosg\+Object\+::get\+Position (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}, {\ttfamily [inherited]}}
 
 Returns object\textquotesingle{}s position. \mbox{\Hypertarget{classbtosgObject_a3b825999ad3a51bde743d4085ff19dae}\label{classbtosgObject_a3b825999ad3a51bde743d4085ff19dae}} 
-\index{btosgBox@{btosgBox}!getRotation@{getRotation}}
-\index{getRotation@{getRotation}!btosgBox@{btosgBox}}
+\index{btosgHeightfield@{btosgHeightfield}!getRotation@{getRotation}}
+\index{getRotation@{getRotation}!btosgHeightfield@{btosgHeightfield}}
 \subsubsection{\texorpdfstring{getRotation()}{getRotation()}}
 {\footnotesize\ttfamily \mbox{\hyperlink{classbtosgQuat}{btosg\+Quat}} btosg\+Object\+::get\+Rotation (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}, {\ttfamily [inherited]}}
 
 Returns object\textquotesingle{}s attitude as a Quaternion. \mbox{\Hypertarget{classbtosgObject_a91838b8235579da178fcc06e6d3d47f3}\label{classbtosgObject_a91838b8235579da178fcc06e6d3d47f3}} 
-\index{btosgBox@{btosgBox}!loadObjectModel@{loadObjectModel}}
-\index{loadObjectModel@{loadObjectModel}!btosgBox@{btosgBox}}
+\index{btosgHeightfield@{btosgHeightfield}!loadObjectModel@{loadObjectModel}}
+\index{loadObjectModel@{loadObjectModel}!btosgHeightfield@{btosgHeightfield}}
 \subsubsection{\texorpdfstring{loadObjectModel()}{loadObjectModel()}}
 {\footnotesize\ttfamily void btosg\+Object\+::load\+Object\+Model (\begin{DoxyParamCaption}\item[{char const $\ast$}]{fname }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inherited]}}
 
 Loads an object model from a Wavefront O\+BJ file. Loadded model is used to define both the collision and graphical shapes. \mbox{\Hypertarget{classbtosgObject_acfd70fa6477c80fd7f29ad7ab9f4f067}\label{classbtosgObject_acfd70fa6477c80fd7f29ad7ab9f4f067}} 
-\index{btosgBox@{btosgBox}!logPosition@{logPosition}}
-\index{logPosition@{logPosition}!btosgBox@{btosgBox}}
+\index{btosgHeightfield@{btosgHeightfield}!logPosition@{logPosition}}
+\index{logPosition@{logPosition}!btosgHeightfield@{btosgHeightfield}}
 \subsubsection{\texorpdfstring{logPosition()}{logPosition()}}
 {\footnotesize\ttfamily void btosg\+Object\+::log\+Position (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}, {\ttfamily [inherited]}}
 
 Outputs object\textquotesingle{}s position. \mbox{\Hypertarget{classbtosgObject_a93983f9180dd0672f8779cf2baa78580}\label{classbtosgObject_a93983f9180dd0672f8779cf2baa78580}} 
-\index{btosgBox@{btosgBox}!reset@{reset}}
-\index{reset@{reset}!btosgBox@{btosgBox}}
+\index{btosgHeightfield@{btosgHeightfield}!reset@{reset}}
+\index{reset@{reset}!btosgHeightfield@{btosgHeightfield}}
 \subsubsection{\texorpdfstring{reset()}{reset()}}
 {\footnotesize\ttfamily void btosg\+Object\+::reset (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inherited]}}
 
 Reposition object to its inital state. \mbox{\Hypertarget{classbtosgObject_ad1508a0ce28cfac83e5f0ff6245f91b5}\label{classbtosgObject_ad1508a0ce28cfac83e5f0ff6245f91b5}} 
-\index{btosgBox@{btosgBox}!setInitState@{setInitState}}
-\index{setInitState@{setInitState}!btosgBox@{btosgBox}}
+\index{btosgHeightfield@{btosgHeightfield}!setInitState@{setInitState}}
+\index{setInitState@{setInitState}!btosgHeightfield@{btosgHeightfield}}
 \subsubsection{\texorpdfstring{setInitState()}{setInitState()}\hspace{0.1cm}{\footnotesize\ttfamily [1/2]}}
 {\footnotesize\ttfamily void btosg\+Object\+::set\+Init\+State (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}, {\ttfamily [inherited]}}
 
 Stores current state as init state. Init state is aplied by \mbox{\hyperlink{classbtosgObject_a93983f9180dd0672f8779cf2baa78580}{reset()}} \mbox{\Hypertarget{classbtosgObject_a6ceb08e59ee95acaaef389ee198d2b56}\label{classbtosgObject_a6ceb08e59ee95acaaef389ee198d2b56}} 
-\index{btosgBox@{btosgBox}!setInitState@{setInitState}}
-\index{setInitState@{setInitState}!btosgBox@{btosgBox}}
+\index{btosgHeightfield@{btosgHeightfield}!setInitState@{setInitState}}
+\index{setInitState@{setInitState}!btosgHeightfield@{btosgHeightfield}}
 \subsubsection{\texorpdfstring{setInitState()}{setInitState()}\hspace{0.1cm}{\footnotesize\ttfamily [2/2]}}
 {\footnotesize\ttfamily void btosg\+Object\+::set\+Init\+State (\begin{DoxyParamCaption}\item[{bt\+Transform}]{i\+State }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}, {\ttfamily [inherited]}}
 
 Stores i\+State as init state. Init state is applied by \mbox{\hyperlink{classbtosgObject_a93983f9180dd0672f8779cf2baa78580}{reset()}} \mbox{\Hypertarget{classbtosgObject_a91da93c82d48b86192f0cbb16054fe57}\label{classbtosgObject_a91da93c82d48b86192f0cbb16054fe57}} 
-\index{btosgBox@{btosgBox}!setMass@{setMass}}
-\index{setMass@{setMass}!btosgBox@{btosgBox}}
+\index{btosgHeightfield@{btosgHeightfield}!setMass@{setMass}}
+\index{setMass@{setMass}!btosgHeightfield@{btosgHeightfield}}
 \subsubsection{\texorpdfstring{setMass()}{setMass()}}
 {\footnotesize\ttfamily void btosg\+Object\+::set\+Mass (\begin{DoxyParamCaption}\item[{double}]{m }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}, {\ttfamily [inherited]}}
 
 Sets the object\textquotesingle{}s mass. m specifies mass in kg units. \mbox{\Hypertarget{classbtosgObject_a6ab7b9e0553dab398b980637788b56a8}\label{classbtosgObject_a6ab7b9e0553dab398b980637788b56a8}} 
-\index{btosgBox@{btosgBox}!setMaterial@{setMaterial}}
-\index{setMaterial@{setMaterial}!btosgBox@{btosgBox}}
+\index{btosgHeightfield@{btosgHeightfield}!setMaterial@{setMaterial}}
+\index{setMaterial@{setMaterial}!btosgHeightfield@{btosgHeightfield}}
 \subsubsection{\texorpdfstring{setMaterial()}{setMaterial()}}
 {\footnotesize\ttfamily void btosg\+Object\+::set\+Material (\begin{DoxyParamCaption}\item[{osg\+::ref\+\_\+ptr$<$ osg\+::\+Material $>$}]{mat }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}, {\ttfamily [inherited]}}
 
 Sets the material properties for the object. \mbox{\Hypertarget{classbtosgObject_ab06a1b3f357209214c6440cd5746523e}\label{classbtosgObject_ab06a1b3f357209214c6440cd5746523e}} 
-\index{btosgBox@{btosgBox}!setName@{setName}}
-\index{setName@{setName}!btosgBox@{btosgBox}}
+\index{btosgHeightfield@{btosgHeightfield}!setName@{setName}}
+\index{setName@{setName}!btosgHeightfield@{btosgHeightfield}}
 \subsubsection{\texorpdfstring{setName()}{setName()}}
 {\footnotesize\ttfamily void btosg\+Object\+::set\+Name (\begin{DoxyParamCaption}\item[{char const $\ast$}]{n }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}, {\ttfamily [inherited]}}
 
 Sets the object\textquotesingle{}s name. \mbox{\Hypertarget{classbtosgObject_ace6b51040b7ddce90818174200cc6074}\label{classbtosgObject_ace6b51040b7ddce90818174200cc6074}} 
-\index{btosgBox@{btosgBox}!setPosition@{setPosition}}
-\index{setPosition@{setPosition}!btosgBox@{btosgBox}}
+\index{btosgHeightfield@{btosgHeightfield}!setPosition@{setPosition}}
+\index{setPosition@{setPosition}!btosgHeightfield@{btosgHeightfield}}
 \subsubsection{\texorpdfstring{setPosition()}{setPosition()}\hspace{0.1cm}{\footnotesize\ttfamily [1/2]}}
 {\footnotesize\ttfamily void btosg\+Object\+::set\+Position (\begin{DoxyParamCaption}\item[{const \mbox{\hyperlink{classbtosgVec3}{btosg\+Vec3}} \&}]{p }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}, {\ttfamily [inherited]}}
 
 Sets objects position. \mbox{\Hypertarget{classbtosgObject_adb9f2cff0faf66dc252cd7c97b11ac84}\label{classbtosgObject_adb9f2cff0faf66dc252cd7c97b11ac84}} 
-\index{btosgBox@{btosgBox}!setPosition@{setPosition}}
-\index{setPosition@{setPosition}!btosgBox@{btosgBox}}
+\index{btosgHeightfield@{btosgHeightfield}!setPosition@{setPosition}}
+\index{setPosition@{setPosition}!btosgHeightfield@{btosgHeightfield}}
 \subsubsection{\texorpdfstring{setPosition()}{setPosition()}\hspace{0.1cm}{\footnotesize\ttfamily [2/2]}}
 {\footnotesize\ttfamily void btosg\+Object\+::set\+Position (\begin{DoxyParamCaption}\item[{float}]{x,  }\item[{float}]{y,  }\item[{float}]{z }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}, {\ttfamily [inherited]}}
 
 Sets objects position. \mbox{\Hypertarget{classbtosgObject_a6365748d5506bb9da31907c9988071fa}\label{classbtosgObject_a6365748d5506bb9da31907c9988071fa}} 
-\index{btosgBox@{btosgBox}!setRotation@{setRotation}}
-\index{setRotation@{setRotation}!btosgBox@{btosgBox}}
+\index{btosgHeightfield@{btosgHeightfield}!setRotation@{setRotation}}
+\index{setRotation@{setRotation}!btosgHeightfield@{btosgHeightfield}}
 \subsubsection{\texorpdfstring{setRotation()}{setRotation()}\hspace{0.1cm}{\footnotesize\ttfamily [1/2]}}
 {\footnotesize\ttfamily void btosg\+Object\+::set\+Rotation (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{classbtosgQuat}{btosg\+Quat}}}]{q }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}, {\ttfamily [inherited]}}
 
 Sets objects attitude from a quaternion. \mbox{\Hypertarget{classbtosgObject_a4d21ca59b944fd26644db35d3e9ba67a}\label{classbtosgObject_a4d21ca59b944fd26644db35d3e9ba67a}} 
-\index{btosgBox@{btosgBox}!setRotation@{setRotation}}
-\index{setRotation@{setRotation}!btosgBox@{btosgBox}}
+\index{btosgHeightfield@{btosgHeightfield}!setRotation@{setRotation}}
+\index{setRotation@{setRotation}!btosgHeightfield@{btosgHeightfield}}
 \subsubsection{\texorpdfstring{setRotation()}{setRotation()}\hspace{0.1cm}{\footnotesize\ttfamily [2/2]}}
 {\footnotesize\ttfamily void btosg\+Object\+::set\+Rotation (\begin{DoxyParamCaption}\item[{float}]{x,  }\item[{float}]{y,  }\item[{float}]{z,  }\item[{float}]{w }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}, {\ttfamily [inherited]}}
 
 Sets objects attitude from the quaternion coords. \mbox{\Hypertarget{classbtosgObject_aff54acbc7c66811efb0cf2838107a241}\label{classbtosgObject_aff54acbc7c66811efb0cf2838107a241}} 
-\index{btosgBox@{btosgBox}!setTexture@{setTexture}}
-\index{setTexture@{setTexture}!btosgBox@{btosgBox}}
+\index{btosgHeightfield@{btosgHeightfield}!setTexture@{setTexture}}
+\index{setTexture@{setTexture}!btosgHeightfield@{btosgHeightfield}}
 \subsubsection{\texorpdfstring{setTexture()}{setTexture()}}
 {\footnotesize\ttfamily void btosg\+Object\+::set\+Texture (\begin{DoxyParamCaption}\item[{char const $\ast$}]{fname }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inherited]}}
 
 Sets the object texture from a loaded image file. \mbox{\Hypertarget{classbtosgObject_ad33fcab26c0c83ccab6dca6906e8cdb0}\label{classbtosgObject_ad33fcab26c0c83ccab6dca6906e8cdb0}} 
-\index{btosgBox@{btosgBox}!setTransform@{setTransform}}
-\index{setTransform@{setTransform}!btosgBox@{btosgBox}}
+\index{btosgHeightfield@{btosgHeightfield}!setTransform@{setTransform}}
+\index{setTransform@{setTransform}!btosgHeightfield@{btosgHeightfield}}
 \subsubsection{\texorpdfstring{setTransform()}{setTransform()}}
 {\footnotesize\ttfamily void btosg\+Object\+::set\+Transform (\begin{DoxyParamCaption}\item[{const bt\+Transform \&}]{w\+Trans }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}, {\ttfamily [inherited]}}
 
 Sets position and orientation of object using bt\+Transform \mbox{\Hypertarget{classbtosgObject_a342917817dfde62554f83da8e0d5110b}\label{classbtosgObject_a342917817dfde62554f83da8e0d5110b}} 
-\index{btosgBox@{btosgBox}!update@{update}}
-\index{update@{update}!btosgBox@{btosgBox}}
+\index{btosgHeightfield@{btosgHeightfield}!update@{update}}
+\index{update@{update}!btosgHeightfield@{btosgHeightfield}}
 \subsubsection{\texorpdfstring{update()}{update()}}
 {\footnotesize\ttfamily virtual void btosg\+Object\+::update (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}, {\ttfamily [virtual]}, {\ttfamily [inherited]}}
 
@@ -237,8 +213,8 @@ Reimplemented in \mbox{\hyperlink{classbtosgVehicle_a5fd0f471df492ac232c9b772a28
 
 \subsection{Member Data Documentation}
 \mbox{\Hypertarget{classbtosgObject_a64ccde0543c184ed1749fdb9c9699785}\label{classbtosgObject_a64ccde0543c184ed1749fdb9c9699785}} 
-\index{btosgBox@{btosgBox}!body@{body}}
-\index{body@{body}!btosgBox@{btosgBox}}
+\index{btosgHeightfield@{btosgHeightfield}!body@{body}}
+\index{body@{body}!btosgHeightfield@{btosgHeightfield}}
 \subsubsection{\texorpdfstring{body}{body}}
 {\footnotesize\ttfamily bt\+Rigid\+Body$\ast$ btosg\+Object\+::body\hspace{0.3cm}{\ttfamily [inherited]}}
 
@@ -246,39 +222,9 @@ Reimplemented in \mbox{\hyperlink{classbtosgVehicle_a5fd0f471df492ac232c9b772a28
 
 object\textquotesingle{}s rigid body 
 
-\mbox{\Hypertarget{classbtosgBox_a1d1e4744d9e377e1462ea097dacef716}\label{classbtosgBox_a1d1e4744d9e377e1462ea097dacef716}} 
-\index{btosgBox@{btosgBox}!dx@{dx}}
-\index{dx@{dx}!btosgBox@{btosgBox}}
-\subsubsection{\texorpdfstring{dx}{dx}}
-{\footnotesize\ttfamily float btosg\+Box\+::dx}
-
-
-
-x dimension 
-
-\mbox{\Hypertarget{classbtosgBox_a7665337187adb52a1ce3b4cf2819217d}\label{classbtosgBox_a7665337187adb52a1ce3b4cf2819217d}} 
-\index{btosgBox@{btosgBox}!dy@{dy}}
-\index{dy@{dy}!btosgBox@{btosgBox}}
-\subsubsection{\texorpdfstring{dy}{dy}}
-{\footnotesize\ttfamily float btosg\+Box\+::dy}
-
-
-
-y dimension 
-
-\mbox{\Hypertarget{classbtosgBox_a1dd905f6afb684d5d364f2b211dbab97}\label{classbtosgBox_a1dd905f6afb684d5d364f2b211dbab97}} 
-\index{btosgBox@{btosgBox}!dz@{dz}}
-\index{dz@{dz}!btosgBox@{btosgBox}}
-\subsubsection{\texorpdfstring{dz}{dz}}
-{\footnotesize\ttfamily float btosg\+Box\+::dz}
-
-
-
-z dimension 
-
 \mbox{\Hypertarget{classbtosgObject_a2dee023f311114e200df9b04c8c1b400}\label{classbtosgObject_a2dee023f311114e200df9b04c8c1b400}} 
-\index{btosgBox@{btosgBox}!init\_state@{init\_state}}
-\index{init\_state@{init\_state}!btosgBox@{btosgBox}}
+\index{btosgHeightfield@{btosgHeightfield}!init\_state@{init\_state}}
+\index{init\_state@{init\_state}!btosgHeightfield@{btosgHeightfield}}
 \subsubsection{\texorpdfstring{init\_state}{init\_state}}
 {\footnotesize\ttfamily bt\+Transform btosg\+Object\+::init\+\_\+state\hspace{0.3cm}{\ttfamily [inherited]}}
 
@@ -287,8 +233,8 @@ z dimension
 Inital state. Applied on reset events. 
 
 \mbox{\Hypertarget{classbtosgObject_a2418bb2194d5e9b0f1c51c84672ba7d1}\label{classbtosgObject_a2418bb2194d5e9b0f1c51c84672ba7d1}} 
-\index{btosgBox@{btosgBox}!mass@{mass}}
-\index{mass@{mass}!btosgBox@{btosgBox}}
+\index{btosgHeightfield@{btosgHeightfield}!mass@{mass}}
+\index{mass@{mass}!btosgHeightfield@{btosgHeightfield}}
 \subsubsection{\texorpdfstring{mass}{mass}}
 {\footnotesize\ttfamily float btosg\+Object\+::mass\hspace{0.3cm}{\ttfamily [inherited]}}
 
@@ -297,8 +243,8 @@ Inital state. Applied on reset events.
 Mass of object. 
 
 \mbox{\Hypertarget{classbtosgObject_afd15726e7a214212d6d5815f8ac1ac6c}\label{classbtosgObject_afd15726e7a214212d6d5815f8ac1ac6c}} 
-\index{btosgBox@{btosgBox}!model@{model}}
-\index{model@{model}!btosgBox@{btosgBox}}
+\index{btosgHeightfield@{btosgHeightfield}!model@{model}}
+\index{model@{model}!btosgHeightfield@{btosgHeightfield}}
 \subsubsection{\texorpdfstring{model}{model}}
 {\footnotesize\ttfamily osg\+::ref\+\_\+ptr$<$osg\+::\+Position\+Attitude\+Transform$>$ btosg\+Object\+::model\hspace{0.3cm}{\ttfamily [inherited]}}
 
@@ -307,8 +253,8 @@ Mass of object.
 Object\textquotesingle{}s graphical model. 
 
 \mbox{\Hypertarget{classbtosgObject_a12396e1362797a75473a2e833b579cc9}\label{classbtosgObject_a12396e1362797a75473a2e833b579cc9}} 
-\index{btosgBox@{btosgBox}!name@{name}}
-\index{name@{name}!btosgBox@{btosgBox}}
+\index{btosgHeightfield@{btosgHeightfield}!name@{name}}
+\index{name@{name}!btosgHeightfield@{btosgHeightfield}}
 \subsubsection{\texorpdfstring{name}{name}}
 {\footnotesize\ttfamily char$\ast$ btosg\+Object\+::name\hspace{0.3cm}{\ttfamily [inherited]}}
 
@@ -317,8 +263,8 @@ Object\textquotesingle{}s graphical model.
 Object name. 
 
 \mbox{\Hypertarget{classbtosgObject_a0f6a8da01cf643c321bffe86e42604b0}\label{classbtosgObject_a0f6a8da01cf643c321bffe86e42604b0}} 
-\index{btosgBox@{btosgBox}!shape@{shape}}
-\index{shape@{shape}!btosgBox@{btosgBox}}
+\index{btosgHeightfield@{btosgHeightfield}!shape@{shape}}
+\index{shape@{shape}!btosgHeightfield@{btosgHeightfield}}
 \subsubsection{\texorpdfstring{shape}{shape}}
 {\footnotesize\ttfamily bt\+Collision\+Shape$\ast$ btosg\+Object\+::shape\hspace{0.3cm}{\ttfamily [inherited]}}
 

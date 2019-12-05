@@ -91,6 +91,9 @@ $(function() {
 Public Member Functions</h2></td></tr>
 <tr class="memitem:a119bf79e2311ba084939d3e25086751c"><td class="memItemLeft" align="right" valign="top">&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classbtosgCone.html#a119bf79e2311ba084939d3e25086751c">btosgCone</a> (float r=0.5, float h=1)</td></tr>
 <tr class="separator:a119bf79e2311ba084939d3e25086751c"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a4432b5c28097065e89e045a8d02c45e6"><td class="memItemLeft" align="right" valign="top"><a id="a4432b5c28097065e89e045a8d02c45e6"></a>
+void&#160;</td><td class="memItemRight" valign="bottom"><b>print</b> ()</td></tr>
+<tr class="separator:a4432b5c28097065e89e045a8d02c45e6"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:ab06a1b3f357209214c6440cd5746523e"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classbtosgObject.html#ab06a1b3f357209214c6440cd5746523e">setName</a> (char const *n)</td></tr>
 <tr class="separator:ab06a1b3f357209214c6440cd5746523e"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a91da93c82d48b86192f0cbb16054fe57"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classbtosgObject.html#a91da93c82d48b86192f0cbb16054fe57">setMass</a> (double m)</td></tr>
@@ -101,6 +104,8 @@ Public Member Functions</h2></td></tr>
 <tr class="separator:a3b825999ad3a51bde743d4085ff19dae"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a2019ec63bde02b72600450c7c985e77a"><td class="memItemLeft" align="right" valign="top"><a class="el" href="classbtosgVec3.html">btosgVec3</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classbtosgObject.html#a2019ec63bde02b72600450c7c985e77a">getEuler</a> ()</td></tr>
 <tr class="separator:a2019ec63bde02b72600450c7c985e77a"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ad33fcab26c0c83ccab6dca6906e8cdb0"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classbtosgObject.html#ad33fcab26c0c83ccab6dca6906e8cdb0">setTransform</a> (const btTransform &amp;wTrans)</td></tr>
+<tr class="separator:ad33fcab26c0c83ccab6dca6906e8cdb0"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:ace6b51040b7ddce90818174200cc6074"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classbtosgObject.html#ace6b51040b7ddce90818174200cc6074">setPosition</a> (const <a class="el" href="classbtosgVec3.html">btosgVec3</a> &amp;p)</td></tr>
 <tr class="separator:ace6b51040b7ddce90818174200cc6074"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:adb9f2cff0faf66dc252cd7c97b11ac84"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classbtosgObject.html#adb9f2cff0faf66dc252cd7c97b11ac84">setPosition</a> (float x, float y, float z)</td></tr>
@@ -208,7 +213,7 @@ Public Attributes</h2></td></tr>
       </table>
   </td>
   <td class="mlabels-right">
-<span class="mlabels"><span class="mlabel">inline</span><span class="mlabel">inherited</span></span>  </td>
+<span class="mlabels"><span class="mlabel">inherited</span></span>  </td>
   </tr>
 </table>
 </div><div class="memdoc">
@@ -365,7 +370,7 @@ Public Attributes</h2></td></tr>
       </table>
   </td>
   <td class="mlabels-right">
-<span class="mlabels"><span class="mlabel">inline</span><span class="mlabel">inherited</span></span>  </td>
+<span class="mlabels"><span class="mlabel">inherited</span></span>  </td>
   </tr>
 </table>
 </div><div class="memdoc">
@@ -680,6 +685,33 @@ Public Attributes</h2></td></tr>
 
 </div>
 </div>
+<a id="ad33fcab26c0c83ccab6dca6906e8cdb0"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#ad33fcab26c0c83ccab6dca6906e8cdb0">&#9670;&nbsp;</a></span>setTransform()</h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">void btosgObject::setTransform </td>
+          <td>(</td>
+          <td class="paramtype">const btTransform &amp;&#160;</td>
+          <td class="paramname"><em>wTrans</em></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">inline</span><span class="mlabel">inherited</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+<p>Sets position and orientation of object using btTransform </p>
+
+</div>
+</div>
 <a id="a342917817dfde62554f83da8e0d5110b"></a>
 <h2 class="memtitle"><span class="permalink"><a href="#a342917817dfde62554f83da8e0d5110b">&#9670;&nbsp;</a></span>update()</h2>
 
@@ -859,7 +891,7 @@ Public Attributes</h2></td></tr>
 </div><!-- contents -->
 <!-- start footer part -->
 <hr class="footer"/><address class="footer"><small>
-Generated on Fri May 31 2019 19:55:26 for btosg by &#160;<a href="http://www.doxygen.org/index.html">
+Generated on Thu Dec 5 2019 12:23:11 for btosg by &#160;<a href="http://www.doxygen.org/index.html">
 <img class="footer" src="doxygen.png" alt="doxygen"/>
 </a> 1.8.15
 </small></address>

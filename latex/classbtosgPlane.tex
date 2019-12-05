@@ -26,6 +26,9 @@ Inheritance diagram for btosg\+Plane\+:\begin{figure}[H]
 \item 
 void \mbox{\hyperlink{classbtosgPlane_a0e6812c186ed1fa128dccf7cd2e525a6}{create\+Rigid\+Body}} ()
 \item 
+\mbox{\Hypertarget{classbtosgObject_a4432b5c28097065e89e045a8d02c45e6}\label{classbtosgObject_a4432b5c28097065e89e045a8d02c45e6}} 
+void {\bfseries print} ()
+\item 
 void \mbox{\hyperlink{classbtosgObject_ab06a1b3f357209214c6440cd5746523e}{set\+Name}} (char const $\ast$n)
 \item 
 void \mbox{\hyperlink{classbtosgObject_a91da93c82d48b86192f0cbb16054fe57}{set\+Mass}} (double m)
@@ -35,6 +38,8 @@ void \mbox{\hyperlink{classbtosgObject_a91da93c82d48b86192f0cbb16054fe57}{set\+M
 \mbox{\hyperlink{classbtosgQuat}{btosg\+Quat}} \mbox{\hyperlink{classbtosgObject_a3b825999ad3a51bde743d4085ff19dae}{get\+Rotation}} ()
 \item 
 \mbox{\hyperlink{classbtosgVec3}{btosg\+Vec3}} \mbox{\hyperlink{classbtosgObject_a2019ec63bde02b72600450c7c985e77a}{get\+Euler}} ()
+\item 
+void \mbox{\hyperlink{classbtosgObject_ad33fcab26c0c83ccab6dca6906e8cdb0}{set\+Transform}} (const bt\+Transform \&w\+Trans)
 \item 
 void \mbox{\hyperlink{classbtosgObject_ace6b51040b7ddce90818174200cc6074}{set\+Position}} (const \mbox{\hyperlink{classbtosgVec3}{btosg\+Vec3}} \&p)
 \item 
@@ -87,7 +92,7 @@ Infinite plane.
 \subsubsection{\texorpdfstring{btosgPlane()}{btosgPlane()}\hspace{0.1cm}{\footnotesize\ttfamily [1/3]}}
 {\footnotesize\ttfamily btosg\+Plane\+::btosg\+Plane (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}}
 
-Constructs a physical infinite plane, viewable as low thickness finite box. Viewable box has dimensions 10,10,0. Plane is created facing Z axis. \mbox{\Hypertarget{classbtosgPlane_a56b020a475b1c955fc50d5c1f6d4d754}\label{classbtosgPlane_a56b020a475b1c955fc50d5c1f6d4d754}} 
+Constructs a physical infinite plane, viewable as low thickness finite box. Viewable box has dimensions 10,10,0. plane is created facing Z axis. \mbox{\Hypertarget{classbtosgPlane_a56b020a475b1c955fc50d5c1f6d4d754}\label{classbtosgPlane_a56b020a475b1c955fc50d5c1f6d4d754}} 
 \index{btosgPlane@{btosgPlane}!btosgPlane@{btosgPlane}}
 \index{btosgPlane@{btosgPlane}!btosgPlane@{btosgPlane}}
 \subsubsection{\texorpdfstring{btosgPlane()}{btosgPlane()}\hspace{0.1cm}{\footnotesize\ttfamily [2/3]}}
@@ -99,7 +104,7 @@ Constructs a physical infinite plane, viewable as low thickness finite box. View
 \subsubsection{\texorpdfstring{btosgPlane()}{btosgPlane()}\hspace{0.1cm}{\footnotesize\ttfamily [3/3]}}
 {\footnotesize\ttfamily btosg\+Plane\+::btosg\+Plane (\begin{DoxyParamCaption}\item[{float}]{dx,  }\item[{float}]{dy,  }\item[{float}]{dz }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}}
 
-Constructs a physical infinite plane, viewable as low thickness finite box. Viewable box has dimensions dx,dy,dz. Minimum dimension selects physical plane orientatiton. Plane is created as axis oriented. 
+Constructs a physical infinite plane, viewable as low thickness finite box. Viewable box has dimensions dx,dy,dz. Minimum dimension selects physical plane orientation. Plane is created as axis oriented. 
 
 \subsection{Member Function Documentation}
 \mbox{\Hypertarget{classbtosgPlane_a0e6812c186ed1fa128dccf7cd2e525a6}\label{classbtosgPlane_a0e6812c186ed1fa128dccf7cd2e525a6}} 
@@ -142,7 +147,7 @@ Outputs object\textquotesingle{}s position. \mbox{\Hypertarget{classbtosgObject_
 \index{btosgPlane@{btosgPlane}!reset@{reset}}
 \index{reset@{reset}!btosgPlane@{btosgPlane}}
 \subsubsection{\texorpdfstring{reset()}{reset()}}
-{\footnotesize\ttfamily void btosg\+Object\+::reset (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}, {\ttfamily [inherited]}}
+{\footnotesize\ttfamily void btosg\+Object\+::reset (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inherited]}}
 
 Reposition object to its inital state. \mbox{\Hypertarget{classbtosgObject_ad1508a0ce28cfac83e5f0ff6245f91b5}\label{classbtosgObject_ad1508a0ce28cfac83e5f0ff6245f91b5}} 
 \index{btosgPlane@{btosgPlane}!setInitState@{setInitState}}
@@ -204,7 +209,13 @@ Sets objects attitude from the quaternion coords. \mbox{\Hypertarget{classbtosgO
 \subsubsection{\texorpdfstring{setTexture()}{setTexture()}}
 {\footnotesize\ttfamily void btosg\+Object\+::set\+Texture (\begin{DoxyParamCaption}\item[{char const $\ast$}]{fname }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inherited]}}
 
-Sets the object texture from a loaded image file. \mbox{\Hypertarget{classbtosgObject_a342917817dfde62554f83da8e0d5110b}\label{classbtosgObject_a342917817dfde62554f83da8e0d5110b}} 
+Sets the object texture from a loaded image file. \mbox{\Hypertarget{classbtosgObject_ad33fcab26c0c83ccab6dca6906e8cdb0}\label{classbtosgObject_ad33fcab26c0c83ccab6dca6906e8cdb0}} 
+\index{btosgPlane@{btosgPlane}!setTransform@{setTransform}}
+\index{setTransform@{setTransform}!btosgPlane@{btosgPlane}}
+\subsubsection{\texorpdfstring{setTransform()}{setTransform()}}
+{\footnotesize\ttfamily void btosg\+Object\+::set\+Transform (\begin{DoxyParamCaption}\item[{const bt\+Transform \&}]{w\+Trans }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}, {\ttfamily [inherited]}}
+
+Sets position and orientation of object using bt\+Transform \mbox{\Hypertarget{classbtosgObject_a342917817dfde62554f83da8e0d5110b}\label{classbtosgObject_a342917817dfde62554f83da8e0d5110b}} 
 \index{btosgPlane@{btosgPlane}!update@{update}}
 \index{update@{update}!btosgPlane@{btosgPlane}}
 \subsubsection{\texorpdfstring{update()}{update()}}
