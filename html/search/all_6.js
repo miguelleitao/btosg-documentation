@@ -1,4 +1,4 @@
 var searchData=
 [
-  ['init_5fstate',['init_state',['../classbtosgObject.html#a2dee023f311114e200df9b04c8c1b400',1,'btosgObject']]]
+  ['hudstateset_31',['HUDStateSet',['../classbtosgHUD.html#aea0ce559e58dcf1afd6d7d092795b0c9',1,'btosgHUD']]]
 ];

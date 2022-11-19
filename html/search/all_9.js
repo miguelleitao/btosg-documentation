@@ -1,4 +1,5 @@
 var searchData=
 [
-  ['name',['name',['../classbtosgObject.html#a12396e1362797a75473a2e833b579cc9',1,'btosgObject']]]
+  ['mass_36',['mass',['../classbtosgObject.html#a2418bb2194d5e9b0f1c51c84672ba7d1',1,'btosgObject']]],
+  ['model_37',['model',['../classbtosgObject.html#afd15726e7a214212d6d5815f8ac1ac6c',1,'btosgObject']]]
 ];

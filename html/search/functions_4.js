@@ -1,5 +1,6 @@
 var searchData=
 [
-  ['loadobjectmodel',['loadObjectModel',['../classbtosgObject.html#a91838b8235579da178fcc06e6d3d47f3',1,'btosgObject']]],
-  ['logposition',['logPosition',['../classbtosgObject.html#acfd70fa6477c80fd7f29ad7ab9f4f067',1,'btosgObject::logPosition()'],['../classbtosgVehicle.html#ae9168c62263b26f95d068d94d6a7cab7',1,'btosgVehicle::logPosition()']]]
+  ['geteuler_101',['getEuler',['../classbtosgObject.html#a2019ec63bde02b72600450c7c985e77a',1,'btosgObject']]],
+  ['getposition_102',['getPosition',['../classbtosgObject.html#a3dadd5da8f2a312e44a039446b93d4cd',1,'btosgObject']]],
+  ['getrotation_103',['getRotation',['../classbtosgObject.html#a3b825999ad3a51bde743d4085ff19dae',1,'btosgObject']]]
 ];

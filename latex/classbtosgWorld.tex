@@ -1,4 +1,4 @@
-\hypertarget{classbtosgWorld}{}\section{btosg\+World Class Reference}
+\hypertarget{classbtosgWorld}{}\doxysection{btosg\+World Class Reference}
 \label{classbtosgWorld}\index{btosgWorld@{btosgWorld}}
 
 
@@ -9,7 +9,7 @@ Physical and visual world.
 
 {\ttfamily \#include $<$btosg.\+h$>$}
 
-\subsection*{Public Member Functions}
+\doxysubsection*{Public Member Functions}
 \begin{DoxyCompactItemize}
 \item 
 void \mbox{\hyperlink{classbtosgWorld_afce096686d8f84afd8b8fa3f2dc161b8}{step\+Simulation}} (bt\+Scalar time\+Step, int max\+Sub\+Steps)
@@ -18,80 +18,91 @@ void \mbox{\hyperlink{classbtosgWorld_ae5b71c6319dd420479096a265a1725b7}{add\+Ob
 \item 
 void \mbox{\hyperlink{classbtosgWorld_a09e7791013d2c3a63bb0fb5d96396a4f}{remove\+Object}} (class \mbox{\hyperlink{classbtosgObject}{btosg\+Object}} $\ast$obj)
 \item 
-\mbox{\Hypertarget{classbtosgWorld_a29bca57c9921aefec00d11cb2d441248}\label{classbtosgWorld_a29bca57c9921aefec00d11cb2d441248}} 
-void {\bfseries list\+Objects} ()
+void \mbox{\hyperlink{classbtosgWorld_a29bca57c9921aefec00d11cb2d441248}{list\+Objects}} ()
 \item 
-\mbox{\Hypertarget{classbtosgWorld_a7c66f3c4d54d60b61856b9455173cd01}\label{classbtosgWorld_a7c66f3c4d54d60b61856b9455173cd01}} 
-int {\bfseries delete\+All\+Objects} ()
+int \mbox{\hyperlink{classbtosgWorld_a7c66f3c4d54d60b61856b9455173cd01}{delete\+All\+Objects}} ()
 \item 
 void \mbox{\hyperlink{classbtosgWorld_a6af4d066410a86b44fff5563667ea9a9}{reset}} ()
 \end{DoxyCompactItemize}
-\subsection*{Public Attributes}
+\doxysubsection*{Public Attributes}
 \begin{DoxyCompactItemize}
 \item 
 bt\+Dynamics\+World $\ast$ \mbox{\hyperlink{classbtosgWorld_ad757a7b3b845142f200d1f2127e5372e}{dynamic}}
-\begin{DoxyCompactList}\small\item\em Pointer to bt\+Dynamics\+World object. \end{DoxyCompactList}\item 
-\mbox{\Hypertarget{classbtosgWorld_ab6d438f54ccfc18955ea43e87731e008}\label{classbtosgWorld_ab6d438f54ccfc18955ea43e87731e008}} 
-osg\+::ref\+\_\+ptr$<$ osg\+::\+Group $>$ {\bfseries scene}
+\item 
+osg\+::ref\+\_\+ptr$<$ osg\+::\+Group $>$ \mbox{\hyperlink{classbtosgWorld_a6f38716ce0c743342cc3f303f11ddf7b}{scene}}
 \item 
 std\+::forward\+\_\+list$<$ class \mbox{\hyperlink{classbtosgObject}{btosg\+Object}} $\ast$ $>$ \mbox{\hyperlink{classbtosgWorld_ab105aa8c0f8bdbdf323d47b902f6aca0}{objects}}
 \begin{DoxyCompactList}\small\item\em List of Objects. \end{DoxyCompactList}\end{DoxyCompactItemize}
 
 
-\subsection{Detailed Description}
+\doxysubsection{Detailed Description}
 Physical and visual world. 
 
 Integrates a bt\+Dynamics\+World and an osg\+::\+Group. Provides automated updating of graphical objects from related physical simulated bodies. 
 
-\subsection{Member Function Documentation}
+\doxysubsection{Member Function Documentation}
 \mbox{\Hypertarget{classbtosgWorld_ae5b71c6319dd420479096a265a1725b7}\label{classbtosgWorld_ae5b71c6319dd420479096a265a1725b7}} 
 \index{btosgWorld@{btosgWorld}!addObject@{addObject}}
 \index{addObject@{addObject}!btosgWorld@{btosgWorld}}
-\subsubsection{\texorpdfstring{addObject()}{addObject()}}
+\doxysubsubsection{\texorpdfstring{addObject()}{addObject()}}
 {\footnotesize\ttfamily void btosg\+World\+::add\+Object (\begin{DoxyParamCaption}\item[{class \mbox{\hyperlink{classbtosgObject}{btosg\+Object}} $\ast$}]{obj }\end{DoxyParamCaption})}
 
-Registers the object obj into a simulation world. \mbox{\Hypertarget{classbtosgWorld_a09e7791013d2c3a63bb0fb5d96396a4f}\label{classbtosgWorld_a09e7791013d2c3a63bb0fb5d96396a4f}} 
+Registers the object obj into a simulation world.\mbox{\Hypertarget{classbtosgWorld_a7c66f3c4d54d60b61856b9455173cd01}\label{classbtosgWorld_a7c66f3c4d54d60b61856b9455173cd01}} 
+\index{btosgWorld@{btosgWorld}!deleteAllObjects@{deleteAllObjects}}
+\index{deleteAllObjects@{deleteAllObjects}!btosgWorld@{btosgWorld}}
+\doxysubsubsection{\texorpdfstring{deleteAllObjects()}{deleteAllObjects()}}
+{\footnotesize\ttfamily int btosg\+World\+::delete\+All\+Objects (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})}
+
+Deletes all abjects from the \mbox{\hyperlink{classbtosgWorld}{btosg\+World}}\mbox{\Hypertarget{classbtosgWorld_a29bca57c9921aefec00d11cb2d441248}\label{classbtosgWorld_a29bca57c9921aefec00d11cb2d441248}} 
+\index{btosgWorld@{btosgWorld}!listObjects@{listObjects}}
+\index{listObjects@{listObjects}!btosgWorld@{btosgWorld}}
+\doxysubsubsection{\texorpdfstring{listObjects()}{listObjects()}}
+{\footnotesize\ttfamily void btosg\+World\+::list\+Objects (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})}
+
+Outputs alist of all objects in the \mbox{\hyperlink{classbtosgWorld}{btosg\+World}}\mbox{\Hypertarget{classbtosgWorld_a09e7791013d2c3a63bb0fb5d96396a4f}\label{classbtosgWorld_a09e7791013d2c3a63bb0fb5d96396a4f}} 
 \index{btosgWorld@{btosgWorld}!removeObject@{removeObject}}
 \index{removeObject@{removeObject}!btosgWorld@{btosgWorld}}
-\subsubsection{\texorpdfstring{removeObject()}{removeObject()}}
+\doxysubsubsection{\texorpdfstring{removeObject()}{removeObject()}}
 {\footnotesize\ttfamily void btosg\+World\+::remove\+Object (\begin{DoxyParamCaption}\item[{class \mbox{\hyperlink{classbtosgObject}{btosg\+Object}} $\ast$}]{obj }\end{DoxyParamCaption})}
 
-Unregisters the object obj from the simulation world. \mbox{\Hypertarget{classbtosgWorld_a6af4d066410a86b44fff5563667ea9a9}\label{classbtosgWorld_a6af4d066410a86b44fff5563667ea9a9}} 
+Unregisters the object obj from the simulation world.\mbox{\Hypertarget{classbtosgWorld_a6af4d066410a86b44fff5563667ea9a9}\label{classbtosgWorld_a6af4d066410a86b44fff5563667ea9a9}} 
 \index{btosgWorld@{btosgWorld}!reset@{reset}}
 \index{reset@{reset}!btosgWorld@{btosgWorld}}
-\subsubsection{\texorpdfstring{reset()}{reset()}}
+\doxysubsubsection{\texorpdfstring{reset()}{reset()}}
 {\footnotesize\ttfamily void btosg\+World\+::reset (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})}
 
-Reset all registered objects. \mbox{\Hypertarget{classbtosgWorld_afce096686d8f84afd8b8fa3f2dc161b8}\label{classbtosgWorld_afce096686d8f84afd8b8fa3f2dc161b8}} 
+Reset all registered objects.\mbox{\Hypertarget{classbtosgWorld_afce096686d8f84afd8b8fa3f2dc161b8}\label{classbtosgWorld_afce096686d8f84afd8b8fa3f2dc161b8}} 
 \index{btosgWorld@{btosgWorld}!stepSimulation@{stepSimulation}}
 \index{stepSimulation@{stepSimulation}!btosgWorld@{btosgWorld}}
-\subsubsection{\texorpdfstring{stepSimulation()}{stepSimulation()}}
+\doxysubsubsection{\texorpdfstring{stepSimulation()}{stepSimulation()}}
 {\footnotesize\ttfamily void btosg\+World\+::step\+Simulation (\begin{DoxyParamCaption}\item[{bt\+Scalar}]{time\+Step,  }\item[{int}]{max\+Sub\+Steps }\end{DoxyParamCaption})}
 
-Performs a simulation step. 
+Performs a simulation step.
 
-\subsection{Member Data Documentation}
+\doxysubsection{Member Data Documentation}
 \mbox{\Hypertarget{classbtosgWorld_ad757a7b3b845142f200d1f2127e5372e}\label{classbtosgWorld_ad757a7b3b845142f200d1f2127e5372e}} 
 \index{btosgWorld@{btosgWorld}!dynamic@{dynamic}}
 \index{dynamic@{dynamic}!btosgWorld@{btosgWorld}}
-\subsubsection{\texorpdfstring{dynamic}{dynamic}}
+\doxysubsubsection{\texorpdfstring{dynamic}{dynamic}}
 {\footnotesize\ttfamily bt\+Dynamics\+World$\ast$ btosg\+World\+::dynamic}
 
-
-
-Pointer to bt\+Dynamics\+World object. 
-
-\mbox{\Hypertarget{classbtosgWorld_ab105aa8c0f8bdbdf323d47b902f6aca0}\label{classbtosgWorld_ab105aa8c0f8bdbdf323d47b902f6aca0}} 
+Pointer to bt\+Dynamics\+World object. \mbox{\Hypertarget{classbtosgWorld_ab105aa8c0f8bdbdf323d47b902f6aca0}\label{classbtosgWorld_ab105aa8c0f8bdbdf323d47b902f6aca0}} 
 \index{btosgWorld@{btosgWorld}!objects@{objects}}
 \index{objects@{objects}!btosgWorld@{btosgWorld}}
-\subsubsection{\texorpdfstring{objects}{objects}}
+\doxysubsubsection{\texorpdfstring{objects}{objects}}
 {\footnotesize\ttfamily std\+::forward\+\_\+list$<$class \mbox{\hyperlink{classbtosgObject}{btosg\+Object}}$\ast$$>$ btosg\+World\+::objects}
 
 
 
 List of Objects. 
 
+\mbox{\Hypertarget{classbtosgWorld_a6f38716ce0c743342cc3f303f11ddf7b}\label{classbtosgWorld_a6f38716ce0c743342cc3f303f11ddf7b}} 
+\index{btosgWorld@{btosgWorld}!scene@{scene}}
+\index{scene@{scene}!btosgWorld@{btosgWorld}}
+\doxysubsubsection{\texorpdfstring{scene}{scene}}
+{\footnotesize\ttfamily osg\+::ref\+\_\+ptr$<$ osg\+::\+Group $>$ btosg\+World\+::scene}
 
+Pointer to osg\+::\+Group object storing the root node of the object tree. 
 
 The documentation for this class was generated from the following files\+:\begin{DoxyCompactItemize}
 \item 

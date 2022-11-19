@@ -1,14 +1,14 @@
 A programming framework to build visual physical simulations.
 
-\subsubsection*{Description}
+\doxysubsubsection*{Description}
 
-{\bfseries{btosg}} is aimed to ease building simple visual simulation applications integrating {\bfseries{Bullet}} and {\bfseries{Open\+Scene\+Graph}}. {\bfseries{btosg}} stands on top of these two A\+P\+Is but does not try to hide them. Instead, in order to build a complete application, the programmer is able and usually needs to access directly the data structures from both {\bfseries{Bullet}} and {\bfseries{Open\+Scene\+Graph}}. So, the use of {\bfseries{btosg}} does not avoid the requirement to know and understand their A\+P\+Is.
+{\bfseries{btosg}} is aimed to ease building simple visual simulation applications integrating {\bfseries{Bullet}} and {\bfseries{Open\+Scene\+Graph}}. {\bfseries{btosg}} stands on top of these two APIs but does not try to hide them. Instead, in order to build a complete application, the programmer is able and usually needs to access directly the data structures from both {\bfseries{Bullet}} and {\bfseries{Open\+Scene\+Graph}}. So, the use of {\bfseries{btosg}} does not avoid the requirement to know and understand their APIs.
 
 The use of {\bfseries{btosg}} can help the programming task because it allows to create and position both the physical and graphics definitions of small objects in one step. It also keeps track of syncronizing the graphics definitions from the state of each physical object.
 
-\subsubsection*{Dependences}
+\doxysubsubsection*{Dependences}
 
-\paragraph*{Open\+Scene\+Graph\+:}
+\doxyparagraph*{Open\+Scene\+Graph\+:}
 
 
 \begin{DoxyItemize}
@@ -16,7 +16,7 @@ The use of {\bfseries{btosg}} can help the programming task because it allows to
 \item \href{http://www.openscenegraph.org/}{\texttt{ http\+://www.\+openscenegraph.\+org/}}
 \end{DoxyItemize}
 
-\paragraph*{Bullet\+:}
+\doxyparagraph*{Bullet\+:}
 
 
 \begin{DoxyItemize}
@@ -27,33 +27,25 @@ The use of {\bfseries{btosg}} can help the programming task because it allows to
 Dependences can be installed on Fedora Linux using\+: \begin{DoxyVerb}dnf install gcc-c++ mesa-libGL-devel
 dnf install bullet bullet-devel OpenSceneGraph OpenSceneGraph-devel
 \end{DoxyVerb}
-
-
-Dependences can be installed on Ubuntu using\+: \begin{DoxyVerb}apt install bullet openscenegraph-osg openscenegraph-osgViewer openscenegraph-osgSim openscenegraph-osgDB openscenegraph-osgGA openscenegraph-osgShadow
+ Dependences can be installed on Ubuntu using\+: \begin{DoxyVerb}apt install bullet openscenegraph-osg openscenegraph-osgViewer openscenegraph-osgSim openscenegraph-osgDB openscenegraph-osgGA openscenegraph-osgShadow
 \end{DoxyVerb}
-
-
-\subsubsection*{Build}
+ \doxysubsubsection*{Build}
 
 \begin{DoxyVerb}git clone https://github.com/miguelleitao/btosg.git
 cd btosg
 make
 sudo make install
 \end{DoxyVerb}
-
-
-\subsubsection*{Usage}
+ \doxysubsubsection*{Usage}
 
 Look at provided examples. Prepare your {\itshape application.\+cpp} using \begin{DoxyVerb}#include <btosg.h>
 \end{DoxyVerb}
-
-
-Compile using
+ Compile using
 
 
 \begin{DoxyPre}
-g++ -c -I path/to/btosg/dir {\itshape application.cpp}
-g++ -o {\itshape application} -L path/to/btosg/dir/lib -l btosg {\itshape application.o}
+g++ -\/c -\/I path/to/btosg/dir {\itshape application.cpp}
+g++ -\/o {\itshape application} -\/L path/to/btosg/dir/lib -\/l btosg {\itshape application.o}
 \end{DoxyPre}
 
 
@@ -61,17 +53,17 @@ Or, if you completed installation using {\ttfamily make install}\+:
 
 
 \begin{DoxyPre}
-g++ -c `pkg-config --cflags btosg` {\itshape application.cpp}
-g++ -o {\itshape application} `pkg-config --libs btosg` {\itshape application.o}
+g++ -\/c `pkg-\/config -\/-\/cflags btosg` {\itshape application.cpp}
+g++ -\/o {\itshape application} `pkg-\/config -\/-\/libs btosg` {\itshape application.o}
 \end{DoxyPre}
 
 
-\subsubsection*{Examples}
+\#\doxysubsection*{Examples}
 
 {\bfseries{btosg}} is available with some working examples.
 \begin{DoxyItemize}
 \item {\bfseries{ball.\+cpp}} implements a simple simulation of a ball with two planes.
-\item {\bfseries{objects.\+cpp}} provides an example for creating a complete object (graphical and physical) from loading an external Wavefront O\+BJ file.
+\item {\bfseries{objects.\+cpp}} provides an example for creating a complete object (graphical and physical) from loading an external Wavefront OBJ file.
 \item {\bfseries{car.\+cpp}} implements a basic vehicle with four wheels and suspensions. It can be compiled using a Z or Y pointing up vector. Usage instructions are provided in source file.
 \end{DoxyItemize}
 
@@ -81,8 +73,6 @@ To compile and try the provided examples do\+: \begin{DoxyVerb}make examples
 ./carZ
 ./carY
 \end{DoxyVerb}
-
-
-\subsubsection*{Referencing}
+ \doxysubsubsection*{Referencing}
 
 The release version can be referenced by either \href{http://doi.org/ctz5}{\texttt{ http\+://doi.\+org/ctz5}} or doi\+:10.\+5281/zenodo.1283484. 

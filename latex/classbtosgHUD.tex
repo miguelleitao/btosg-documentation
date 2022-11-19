@@ -1,4 +1,4 @@
-\hypertarget{classbtosgHUD}{}\section{btosg\+H\+UD Class Reference}
+\hypertarget{classbtosgHUD}{}\doxysection{btosg\+HUD Class Reference}
 \label{classbtosgHUD}\index{btosgHUD@{btosgHUD}}
 
 
@@ -7,52 +7,208 @@ Head Up Display.
 
 
 
-{\ttfamily \#include $<$btosg\+H\+U\+D.\+h$>$}
+{\ttfamily \#include $<$btosg\+HUD.\+h$>$}
 
-Inheritance diagram for btosg\+H\+UD\+:\begin{figure}[H]
+Inheritance diagram for btosg\+HUD\+:\begin{figure}[H]
 \begin{center}
 \leavevmode
 \includegraphics[height=2.000000cm]{classbtosgHUD}
 \end{center}
 \end{figure}
-\subsection*{Public Member Functions}
+\doxysubsection*{Public Member Functions}
 \begin{DoxyCompactItemize}
+\item 
+void \mbox{\hyperlink{classbtosgHUD_a463c31b0fa1cf0ae03b6a4ad4dcc92ce}{set\+Position}} (int \mbox{\hyperlink{classbtosgHUD_a085c2b65b811555ce73e9d7cfa437efe}{x1}}, int \mbox{\hyperlink{classbtosgHUD_a83dc163056cb5bd2d279b4c2893a5573}{y1}}, int \mbox{\hyperlink{classbtosgHUD_aca3a9b4f1c4ad69a3410ededa17de6e3}{x2}}, int \mbox{\hyperlink{classbtosgHUD_a940fcd639121b97ae0427d69545af26d}{y2}})
+\item 
+void \mbox{\hyperlink{classbtosgHUD_af605e9425ccb0b44e51c176433ba9b41}{set\+Full\+Screen}} (osg\+::\+Viewport $\ast$vp)
+\item 
+void \mbox{\hyperlink{classbtosgHUD_aa8db0080d220a3d9ce8d1227966aad34}{set\+Color}} (osg\+::\+Vec4 \&c)
+\item 
+void \mbox{\hyperlink{classbtosgHUD_a42e1fde7fb1187d03314db975fba57db}{set\+Background}} (const char $\ast$back\+\_\+fname)
+\item 
+void \mbox{\hyperlink{classbtosgHUD_a2fc9c4b7f711093928168fa498e433ac}{clear\+Background}} ()
+\item 
+void \mbox{\hyperlink{classbtosgHUD_a4dec5ff1c8d4dfd5d52837c6e2536972}{set\+Background}} (osg\+::\+Image $\ast$hud\+Image)
 \item 
 void \mbox{\hyperlink{classbtosgHUD_a18c1eb80934574e6bdabbbee43e0bfeb}{set\+Background}} ()
 \item 
-\mbox{\hyperlink{classbtosgHUD_a1aee59dc4eff398996632f1e4b3e70fd}{btosg\+H\+UD}} ()
+\mbox{\hyperlink{classbtosgHUD_a1aee59dc4eff398996632f1e4b3e70fd}{btosg\+HUD}} ()
 \item 
-virtual bool \mbox{\hyperlink{classbtosgHUD_a182be3e4bdf00f9ff2b9c482833089a4}{add\+Drawable}} (osg\+::\+Drawable $\ast$td)
+bool \mbox{\hyperlink{classbtosgHUD_a6a2f72bc5a53be7e167fe5db7f8d555a}{add\+Drawable}} (osg\+::\+Drawable $\ast$td)
+\item 
+virtual bool \mbox{\hyperlink{classbtosgHUD_ad76fdcc3d3248ade89c291069296aebf}{remove\+Drawable}} (osg\+::\+Drawable $\ast$td)
+\item 
+void \mbox{\hyperlink{classbtosgHUD_a0665cf2c4a53a62da52db12024a316b7}{set\+State\+Set}} (osg\+::\+State\+Set $\ast$s\+Set)
 \end{DoxyCompactItemize}
+\doxysubsection*{Protected Attributes}
+\begin{DoxyCompactItemize}
+\item 
+int \mbox{\hyperlink{classbtosgHUD_a085c2b65b811555ce73e9d7cfa437efe}{x1}} = 0
+\begin{DoxyCompactList}\small\item\em left \end{DoxyCompactList}\item 
+int \mbox{\hyperlink{classbtosgHUD_a83dc163056cb5bd2d279b4c2893a5573}{y1}} = 0
+\begin{DoxyCompactList}\small\item\em bottom \end{DoxyCompactList}\item 
+int \mbox{\hyperlink{classbtosgHUD_aca3a9b4f1c4ad69a3410ededa17de6e3}{x2}} = 1024
+\begin{DoxyCompactList}\small\item\em right \end{DoxyCompactList}\item 
+int \mbox{\hyperlink{classbtosgHUD_a940fcd639121b97ae0427d69545af26d}{y2}} = 150
+\begin{DoxyCompactList}\small\item\em top \end{DoxyCompactList}\item 
+osg\+::\+Vec4 \mbox{\hyperlink{classbtosgHUD_af9619e80edb653c9d1ff5a4a55710c30}{back\+\_\+color}} = osg\+::\+Vec4(1.f,1.f,1.f,1.\+0f)
+\begin{DoxyCompactList}\small\item\em Bachground color. \end{DoxyCompactList}\item 
+osg\+::\+Texture2D $\ast$ \mbox{\hyperlink{classbtosgHUD_a962a1d8cd814534f812ee760be8b0994}{background\+Texture}} = NULL
+\begin{DoxyCompactList}\small\item\em Background Texture. \end{DoxyCompactList}\item 
+osg\+::\+State\+Set $\ast$ \mbox{\hyperlink{classbtosgHUD_aea0ce559e58dcf1afd6d7d092795b0c9}{HUDState\+Set}}
+\begin{DoxyCompactList}\small\item\em State\+Set for HUD visual properties. \end{DoxyCompactList}\end{DoxyCompactItemize}
 
 
-\subsection{Detailed Description}
+\doxysubsection{Detailed Description}
 Head Up Display. 
 
-\subsection{Constructor \& Destructor Documentation}
+\doxysubsection{Constructor \& Destructor Documentation}
 \mbox{\Hypertarget{classbtosgHUD_a1aee59dc4eff398996632f1e4b3e70fd}\label{classbtosgHUD_a1aee59dc4eff398996632f1e4b3e70fd}} 
 \index{btosgHUD@{btosgHUD}!btosgHUD@{btosgHUD}}
 \index{btosgHUD@{btosgHUD}!btosgHUD@{btosgHUD}}
-\subsubsection{\texorpdfstring{btosgHUD()}{btosgHUD()}}
-{\footnotesize\ttfamily btosg\+H\+U\+D\+::btosg\+H\+UD (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}}
+\doxysubsubsection{\texorpdfstring{btosgHUD()}{btosgHUD()}}
+{\footnotesize\ttfamily btosg\+HUD\+::btosg\+HUD (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}}
 
-Constructs an Head Up Display. 
+Constructs an Head Up Display.
 
-\subsection{Member Function Documentation}
-\mbox{\Hypertarget{classbtosgHUD_a182be3e4bdf00f9ff2b9c482833089a4}\label{classbtosgHUD_a182be3e4bdf00f9ff2b9c482833089a4}} 
+\doxysubsection{Member Function Documentation}
+\mbox{\Hypertarget{classbtosgHUD_a6a2f72bc5a53be7e167fe5db7f8d555a}\label{classbtosgHUD_a6a2f72bc5a53be7e167fe5db7f8d555a}} 
 \index{btosgHUD@{btosgHUD}!addDrawable@{addDrawable}}
 \index{addDrawable@{addDrawable}!btosgHUD@{btosgHUD}}
-\subsubsection{\texorpdfstring{addDrawable()}{addDrawable()}}
-{\footnotesize\ttfamily virtual bool btosg\+H\+U\+D\+::add\+Drawable (\begin{DoxyParamCaption}\item[{osg\+::\+Drawable $\ast$}]{td }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}, {\ttfamily [virtual]}}
+\doxysubsubsection{\texorpdfstring{addDrawable()}{addDrawable()}}
+{\footnotesize\ttfamily bool btosg\+HUD\+::add\+Drawable (\begin{DoxyParamCaption}\item[{osg\+::\+Drawable $\ast$}]{td }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}}
 
-Add a visual elemente to the H\+UD. \mbox{\Hypertarget{classbtosgHUD_a18c1eb80934574e6bdabbbee43e0bfeb}\label{classbtosgHUD_a18c1eb80934574e6bdabbbee43e0bfeb}} 
+Add a visual element to the HUD.\mbox{\Hypertarget{classbtosgHUD_a2fc9c4b7f711093928168fa498e433ac}\label{classbtosgHUD_a2fc9c4b7f711093928168fa498e433ac}} 
+\index{btosgHUD@{btosgHUD}!clearBackground@{clearBackground}}
+\index{clearBackground@{clearBackground}!btosgHUD@{btosgHUD}}
+\doxysubsubsection{\texorpdfstring{clearBackground()}{clearBackground()}}
+{\footnotesize\ttfamily void btosg\+HUD\+::clear\+Background (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}}
+
+Clears the defined background image\mbox{\Hypertarget{classbtosgHUD_ad76fdcc3d3248ade89c291069296aebf}\label{classbtosgHUD_ad76fdcc3d3248ade89c291069296aebf}} 
+\index{btosgHUD@{btosgHUD}!removeDrawable@{removeDrawable}}
+\index{removeDrawable@{removeDrawable}!btosgHUD@{btosgHUD}}
+\doxysubsubsection{\texorpdfstring{removeDrawable()}{removeDrawable()}}
+{\footnotesize\ttfamily virtual bool btosg\+HUD\+::remove\+Drawable (\begin{DoxyParamCaption}\item[{osg\+::\+Drawable $\ast$}]{td }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}, {\ttfamily [virtual]}}
+
+Removes Drawable element from HUD\mbox{\Hypertarget{classbtosgHUD_a18c1eb80934574e6bdabbbee43e0bfeb}\label{classbtosgHUD_a18c1eb80934574e6bdabbbee43e0bfeb}} 
 \index{btosgHUD@{btosgHUD}!setBackground@{setBackground}}
 \index{setBackground@{setBackground}!btosgHUD@{btosgHUD}}
-\subsubsection{\texorpdfstring{setBackground()}{setBackground()}}
-{\footnotesize\ttfamily void btosg\+H\+U\+D\+::set\+Background (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}}
+\doxysubsubsection{\texorpdfstring{setBackground()}{setBackground()}\hspace{0.1cm}{\footnotesize\ttfamily [1/3]}}
+{\footnotesize\ttfamily void btosg\+HUD\+::set\+Background (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}}
 
-Set up geometry for the H\+UD and add it to the H\+UD 
+Selects default background image\mbox{\Hypertarget{classbtosgHUD_a42e1fde7fb1187d03314db975fba57db}\label{classbtosgHUD_a42e1fde7fb1187d03314db975fba57db}} 
+\index{btosgHUD@{btosgHUD}!setBackground@{setBackground}}
+\index{setBackground@{setBackground}!btosgHUD@{btosgHUD}}
+\doxysubsubsection{\texorpdfstring{setBackground()}{setBackground()}\hspace{0.1cm}{\footnotesize\ttfamily [2/3]}}
+{\footnotesize\ttfamily void btosg\+HUD\+::set\+Background (\begin{DoxyParamCaption}\item[{const char $\ast$}]{back\+\_\+fname }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}}
+
+Load the image from file back\+\_\+fname to be used as background\mbox{\Hypertarget{classbtosgHUD_a4dec5ff1c8d4dfd5d52837c6e2536972}\label{classbtosgHUD_a4dec5ff1c8d4dfd5d52837c6e2536972}} 
+\index{btosgHUD@{btosgHUD}!setBackground@{setBackground}}
+\index{setBackground@{setBackground}!btosgHUD@{btosgHUD}}
+\doxysubsubsection{\texorpdfstring{setBackground()}{setBackground()}\hspace{0.1cm}{\footnotesize\ttfamily [3/3]}}
+{\footnotesize\ttfamily void btosg\+HUD\+::set\+Background (\begin{DoxyParamCaption}\item[{osg\+::\+Image $\ast$}]{hud\+Image }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}}
+
+Use hud\+Image as background image
+
+Set up geometry for the HUD and add it to the HUD\mbox{\Hypertarget{classbtosgHUD_aa8db0080d220a3d9ce8d1227966aad34}\label{classbtosgHUD_aa8db0080d220a3d9ce8d1227966aad34}} 
+\index{btosgHUD@{btosgHUD}!setColor@{setColor}}
+\index{setColor@{setColor}!btosgHUD@{btosgHUD}}
+\doxysubsubsection{\texorpdfstring{setColor()}{setColor()}}
+{\footnotesize\ttfamily void btosg\+HUD\+::set\+Color (\begin{DoxyParamCaption}\item[{osg\+::\+Vec4 \&}]{c }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}}
+
+Define the background color\mbox{\Hypertarget{classbtosgHUD_af605e9425ccb0b44e51c176433ba9b41}\label{classbtosgHUD_af605e9425ccb0b44e51c176433ba9b41}} 
+\index{btosgHUD@{btosgHUD}!setFullScreen@{setFullScreen}}
+\index{setFullScreen@{setFullScreen}!btosgHUD@{btosgHUD}}
+\doxysubsubsection{\texorpdfstring{setFullScreen()}{setFullScreen()}}
+{\footnotesize\ttfamily void btosg\+HUD\+::set\+Full\+Screen (\begin{DoxyParamCaption}\item[{osg\+::\+Viewport $\ast$}]{vp }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}}
+
+Fill the whole viewport\mbox{\Hypertarget{classbtosgHUD_a463c31b0fa1cf0ae03b6a4ad4dcc92ce}\label{classbtosgHUD_a463c31b0fa1cf0ae03b6a4ad4dcc92ce}} 
+\index{btosgHUD@{btosgHUD}!setPosition@{setPosition}}
+\index{setPosition@{setPosition}!btosgHUD@{btosgHUD}}
+\doxysubsubsection{\texorpdfstring{setPosition()}{setPosition()}}
+{\footnotesize\ttfamily void btosg\+HUD\+::set\+Position (\begin{DoxyParamCaption}\item[{int}]{x1,  }\item[{int}]{y1,  }\item[{int}]{x2,  }\item[{int}]{y2 }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}}
+
+Positions the HUD in the display window. x1, x2, y1, y2 are interpreted as pixel coordinates.\mbox{\Hypertarget{classbtosgHUD_a0665cf2c4a53a62da52db12024a316b7}\label{classbtosgHUD_a0665cf2c4a53a62da52db12024a316b7}} 
+\index{btosgHUD@{btosgHUD}!setStateSet@{setStateSet}}
+\index{setStateSet@{setStateSet}!btosgHUD@{btosgHUD}}
+\doxysubsubsection{\texorpdfstring{setStateSet()}{setStateSet()}}
+{\footnotesize\ttfamily void btosg\+HUD\+::set\+State\+Set (\begin{DoxyParamCaption}\item[{osg\+::\+State\+Set $\ast$}]{s\+Set }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}}
+
+Use State\+Set to define visual properties for HUD
+
+\doxysubsection{Member Data Documentation}
+\mbox{\Hypertarget{classbtosgHUD_af9619e80edb653c9d1ff5a4a55710c30}\label{classbtosgHUD_af9619e80edb653c9d1ff5a4a55710c30}} 
+\index{btosgHUD@{btosgHUD}!back\_color@{back\_color}}
+\index{back\_color@{back\_color}!btosgHUD@{btosgHUD}}
+\doxysubsubsection{\texorpdfstring{back\_color}{back\_color}}
+{\footnotesize\ttfamily osg\+::\+Vec4 btosg\+HUD\+::back\+\_\+color = osg\+::\+Vec4(1.f,1.f,1.f,1.\+0f)\hspace{0.3cm}{\ttfamily [protected]}}
+
+
+
+Bachground color. 
+
+\mbox{\Hypertarget{classbtosgHUD_a962a1d8cd814534f812ee760be8b0994}\label{classbtosgHUD_a962a1d8cd814534f812ee760be8b0994}} 
+\index{btosgHUD@{btosgHUD}!backgroundTexture@{backgroundTexture}}
+\index{backgroundTexture@{backgroundTexture}!btosgHUD@{btosgHUD}}
+\doxysubsubsection{\texorpdfstring{backgroundTexture}{backgroundTexture}}
+{\footnotesize\ttfamily osg\+::\+Texture2D$\ast$ btosg\+HUD\+::background\+Texture = NULL\hspace{0.3cm}{\ttfamily [protected]}}
+
+
+
+Background Texture. 
+
+\mbox{\Hypertarget{classbtosgHUD_aea0ce559e58dcf1afd6d7d092795b0c9}\label{classbtosgHUD_aea0ce559e58dcf1afd6d7d092795b0c9}} 
+\index{btosgHUD@{btosgHUD}!HUDStateSet@{HUDStateSet}}
+\index{HUDStateSet@{HUDStateSet}!btosgHUD@{btosgHUD}}
+\doxysubsubsection{\texorpdfstring{HUDStateSet}{HUDStateSet}}
+{\footnotesize\ttfamily osg\+::\+State\+Set$\ast$ btosg\+HUD\+::\+HUDState\+Set\hspace{0.3cm}{\ttfamily [protected]}}
+
+
+
+State\+Set for HUD visual properties. 
+
+\mbox{\Hypertarget{classbtosgHUD_a085c2b65b811555ce73e9d7cfa437efe}\label{classbtosgHUD_a085c2b65b811555ce73e9d7cfa437efe}} 
+\index{btosgHUD@{btosgHUD}!x1@{x1}}
+\index{x1@{x1}!btosgHUD@{btosgHUD}}
+\doxysubsubsection{\texorpdfstring{x1}{x1}}
+{\footnotesize\ttfamily int btosg\+HUD\+::x1 = 0\hspace{0.3cm}{\ttfamily [protected]}}
+
+
+
+left 
+
+\mbox{\Hypertarget{classbtosgHUD_aca3a9b4f1c4ad69a3410ededa17de6e3}\label{classbtosgHUD_aca3a9b4f1c4ad69a3410ededa17de6e3}} 
+\index{btosgHUD@{btosgHUD}!x2@{x2}}
+\index{x2@{x2}!btosgHUD@{btosgHUD}}
+\doxysubsubsection{\texorpdfstring{x2}{x2}}
+{\footnotesize\ttfamily int btosg\+HUD\+::x2 = 1024\hspace{0.3cm}{\ttfamily [protected]}}
+
+
+
+right 
+
+\mbox{\Hypertarget{classbtosgHUD_a83dc163056cb5bd2d279b4c2893a5573}\label{classbtosgHUD_a83dc163056cb5bd2d279b4c2893a5573}} 
+\index{btosgHUD@{btosgHUD}!y1@{y1}}
+\index{y1@{y1}!btosgHUD@{btosgHUD}}
+\doxysubsubsection{\texorpdfstring{y1}{y1}}
+{\footnotesize\ttfamily int btosg\+HUD\+::y1 = 0\hspace{0.3cm}{\ttfamily [protected]}}
+
+
+
+bottom 
+
+\mbox{\Hypertarget{classbtosgHUD_a940fcd639121b97ae0427d69545af26d}\label{classbtosgHUD_a940fcd639121b97ae0427d69545af26d}} 
+\index{btosgHUD@{btosgHUD}!y2@{y2}}
+\index{y2@{y2}!btosgHUD@{btosgHUD}}
+\doxysubsubsection{\texorpdfstring{y2}{y2}}
+{\footnotesize\ttfamily int btosg\+HUD\+::y2 = 150\hspace{0.3cm}{\ttfamily [protected]}}
+
+
+
+top 
+
+
 
 The documentation for this class was generated from the following file\+:\begin{DoxyCompactItemize}
 \item 
-btosg\+H\+U\+D.\+h\end{DoxyCompactItemize}
+btosg\+HUD.\+h\end{DoxyCompactItemize}
